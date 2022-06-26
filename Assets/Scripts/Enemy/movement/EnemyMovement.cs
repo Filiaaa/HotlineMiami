@@ -50,9 +50,12 @@ public class EnemyMovement : MonoBehaviour {
 		wayPointNumber %= wayPoints.Length;
 	}
 
-	public void Agro () {
+	public void Agr () {
 		agred = true;
-		transform.parent = null;
+	}
+
+	public void DisAgr () {
+		agred = false;
 	}
 
 }

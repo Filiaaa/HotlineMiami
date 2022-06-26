@@ -393,7 +393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 7, z: -1}
+  m_LocalPosition: {x: 0, y: 10, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -493,7 +493,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644864745}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 7, z: 0}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2008,7 +2008,11 @@ PrefabInstance:
       objectReference: {fileID: 644864745}
     - target: {fileID: 5862226880108972336, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
       propertyPath: navigation
-      value: 0.001
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862226880108972336, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
+      propertyPath: movingSpeed
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5862226880108972336, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
       propertyPath: wayPoints.Array.data[2]

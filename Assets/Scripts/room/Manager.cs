@@ -6,9 +6,15 @@ public class Manager : MonoBehaviour {
 
 	public GameObject [] enemys;
 
-	public void enemysAgro () {
+	public void enemysAgr () {
 		for (int i = 0; i < enemys.Length; i++) {
-			enemys[i].GetComponent <EnemyMovement>().Agro();
+			enemys[i].GetComponent <EnemyMovement>().Agr();
+		}
+	}
+
+	public void enemysDisAgr () {
+		for (int i = 0; i < enemys.Length; i++) {
+			enemys[i].GetComponent <EnemyMovement> ().DisAgr();
 		}
 	}
 }

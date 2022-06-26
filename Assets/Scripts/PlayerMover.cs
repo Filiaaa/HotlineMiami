@@ -13,7 +13,7 @@ public class PlayerMover : MonoBehaviour
 		rb = GetComponent<Rigidbody2D>();
 	}
 
-	void Update()
+	void FixedUpdate()
 	{
 
 		if (Input.GetMouseButtonDown(0))
@@ -22,7 +22,8 @@ public class PlayerMover : MonoBehaviour
 		}
 		vert = Input.GetAxis("Vertical");
 		hor = Input.GetAxis("Horizontal");
-		rb.velocity = new Vector2(hor * movingSpeed, vert * movingSpeed);
+		rb.velocity = new Vector2(hor, vert) * movingSpeed;
+
 		var mousePosition = Input.mousePosition;
 		mousePosition = Camera.main.ScreenToWorldPoint(mousePosition); //положение мыши из экранных в мировые координаты
 		angle = Vector2.Angle(Vector2.up, mousePosition - transform.position);//угол между вектором от объекта к мыше и осью х
@@ -51,20 +52,25 @@ public class PlayerMover : MonoBehaviour
 
 	}
 
-
-	bool inRoom = false;	
 	GameObject curRoom;
 	
 	void OnTriggerEnter2D(Collider2D collision) {
-		Debug.Log (collision.gameObject);
+		
 		if (collision.tag == "Room") {
-			if (inRoom) {
-				inRoom = false;
-			} else {
-				inRoom = true;
-				curRoom = collision.gameObject;
-				curRoom.GetComponent <Manager>().enemysAgro();
-			}
+			
+			curRoom = collision.gameObject;
+			curRoom.GetComponent <Manager>().enemysAgr();
+
+		}
+	}
+
+	void OnTriggerExit2D(Collider2D collision) {
+		
+		if (collision.tag == "Room") {
+
+			curRoom.GetComponent <Manager>().enemysDisAgr();
+			curRoom = null;
+
 		}
 	}
 }
