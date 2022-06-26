@@ -7,12 +7,11 @@ public class EnemyMovement : MonoBehaviour {
 	public int wayPointNumber;
 	public Transform [] wayPoints;
 	public float navigation;
-	public GameObject playerObj;
+	public GameObject playerObj, enter;
+	public float minDistance = 0.5f, movingSpeed = 1, deltaDictance = 0.3f;
 
-	private Transform enemy;
-	private Transform player;
-	private float navigationTime = 0;
-	private bool agred = false;
+	private Transform enemy, player;
+	private bool agred = false, isReturning = false;
 
 	void Start () {
 		enemy = GetComponent <Transform> (); 
@@ -21,26 +20,32 @@ public class EnemyMovement : MonoBehaviour {
 
 	private float angle;
 	 
-	void Update () {
-			navigationTime += Time.deltaTime;
-		if (!agred) {
-			if (navigationTime > navigation) {
-				enemy.position = Vector2.MoveTowards (enemy.position, wayPoints[wayPointNumber].position, navigationTime);
+	void FixedUpdate () {
+		if (!isReturning) {
+			if (!agred) {
+				enemy.Translate (Vector2.up * movingSpeed);
 
 				angle = Vector2.Angle (Vector2.up, wayPoints[wayPointNumber].position - enemy.position);
 				enemy.eulerAngles = new Vector3 (0, 0, enemy.position.x < wayPoints[wayPointNumber].position.x ? -angle : angle);
 
-				navigationTime = 0;
-			}
-		} else {
-			if (navigationTime > navigation) {
-				enemy.position = Vector2.MoveTowards(enemy.position, player.position, navigationTime);
+			} else {
+
+				if (Vector2.Distance(enemy.position, player.position) - deltaDictance > minDistance) {
+					enemy.Translate (Vector2.up * movingSpeed);
+				} else if (Vector2.Distance(enemy.position, player.position) + deltaDictance < minDistance) {
+					enemy.Translate (Vector2.down * movingSpeed);
+				}
 
 				angle = Vector2.Angle (Vector2.up, player.position - enemy.position);
 				enemy.eulerAngles = new Vector3 (0, 0, enemy.position.x < player.position.x ? -angle : angle);
 
-				navigationTime = 0;
 			}
+		} else {
+			angle = Vector2.Angle (Vector2.up, enter.GetComponent <Transform> ().position - enemy.position);
+			enemy.eulerAngles = new Vector3 (0, 0, enemy.position.x < enter.GetComponent <Transform> ().position.x ? -angle : angle);
+
+			enemy.Translate (Vector2.up * movingSpeed);
+
 		}
 	}
 
@@ -56,6 +61,18 @@ public class EnemyMovement : MonoBehaviour {
 
 	public void DisAgr () {
 		agred = false;
+	}
+
+	void OnTriggerExit2D(Collider2D collision) {
+		if (collision.tag == "Room") {
+			isReturning = true;
+		}
+	}
+
+	void OnTriggerEnter2D (Collider2D collision) {
+		if (collision.tag == "Room") {
+			isReturning = false;
+		}
 	}
 
 }
