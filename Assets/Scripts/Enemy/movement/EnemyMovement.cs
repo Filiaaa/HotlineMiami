@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour {
 
-	public int wayPointNumber;
 	public Transform [] wayPoints;
-	public float navigation;
-	public GameObject playerObj, enter;
+	public GameObject playerObj, enter, curWeapon;
 	public float minDistance = 0.5f, movingSpeed = 1, deltaDictance = 0.3f;
+	public bool agred = false;
 
+	private int wayPointNumber;
 	private Transform enemy, player;
-	private bool agred = false, isReturning = false;
+	private bool isReturning = false;
 
 	void Start () {
 		enemy = GetComponent <Transform> (); 
@@ -39,6 +39,10 @@ public class EnemyMovement : MonoBehaviour {
 				angle = Vector2.Angle (Vector2.up, player.position - enemy.position);
 				enemy.eulerAngles = new Vector3 (0, 0, enemy.position.x < player.position.x ? -angle : angle);
 
+				if (curWeapon != null) {
+					curWeapon.GetComponent <Weapon> ().Attack ();
+				}
+
 			}
 		} else {
 			angle = Vector2.Angle (Vector2.up, enter.GetComponent <Transform> ().position - enemy.position);
@@ -53,14 +57,6 @@ public class EnemyMovement : MonoBehaviour {
 	public void ArriveToPoint () {
 		wayPointNumber++;
 		wayPointNumber %= wayPoints.Length;
-	}
-
-	public void Agr () {
-		agred = true;
-	}
-
-	public void DisAgr () {
-		agred = false;
 	}
 
 	void OnTriggerExit2D(Collider2D collision) {
