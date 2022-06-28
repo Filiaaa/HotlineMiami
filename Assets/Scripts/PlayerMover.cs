@@ -40,7 +40,7 @@ public class PlayerMover : MonoBehaviour
 		{
 			if (currentWeapon != kick && collision.gameObject.GetComponent<BoxCollider2D>().enabled)
 			{
-				currentWeapon.transform.parent = null;
+				currentWeapon.GetComponent <Weapon> ().Throw();
 			}
 			currentWeapon = collision.gameObject;
 			currentWeapon.transform.parent = transform;
