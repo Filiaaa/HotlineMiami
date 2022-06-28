@@ -13,11 +13,12 @@ public class FireWeapon : Weapon
 	Vector3 navigation;
 
 	public override bool Attack () {
-
 		if (canAttack && bulletsInHolder > 0) {
+			transform.parent.GetComponent<Animator>().SetBool("Attack", true);
+			GetComponent<Animator>().SetBool("Attack", true);
 			bulletsInHolder--;
 			var bullet_ = Instantiate(curBullet, transform.position, Quaternion.identity, null);
-			navigation = new Vector3 (transform.right.x + Random.Range (minVarience, maxVarience), transform.right.y + Random.Range (minVarience, maxVarience), transform.right.z);
+			navigation = new Vector3 (transform.up.x + Random.Range (minVarience, maxVarience), transform.up.y + Random.Range (minVarience, maxVarience), transform.up.z);
 			bullet_.GetComponent<Rigidbody2D>().AddForce(navigation * force/*, ForceMode2D.Impulse*/);
 			/*			bullet.GetComponent<Bullet>().navigation = transform.right;*/
 
@@ -31,6 +32,7 @@ public class FireWeapon : Weapon
 			}
 		} else if (bulletsInHolder <= 0) {
 			Throw ();
+			transform.parent.GetComponent<Animator>().SetBool("withKnife", true);
 			GetComponent <BoxCollider2D> ().enabled = false;
 			return false;
 		}

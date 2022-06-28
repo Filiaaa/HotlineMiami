@@ -6,16 +6,18 @@ public class meleeWeapon : Weapon
 {
 	public Collider2D attackCol;
 	public float attackTime;
+	bool attack = false;
 	
 	public override bool Attack()
 	{
-/*        if (!GetComponent<Animator>().GetBool("isAttacking"))
-		{*/
-		attackCol.enabled = true;
-/*            GetComponent<Animator>().SetBool("isAttacking", true);*/
-		StartCoroutine(waitForEnablingCol());
-/*        }*/
-		return true;
+        if (!attack)
+        {
+			attack = true;
+			transform.parent.GetComponent<SpriteRenderer>().enabled = false;
+			attackCol.enabled = true;
+            StartCoroutine(waitForEnablingCol());
+        }
+        return true;
 		
 	}
 
@@ -23,6 +25,8 @@ public class meleeWeapon : Weapon
 	{
 		yield return new WaitForSeconds(attackTime);
 		attackCol.enabled = false;
-/*        GetComponent<Animator>().SetBool("isAttacking", false);*/
+		transform.parent.GetComponent<SpriteRenderer>().enabled = true;
+		attack = false;
+		gameObject.SetActive(false);
 	}
 }

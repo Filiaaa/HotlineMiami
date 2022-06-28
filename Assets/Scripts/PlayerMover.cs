@@ -19,12 +19,24 @@ public class PlayerMover : MonoBehaviour
 	void FixedUpdate () {
 		if (currentWeapon == null) {
 			currentWeapon = knife;
+			GetComponent<Animator>().SetBool("withKnife", true);
 			knife.SetActive (true);
 		}
+		else GetComponent<Animator>().SetBool("withKnife", false);
 		if (Input.GetMouseButton(0)) {
+			currentWeapon.SetActive(true);
 			attacked = currentWeapon.GetComponent <Weapon> ().Attack();
 			if (!attacked) {
 				currentWeapon = null;
+			}
+		}
+        else if(!Input.GetMouseButton(0))
+        {
+/*            GetComponent<Animator>().SetBool("Attack", false);*/
+            if (currentWeapon != knife)
+            {
+				currentWeapon.SetActive(false);
+/*				currentWeapon.GetComponent<Animator>().SetBool("Attack", false);*/
 			}
 		}
 
@@ -32,6 +44,11 @@ public class PlayerMover : MonoBehaviour
 		vert = Input.GetAxis("Vertical");
 		hor = Input.GetAxis("Horizontal");
 		rb.velocity = new Vector2(hor, vert) * movingSpeed;
+        if (rb.velocity == Vector2.zero) 
+        {
+			GetComponent<Animator>().SetBool("walk", false);
+		}
+		else GetComponent<Animator>().SetBool("walk", true);
 
 		var mousePosition = Input.mousePosition;
 		mousePosition = Camera.main.ScreenToWorldPoint(mousePosition); //положение мыши из экранных в мировые координаты
@@ -47,12 +64,15 @@ public class PlayerMover : MonoBehaviour
 		if (collision.tag == "Weapon" && Input.GetMouseButtonDown (1)/* && !currentWeapon.GetComponent<Animator>().GetBool("isAttacking")*/) {
 			if (collision.gameObject.GetComponent <BoxCollider2D> ().enabled) {
 				if (currentWeapon != knife) {
+					currentWeapon.GetComponent<Animator>().SetBool("onFloor", true);
 					currentWeapon.GetComponent <Weapon> ().Throw();
 				} else {
 					knife.SetActive (false);
 				}
 			}
+			GetComponent<Animator>().SetBool("withKnife", false);
 			currentWeapon = collision.gameObject;
+			currentWeapon.GetComponent<Animator>().SetBool("onFloor", false);
 			currentWeapon.transform.parent = transform;
 			currentWeapon.GetComponent <Weapon> ().Take();
 		}
