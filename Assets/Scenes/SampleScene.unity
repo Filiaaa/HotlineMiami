@@ -1019,6 +1019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offsetInHands: {x: -0.447, y: -0.235, z: 0}
+  offsetRotationInHands: {x: 0, y: 0, z: 0, w: 0}
   spriteInHands: {fileID: 0}
   attackCol: {fileID: 1617025914}
   attackTime: 1
@@ -1158,6 +1159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offsetInHands: {x: -0.316, y: -0.235, z: 0}
+  offsetRotationInHands: {x: 0, y: 0, z: 0, w: 0}
   spriteInHands: {fileID: 0}
   attackCol: {fileID: 1950908482}
   attackTime: 1
@@ -1840,6 +1842,22 @@ PrefabInstance:
       propertyPath: playerObj
       value: 
       objectReference: {fileID: 644864745}
+    - target: {fileID: 7568317754413847410, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
+      propertyPath: wayPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 902496083238187114}
+    - target: {fileID: 7568317754413847410, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
+      propertyPath: wayPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 3661438343325938192}
+    - target: {fileID: 7568317754413847410, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
+      propertyPath: wayPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 6788686940513191703}
+    - target: {fileID: 7568317754413847410, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
+      propertyPath: wayPoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 4403009494756463547}
     - target: {fileID: 7568317754413847417, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
       propertyPath: m_Name
       value: Enemy
