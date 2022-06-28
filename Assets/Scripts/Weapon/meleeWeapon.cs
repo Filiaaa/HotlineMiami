@@ -8,16 +8,14 @@ public class meleeWeapon : Weapon
 	public float attackTime;
 	bool attack = false;
 	
-	public override bool Attack()
-	{
-        if (!attack)
-        {
+	public override bool Attack() {
+    if (!attack) {
 			attack = true;
-			transform.parent.GetComponent<SpriteRenderer>().enabled = false;
+			transform.parent.GetComponent <SpriteRenderer> ().enabled = false;
 			attackCol.enabled = true;
-            StartCoroutine(waitForEnablingCol());
-        }
-        return true;
+      StartCoroutine (waitForEnablingCol());
+    }
+    return true;
 		
 	}
 

@@ -14,17 +14,18 @@ public class Weapon : MonoBehaviour
 	}
 
 
-	public void Take () {
+	public void Take (Transform parent) {
+		transform.parent = parent;
 		transform.localPosition = offsetInHands;
 		transform.localRotation = offsetRotationInHands;
 		GetComponent <BoxCollider2D> ().enabled = false;
-		GetComponent<Animator>().SetBool("onFloor", false);
+		GetComponent <Animator> ().SetBool ("onFloor", false);
 		/*        GetComponent<SpriteRenderer>().sprite = spriteInHands;*/
 	}
 
 	public virtual void Throw () {
 		transform.parent = null;
-		GetComponent<Animator>().SetBool("onFloor", true);
+		GetComponent <Animator> ().SetBool ("onFloor", true);
 		GetComponent <BoxCollider2D> ().enabled = true;
 	}
 }

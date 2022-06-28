@@ -6,6 +6,8 @@ public class PlayerMover : MonoBehaviour
 {
 	public GameObject currentWeapon, knife, killedPlayer, restartPanel;
 	public float movingSpeed;
+	public bool canThrow = true;
+
 	float hor, vert, angle;
 	
 	Rigidbody2D rb;
@@ -13,91 +15,90 @@ public class PlayerMover : MonoBehaviour
 	
 	private void Start () {
 		currentWeapon = knife;
-		rb = GetComponent<Rigidbody2D>();
+		rb = GetComponent <Rigidbody2D> ();
 	}
 
 	void FixedUpdate () {
 		if (currentWeapon == null) {
 			currentWeapon = knife;
-			GetComponent<Animator>().SetBool("withKnife", true);
+			GetComponent <Animator> ().SetBool ("withKnife", true);
 			knife.SetActive (true);
 		}
-		else GetComponent<Animator>().SetBool("withKnife", false);
-		if (Input.GetMouseButton(0)) {
-			currentWeapon.SetActive(true);
+		if (Input.GetMouseButton (0)) {
+			currentWeapon.SetActive (true);
 			attacked = currentWeapon.GetComponent <Weapon> ().Attack();
 			if (!attacked) {
 				currentWeapon = null;
 			}
-		}
-        else if(!Input.GetMouseButton(0))
-        {
-/*            GetComponent<Animator>().SetBool("Attack", false);*/
-            if (currentWeapon != knife)
-            {
-				currentWeapon.SetActive(false);
-/*				currentWeapon.GetComponent<Animator>().SetBool("Attack", false);*/
-			}
+		} 
+
+		if (!Input.GetMouseButton (0)) {
+			GetComponent <Animator> ().SetBool ("Attack", false);
+			canThrow = true;
+			if (currentWeapon != null && currentWeapon != knife)
+				currentWeapon.GetComponent <Animator> ().SetBool ("Attack", false);
+			// currentWeapon.SetActive (false);
 		}
 
+// 		else if (!Input.GetMouseButton (0)) {
+// /*            GetComponent<Animator>().SetBool("Attack", false);*/
+//       if (currentWeapon != knife) {
+// 				currentWeapon.SetActive (false);
+// /*				currentWeapon.GetComponent<Animator>().SetBool("Attack", false);*/
+			// }
+		// }
 
-		vert = Input.GetAxis("Vertical");
-		hor = Input.GetAxis("Horizontal");
+
+		vert = Input.GetAxis ("Vertical");
+		hor = Input.GetAxis ("Horizontal");
 		rb.velocity = new Vector2(hor, vert) * movingSpeed;
-        if (rb.velocity == Vector2.zero) 
-        {
-			GetComponent<Animator>().SetBool("walk", false);
+    if (rb.velocity == Vector2.zero) {
+			GetComponent <Animator> ().SetBool("walk", false);
 		}
-		else GetComponent<Animator>().SetBool("walk", true);
+		else GetComponent <Animator> ().SetBool("walk", true);
 
 		var mousePosition = Input.mousePosition;
-		mousePosition = Camera.main.ScreenToWorldPoint(mousePosition); //положение мыши из экранных в мировые координаты
-		angle = Vector2.Angle(Vector2.up, mousePosition - transform.position);//угол между вектором от объекта к мыше и осью х
+		mousePosition = Camera.main.ScreenToWorldPoint (mousePosition); //положение мыши из экранных в мировые координаты
+		angle = Vector2.Angle (Vector2.up, mousePosition - transform.position);//угол между вектором от объекта к мыше и осью х
 /*        if (Vector2.Distance(mousePosition, transform.position) > 0.6f)
 		{*/
-			transform.eulerAngles = new Vector3 (0f, 0f, transform.position.x < mousePosition.x ? -angle : angle);//немного магии на последок
+		transform.eulerAngles = new Vector3 (0f, 0f, transform.position.x < mousePosition.x ? -angle : angle);//немного магии на последок
 /*        }*/
 
 	}
 
 	private void OnTriggerStay2D (Collider2D collision) {
-		if (collision.tag == "Weapon" && Input.GetMouseButtonDown (1)/* && !currentWeapon.GetComponent<Animator>().GetBool("isAttacking")*/) {
-			if (collision.gameObject.GetComponent <BoxCollider2D> ().enabled) {
-				if (currentWeapon != knife) {
-					currentWeapon.GetComponent<Animator>().SetBool("onFloor", true);
-					currentWeapon.GetComponent <Weapon> ().Throw();
-				} else {
-					knife.SetActive (false);
-				}
-			}
-			GetComponent<Animator>().SetBool("withKnife", false);
+		if (collision.tag == "Weapon" && Input.GetMouseButtonDown (1) && canThrow) {
+			if (currentWeapon != knife) {
+				currentWeapon.GetComponent <Weapon> ().Throw();
+			} 
+			GetComponent <Animator> ().SetBool ("withKnife", false);
 			currentWeapon = collision.gameObject;
-			currentWeapon.GetComponent<Animator>().SetBool("onFloor", false);
-			currentWeapon.transform.parent = transform;
-			currentWeapon.GetComponent <Weapon> ().Take();
+			currentWeapon.GetComponent <Weapon> ().Take (transform);
+			// currentWeapon.SetActive (false);
 		}
 
 	}
 
 	GameObject curRoom;
 	
-	void OnTriggerEnter2D(Collider2D collision) {
+	void OnTriggerEnter2D (Collider2D collision) {
 		
 		if (collision.tag == "Room") {
 			
 			curRoom = collision.gameObject;
-			curRoom.GetComponent <Manager>().enemysAgr();
+			curRoom.GetComponent <Manager> ().enemysAgr();
 
 		} else if (collision.tag == "EnemyAttack") {
 			KillPlayer ();
 		}
 	}
 
-	void OnTriggerExit2D(Collider2D collision) {
+	void OnTriggerExit2D (Collider2D collision) {
 		
 		if (collision.tag == "Room") {
 
-			curRoom.GetComponent <Manager>().enemysDisAgr();
+			curRoom.GetComponent <Manager> ().enemysDisAgr();
 			curRoom = null;
 
 		}
