@@ -8,13 +8,17 @@ public class Manager : MonoBehaviour {
 
 	public void enemysAgr () {
 		for (int i = 0; i < enemys.Length; i++) {
-			enemys[i].GetComponent <EnemyMovement>().agred = true;
+			if (enemys[i] != null) {
+				enemys[i].GetComponent <EnemyMovement>().agred = true;
+			}
 		}
 	}
 
 	public void enemysDisAgr () {
 		for (int i = 0; i < enemys.Length; i++) {
-			enemys[i].GetComponent <EnemyMovement> ().agred = false;
+			if (enemys[i] != null) {
+				enemys[i].GetComponent <EnemyMovement> ().agred = false;
+			}
 		}
 	}
 }
