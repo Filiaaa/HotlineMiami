@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour {
 
 	public Transform [] wayPoints;
-	public GameObject playerObj, enter, curWeapon;
+	public GameObject playerObj, enter, curWeapon, killedEnemy;
 	public float minDistance = 0.5f, movingSpeed = 1, deltaDictance = 0.3f;
 	public bool agred = false;
 
@@ -68,7 +68,15 @@ public class EnemyMovement : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D collision) {
 		if (collision.tag == "Room") {
 			isReturning = false;
+		} else if (collision.tag == "PlayerAttack") {
+			KillEnemy ();
 		}
+	}
+
+	void KillEnemy () {
+		curWeapon.GetComponent <Weapon> ().Throw();
+		Instantiate (killedEnemy, transform.position, transform.rotation);
+		Destroy (gameObject);
 	}
 
 }

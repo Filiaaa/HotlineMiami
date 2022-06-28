@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FireWeapon : Weapon
 {
-	public GameObject bullet;
+	public GameObject curBullet, playerBullet;
 	public float attackTime, beforeNextBulletTime;
 	public float minVarience;
 	public float maxVarience;
@@ -15,7 +15,7 @@ public class FireWeapon : Weapon
 	public override void Attack () {
 
 		if (canAttack) {
-			var bullet_ = Instantiate(bullet, transform.position, Quaternion.identity, null);
+			var bullet_ = Instantiate(curBullet, transform.position, Quaternion.identity, null);
 			navigation = new Vector3 (transform.right.x + Random.Range (minVarience, maxVarience), transform.right.y + Random.Range (minVarience, maxVarience), transform.right.z);
 			bullet_.GetComponent<Rigidbody2D>().AddForce(navigation * force/*, ForceMode2D.Impulse*/);
 			/*			bullet.GetComponent<Bullet>().navigation = transform.right;*/
@@ -48,5 +48,10 @@ public class FireWeapon : Weapon
 		/*        GetComponent<Animator>().SetBool("isAttacking", false);*/
 
 	}
+
+	public override void Throw () {
+		curBullet = playerBullet;
+		transform.parent = null;
+	} 
 
 }

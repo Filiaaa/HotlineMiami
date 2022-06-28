@@ -126,7 +126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offsetInHands: {x: 0, y: 0.23, z: 0}
   spriteInHands: {fileID: 0}
-  bullet: {fileID: 1702249099695267215, guid: fa48f10bbddcfd941853bed72852ff0b, type: 3}
+  curBullet: {fileID: 0}
+  playerBullet: {fileID: 1702249099695267215, guid: fa48f10bbddcfd941853bed72852ff0b, type: 3}
   attackTime: 0.1
   beforeNextBulletTime: 0.2
   minVarience: -0.5
