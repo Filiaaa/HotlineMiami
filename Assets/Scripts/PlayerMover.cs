@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMover : MonoBehaviour
 {
-	public GameObject currentWeapon, kick;
+	public GameObject currentWeapon, kick, killedPlayer;
 	public float movingSpeed;
 	float hor, vert, angle;
 	Rigidbody2D rb;
@@ -60,6 +60,8 @@ public class PlayerMover : MonoBehaviour
 			curRoom = collision.gameObject;
 			curRoom.GetComponent <Manager>().enemysAgr();
 
+		} else if (collision.tag == "EnemyAttack") {
+			KillPlayer ();
 		}
 	}
 
@@ -72,4 +74,11 @@ public class PlayerMover : MonoBehaviour
 
 		}
 	}
+
+	void KillPlayer () {
+		Instantiate (killedPlayer, transform.position, transform.rotation);
+
+		Destroy (gameObject);
+	}
+
 }
