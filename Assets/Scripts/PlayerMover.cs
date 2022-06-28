@@ -16,7 +16,7 @@ public class PlayerMover : MonoBehaviour
 	void FixedUpdate()
 	{
 
-		if (Input.GetMouseButtonDown(0))
+		if (Input.GetMouseButton(0))
 		{
 			currentWeapon.GetComponent<Weapon>().Attack();
 		}
@@ -38,16 +38,15 @@ public class PlayerMover : MonoBehaviour
 	{
 		if (collision.tag == "Weapon" && Input.GetKeyDown(KeyCode.E)/* && !currentWeapon.GetComponent<Animator>().GetBool("isAttacking")*/)
 		{
-			print('d');
 			if (currentWeapon != kick && collision.gameObject.GetComponent<BoxCollider2D>().enabled)
 			{
 				currentWeapon.transform.parent = null;
 			}
 			currentWeapon = collision.gameObject;
-			collision.gameObject.transform.parent = transform;
-			collision.gameObject.transform.localRotation = Quaternion.identity;
-			collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
-			collision.gameObject.GetComponent<Weapon>().Take();
+			currentWeapon.transform.rotation = Quaternion.identity;
+			currentWeapon.transform.parent = transform;
+			currentWeapon.GetComponent<BoxCollider2D>().enabled = false;
+			currentWeapon.GetComponent<Weapon>().Take();
 		}
 
 	}
