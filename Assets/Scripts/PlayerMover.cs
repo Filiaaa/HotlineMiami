@@ -36,7 +36,7 @@ public class PlayerMover : MonoBehaviour
 
 	private void OnTriggerStay2D(Collider2D collision)
 	{
-		if (collision.tag == "Weapon" && Input.GetKeyDown(KeyCode.E)/* && !currentWeapon.GetComponent<Animator>().GetBool("isAttacking")*/)
+		if (collision.tag == "Weapon" && Input.GetMouseButton (1)/* && !currentWeapon.GetComponent<Animator>().GetBool("isAttacking")*/)
 		{
 			if (currentWeapon != kick && collision.gameObject.GetComponent<BoxCollider2D>().enabled)
 			{
