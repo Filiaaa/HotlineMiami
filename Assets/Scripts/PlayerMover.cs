@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMover : MonoBehaviour
 {
-	public GameObject currentWeapon, kick, killedPlayer;
+	public GameObject currentWeapon, kick, killedPlayer, restartPanel;
 	public float movingSpeed;
 	float hor, vert, angle;
 	Rigidbody2D rb;
@@ -73,7 +73,7 @@ public class PlayerMover : MonoBehaviour
 
 	void KillPlayer () {
 		Instantiate (killedPlayer, transform.position, transform.rotation);
-
+		restartPanel.SetActive(true);
 		Destroy (gameObject);
 	}
 
