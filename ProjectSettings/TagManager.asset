@@ -9,6 +9,7 @@ TagManager:
   - WayPoint
   - Door
   - Room
+  - wall
   layers:
   - Default
   - TransparentFX
