@@ -5,6 +5,7 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public Vector3 offsetInHands;
+    public Quaternion offseRotationtInHands;
     public Sprite spriteInHands;
 
     public virtual void Attack()
@@ -16,6 +17,7 @@ public class Weapon : MonoBehaviour
     public void Take()
     {
         transform.localPosition = offsetInHands;
+        transform.localRotation = offseRotationtInHands;
         /*        GetComponent<SpriteRenderer>().sprite = spriteInHands;*/
     }
 }

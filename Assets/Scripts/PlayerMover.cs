@@ -43,7 +43,6 @@ public class PlayerMover : MonoBehaviour
 				currentWeapon.transform.parent = null;
 			}
 			currentWeapon = collision.gameObject;
-			currentWeapon.transform.rotation = Quaternion.identity;
 			currentWeapon.transform.parent = transform;
 			currentWeapon.GetComponent<BoxCollider2D>().enabled = false;
 			currentWeapon.GetComponent<Weapon>().Take();

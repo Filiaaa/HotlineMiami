@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offsetInHands: {x: 0, y: 0.23, z: 0}
+  offseRotationtInHands: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
   spriteInHands: {fileID: 0}
   bullet: {fileID: 1702249099695267215, guid: fa48f10bbddcfd941853bed72852ff0b, type: 3}
   attackTime: 0.1
