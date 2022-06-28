@@ -9,9 +9,8 @@ public class Weapon : MonoBehaviour
 
 	public Sprite spriteInHands;
 
-	public virtual void Attack()
-	{
-
+	public virtual bool Attack () {
+		return true;
 	}
 
 

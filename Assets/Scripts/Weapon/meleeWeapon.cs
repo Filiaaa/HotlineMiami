@@ -4,23 +4,25 @@ using UnityEngine;
 
 public class meleeWeapon : Weapon
 {
-    public Collider2D attackCol;
-    public float attackTime;
-    
-    public override void Attack()
-    {
+	public Collider2D attackCol;
+	public float attackTime;
+	
+	public override bool Attack()
+	{
 /*        if (!GetComponent<Animator>().GetBool("isAttacking"))
-        {*/
-            attackCol.enabled = true;
+		{*/
+		attackCol.enabled = true;
 /*            GetComponent<Animator>().SetBool("isAttacking", true);*/
-            StartCoroutine(waitForEnablingCol());
+		StartCoroutine(waitForEnablingCol());
 /*        }*/
-    }
+		return true;
+		
+	}
 
-    IEnumerator waitForEnablingCol()
-    {
-        yield return new WaitForSeconds(attackTime);
-        attackCol.enabled = false;
+	IEnumerator waitForEnablingCol()
+	{
+		yield return new WaitForSeconds(attackTime);
+		attackCol.enabled = false;
 /*        GetComponent<Animator>().SetBool("isAttacking", false);*/
-    }
+	}
 }

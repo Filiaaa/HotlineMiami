@@ -12,7 +12,7 @@ public class FireWeapon : Weapon
 	public	bool canAttack = true;
 	Vector3 navigation;
 
-	public override void Attack () {
+	public override bool Attack () {
 
 		if (canAttack && bulletsInHolder > 0) {
 			bulletsInHolder--;
@@ -32,7 +32,10 @@ public class FireWeapon : Weapon
 		} else if (bulletsInHolder <= 0) {
 			Throw ();
 			GetComponent <BoxCollider2D> ().enabled = false;
+			return false;
 		}
+
+		return true;
 
 	}
 
