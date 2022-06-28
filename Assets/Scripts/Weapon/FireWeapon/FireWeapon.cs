@@ -8,13 +8,14 @@ public class FireWeapon : Weapon
 	public float attackTime, beforeNextBulletTime;
 	public float minVarience;
 	public float maxVarience;
-	public int force, bulletsInQueue, bulletNumber;
+	public int force, bulletsInQueue, bulletNumber, bulletsInHolder;
 	public	bool canAttack = true;
 	Vector3 navigation;
 
 	public override void Attack () {
 
-		if (canAttack) {
+		if (canAttack && bulletsInHolder > 0) {
+			bulletsInHolder--;
 			var bullet_ = Instantiate(curBullet, transform.position, Quaternion.identity, null);
 			navigation = new Vector3 (transform.right.x + Random.Range (minVarience, maxVarience), transform.right.y + Random.Range (minVarience, maxVarience), transform.right.z);
 			bullet_.GetComponent<Rigidbody2D>().AddForce(navigation * force/*, ForceMode2D.Impulse*/);
@@ -28,6 +29,9 @@ public class FireWeapon : Weapon
 				bulletNumber = 0;
 				canAttack = false;
 			}
+		} else if (bulletsInHolder <= 0) {
+			Throw ();
+			GetComponent <BoxCollider2D> ().enabled = false;
 		}
 
 	}
@@ -50,6 +54,7 @@ public class FireWeapon : Weapon
 	}
 
 	public override void Throw () {
+		GetComponent <BoxCollider2D> ().enabled = true;
 		curBullet = playerBullet;
 		transform.parent = null;
 	} 

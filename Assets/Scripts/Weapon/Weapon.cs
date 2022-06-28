@@ -18,10 +18,12 @@ public class Weapon : MonoBehaviour
 	public void Take () {
 		transform.localPosition = offsetInHands;
 		transform.localRotation = offsetRotationInHands;
+		GetComponent <BoxCollider2D> ().enabled = false;
 		/*        GetComponent<SpriteRenderer>().sprite = spriteInHands;*/
 	}
 
 	public virtual void Throw () {
 		transform.parent = null;
+		GetComponent <BoxCollider2D> ().enabled = true;
 	}
 }

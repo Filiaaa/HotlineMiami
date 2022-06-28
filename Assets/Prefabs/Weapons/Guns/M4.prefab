@@ -124,8 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 804b5acff8fe27f4db1c93d1a9a6b8d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetInHands: {x: 0, y: 0.23, z: 0}
-  offseRotationtInHands: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  offsetInHands: {x: 0, y: 0.4, z: 0}
+  offsetRotationInHands: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
   spriteInHands: {fileID: 0}
   curBullet: {fileID: 0}
   playerBullet: {fileID: 1702249099695267215, guid: fa48f10bbddcfd941853bed72852ff0b, type: 3}
@@ -136,4 +136,5 @@ MonoBehaviour:
   force: 1800
   bulletsInQueue: 1
   bulletNumber: 0
+  bulletsInHolder: 20
   canAttack: 1
