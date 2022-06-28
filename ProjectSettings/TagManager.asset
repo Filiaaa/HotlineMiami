@@ -6,6 +6,9 @@ TagManager:
   tags:
   - PlayerAttack
   - Weapon
+  - WayPoint
+  - Door
+  - Room
   layers:
   - Default
   - TransparentFX
