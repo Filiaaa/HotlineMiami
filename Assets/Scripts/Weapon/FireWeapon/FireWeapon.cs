@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class M4 : Weapon
+public class FireWeapon : Weapon
 {
 	public GameObject bullet;
-	public int force;
 	public float attackTime;
-	public int minVarience;
-	public int maxVarience;
-	bool canAttack = true;
+	public float minVarience;
+	public float maxVarience;
+	public int force;
+	public	bool canAttack = true;
 	Vector3 navigation;
 
 
@@ -19,10 +19,10 @@ public class M4 : Weapon
 		if (canAttack)
 		{
 			var bullet_ = Instantiate(bullet, transform.position, Quaternion.identity, null);
-
-            bullet_.GetComponent<Rigidbody2D>().AddForce(transform.right * force/*, ForceMode2D.Impulse*/);
-            /*			bullet.GetComponent<Bullet>().navigation = transform.right;*/
-            canAttack = false;
+			navigation = new Vector3(transform.right.x + Random.RandomRange(minVarience, maxVarience), transform.right.y + Random.RandomRange(minVarience, maxVarience), transform.right.z);
+			bullet_.GetComponent<Rigidbody2D>().AddForce(navigation * force/*, ForceMode2D.Impulse*/);
+			/*			bullet.GetComponent<Bullet>().navigation = transform.right;*/
+			canAttack = false;
 			StartCoroutine(TimeBeforeAttack());
 		}
 

@@ -488,16 +488,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 539528415}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b6eb4c4a23e52f4fb0915606bcd0caa, type: 3}
+  m_Script: {fileID: 11500000, guid: 804b5acff8fe27f4db1c93d1a9a6b8d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   offsetInHands: {x: 0, y: 0.2, z: 0}
   spriteInHands: {fileID: 0}
   bullet: {fileID: 1702249099695267215, guid: fa48f10bbddcfd941853bed72852ff0b, type: 3}
-  force: 0
   attackTime: 0.2
   minVarience: 0
   maxVarience: 0
+  force: 0
+  canAttack: 1
 --- !u!61 &539528418
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -744,16 +745,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 676247832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b6eb4c4a23e52f4fb0915606bcd0caa, type: 3}
+  m_Script: {fileID: 11500000, guid: 804b5acff8fe27f4db1c93d1a9a6b8d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   offsetInHands: {x: 0, y: 0.23, z: 0}
   spriteInHands: {fileID: 0}
   bullet: {fileID: 1702249099695267215, guid: fa48f10bbddcfd941853bed72852ff0b, type: 3}
-  force: 800
   attackTime: 0.2
-  minVarience: 5
-  maxVarience: 10
+  minVarience: -0.1
+  maxVarience: 0.1
+  force: 800
+  canAttack: 1
 --- !u!61 &676247834
 BoxCollider2D:
   m_ObjectHideFlags: 0
