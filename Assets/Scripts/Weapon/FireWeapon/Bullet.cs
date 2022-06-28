@@ -18,19 +18,21 @@ public class Bullet : MonoBehaviour
 
 	}
 
-	void Awake () {
-		StartCoroutine (TimeBeforeDestory ());
-	}
+    void Awake()
+    {
+        StartCoroutine(TimeBeforeDestory());
+    }
 
-	IEnumerator TimeBeforeDestory () {
+    IEnumerator TimeBeforeDestory()
+    {
 
-		yield return new WaitForSeconds (liveTime);
+        yield return new WaitForSeconds(liveTime);
 
-		Destroy (gameObject);
-	}
+        Destroy(gameObject);
+    }
 
-/*    private void Update()
-	{
-		transform.Translate(navigation * speed * Time.deltaTime);
-	}*/
+    /*    private void Update()
+        {
+            transform.Translate(navigation * speed * Time.deltaTime);
+        }*/
 }
