@@ -10,14 +10,18 @@ public class FireWeapon : Weapon
 	public float maxVarience;
 	public int force, bulletsInQueue, bulletsInHolder, bulletsNormalInHolder;
 	public	bool canAttack = true;
+	public AudioSource attackSound;
 
-	
 	Vector3 navigation;
 
 	public override bool Attack () {
 		if (canAttack && bulletsInHolder > 0) {
+			attackSound.pitch = Random.Range (0.95f, 1.05f);
+			attackSound.Play();
+
 			transform.parent.GetComponent <Animator> ().SetBool ("Attack", true);
 			GetComponent <Animator> ().SetBool ("Attack", true);
+
 			bulletsInHolder--;
 			var bullet_ = Instantiate (curBullet, transform.position, Quaternion.identity, null);
 			navigation = new Vector3 (transform.up.x + Random.Range (minVarience, maxVarience), transform.up.y + Random.Range (minVarience, maxVarience), transform.up.z);
