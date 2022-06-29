@@ -87,6 +87,7 @@ public class EnemyMovement : MonoBehaviour {
 
 	void KillEnemy () {
 		curWeapon.GetComponent<Animator>().SetBool("Enemys", false);
+		curWeapon.GetComponent<Animator>().SetBool("Attack", false);
 		if(curWeapon.GetComponent<FireWeapon>() != null) curWeapon.GetComponent<FireWeapon>().bulletsInHolder = curWeapon.GetComponent<FireWeapon>().bulletsNormalInHolder;
 
 		curWeapon.GetComponent <Weapon> ().Throw();
