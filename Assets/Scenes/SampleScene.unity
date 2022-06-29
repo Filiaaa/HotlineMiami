@@ -2057,6 +2057,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5396115212216695365, guid: fec94afb11cef0d41b995ccc24219c4d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396115212216695365, guid: fec94afb11cef0d41b995ccc24219c4d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396115212216695365, guid: fec94afb11cef0d41b995ccc24219c4d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.151
       objectReference: {fileID: 0}
@@ -2100,6 +2108,10 @@ PrefabInstance:
       propertyPath: restartPanel
       value: 
       objectReference: {fileID: 1818436452}
+    - target: {fileID: 8867153112413591589, guid: fec94afb11cef0d41b995ccc24219c4d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8867153112413591640, guid: fec94afb11cef0d41b995ccc24219c4d, type: 3}
       propertyPath: attackTime
       value: 0.6
