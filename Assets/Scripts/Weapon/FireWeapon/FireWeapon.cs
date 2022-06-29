@@ -10,6 +10,8 @@ public class FireWeapon : Weapon
 	public float maxVarience;
 	public int force, bulletsInQueue, bulletsInHolder, bulletsNormalInHolder;
 	public	bool canAttack = true;
+
+	
 	Vector3 navigation;
 
 	public override bool Attack () {
