@@ -1158,10 +1158,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 512500044}
     m_Modifications:
-    - target: {fileID: 1719176543, guid: d602b630e791d64459c5a45f1e5bcc88, type: 3}
-      propertyPath: m_TagString
-      value: EnemyAttack
-      objectReference: {fileID: 0}
     - target: {fileID: 237290185713400674, guid: d602b630e791d64459c5a45f1e5bcc88, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1218,18 +1214,6 @@ PrefabInstance:
       propertyPath: playerObj
       value: 
       objectReference: {fileID: 644864745}
-    - target: {fileID: 237290185713400684, guid: d602b630e791d64459c5a45f1e5bcc88, type: 3}
-      propertyPath: minDistance
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 237290185713400684, guid: d602b630e791d64459c5a45f1e5bcc88, type: 3}
-      propertyPath: deltaDictance
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 237290185713400684, guid: d602b630e791d64459c5a45f1e5bcc88, type: 3}
-      propertyPath: agringDistanse
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 237290185713400684, guid: d602b630e791d64459c5a45f1e5bcc88, type: 3}
       propertyPath: wayPoints.Array.data[0]
       value: 
