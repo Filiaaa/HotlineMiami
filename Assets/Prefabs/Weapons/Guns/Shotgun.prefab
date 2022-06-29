@@ -41,8 +41,8 @@ AudioSource:
   m_GameObject: {fileID: 283186788254310870}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 9102401602887080819, guid: d8a87a6541350344dbbb85e34d99b9af, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 0bb97b6eac2154840bf2cf3e99fb8443, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -259,7 +259,7 @@ MonoBehaviour:
   spriteInHands: {fileID: 0}
   curBullet: {fileID: 1702249099695267215, guid: fa48f10bbddcfd941853bed72852ff0b, type: 3}
   playerBullet: {fileID: 1702249099695267215, guid: fa48f10bbddcfd941853bed72852ff0b, type: 3}
-  attackTime: 1
+  attackTime: 1.5
   beforeNextBulletTime: 0.2
   minVarience: -0.6
   maxVarience: 0.6
@@ -268,6 +268,7 @@ MonoBehaviour:
   bulletsInHolder: 6
   bulletsNormalInHolder: 6
   canAttack: 1
+  attackSound: {fileID: 6687461912230079767}
 --- !u!95 &3661608222550671617
 Animator:
   serializedVersion: 4
