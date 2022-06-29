@@ -23,12 +23,10 @@ public class FireWeapon : Weapon
 			GetComponent <Animator> ().SetBool ("Attack", true);
 
 			bulletsInHolder--;
-			var bullet_ = Instantiate (curBullet, transform.position, Quaternion.identity, null);
-			navigation = new Vector3 (transform.up.x + Random.Range (minVarience, maxVarience), transform.up.y + Random.Range (minVarience, maxVarience), transform.up.z);
-			bullet_.GetComponent <Rigidbody2D> ().AddForce (navigation * force/*, ForceMode2D.Impulse*/);
+			StartCoroutine (QueueAttack ());
 			/*			bullet.GetComponent<Bullet>().navigation = transform.right;*/
 
-			StartCoroutine(TimeBeforeAttack ());
+			StartCoroutine (TimeBeforeAttack ());
 			canAttack = false;
 
 		} 
@@ -43,10 +41,18 @@ public class FireWeapon : Weapon
 
 	}
 
+	IEnumerator QueueAttack () {
+		for (int bulletNumber = 0; bulletNumber < bulletsInQueue; bulletNumber++) {
+			var bullet_ = Instantiate (curBullet, transform.position, Quaternion.identity, null);
+			navigation = new Vector3 (transform.up.x + Random.Range (minVarience, maxVarience), transform.up.y + Random.Range (minVarience, maxVarience), transform.up.z);
+			bullet_.GetComponent <Rigidbody2D> ().AddForce (navigation * force/*, ForceMode2D.Impulse*/);
+			yield return new WaitForSeconds (beforeNextBulletTime);
+		}
+	}
 
 	IEnumerator TimeBeforeAttack () {
 
-		yield return new WaitForSeconds(attackTime);
+		yield return new WaitForSeconds (attackTime);
 		if (transform.parent != null && transform.parent.GetComponent<PlayerMover>() != null)
 			transform.parent.GetComponent <PlayerMover> ().canThrow = true;
 		// transform.parent.GetComponent <Animator> ().SetBool ("Attack", false);
