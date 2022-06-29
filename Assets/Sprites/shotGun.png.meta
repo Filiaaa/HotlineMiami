@@ -124,7 +124,7 @@ TextureImporter:
         width: 100
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -132,6 +132,27 @@ TextureImporter:
       bones: []
       spriteID: d0cdbb99805dc024db5826d09428d210
       internalID: -857166311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shotGun_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 380
+        width: 100
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c03ff4332a71449af630a41d3a5c77
+      internalID: -1657354985
       vertices: []
       indices: 
       edges: []
@@ -147,6 +168,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      shotGun_1: -1657354985
       shotGun_0: -857166311
   spritePackingTag: 
   pSDRemoveMatte: 0

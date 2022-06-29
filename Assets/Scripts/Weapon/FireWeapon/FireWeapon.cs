@@ -19,7 +19,8 @@ public class FireWeapon : Weapon
 			attackSound.pitch = Random.Range (0.95f, 1.05f);
 			attackSound.Play();
 
-			transform.parent.GetComponent <Animator> ().SetBool ("Attack", true);
+			if (transform.parent.tag == "Player")
+				transform.parent.GetComponent <Animator> ().SetBool ("Attack", true);
 			GetComponent <Animator> ().SetBool ("Attack", true);
 
 			bulletsInHolder--;
@@ -31,7 +32,8 @@ public class FireWeapon : Weapon
 
 		} 
 		if (bulletsInHolder <= 0) {
-			transform.parent.GetComponent <PlayerMover> ().canThrow = true;
+			if (transform.parent.tag == "Palyer")
+				transform.parent.GetComponent <PlayerMover> ().canThrow = true;
 			Throw ();
 			GetComponent <BoxCollider2D> ().enabled = false;
 			return false;
