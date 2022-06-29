@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c9bc81f38c0d6e545af4df92a97fbd75
+guid: e2e5a67d713c9d24aae4fc832594fdc7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 90
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,673 +116,673 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lightGreenAlian_0
+      name: animWithUZI_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 0
+        x: 635
+        y: 5
         width: 85
-        height: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.54590696, y: 0.22518982}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e976d9d013c0ab488e22e83a288ab01
-      internalID: -2071150350
+      spriteID: a66db49a106e9434e8c205f113a2feaf
+      internalID: 1337340100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_1
+      name: animWithUZI_1
       rect:
         serializedVersion: 2
-        x: 8
-        y: 135
+        x: 635
+        y: 139
         width: 85
-        height: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.54590696, y: 0.22518982}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5caf97be5e3544499a218a936ac4896
-      internalID: -161697458
+      spriteID: eca971a718446e04d91010285145545c
+      internalID: 1217712523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_2
+      name: animWithUZI_2
       rect:
         serializedVersion: 2
-        x: 8
-        y: 265
+        x: 635
+        y: 269
         width: 85
-        height: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.54590696, y: 0.22518982}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0075320e18a070841a9af6f7e57c3469
-      internalID: 1897902562
+      spriteID: 86489d0ec6540a44d9d9087c2337c156
+      internalID: -1494601721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_3
+      name: animWithUZI_3
       rect:
         serializedVersion: 2
-        x: 8
-        y: 395
+        x: 635
+        y: 529
         width: 85
-        height: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.586651, y: 0.21099332}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5363997b564b694a9b7bb32e552090a
-      internalID: -503383276
+      spriteID: 120c9cebe70eb6c45a798026a86a984d
+      internalID: 1194024288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_4
+      name: animWithUZI_4
       rect:
         serializedVersion: 2
-        x: 13
-        y: 525
+        x: 635
+        y: 399
         width: 85
-        height: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5369299, y: 0.22032203}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7784cc0b6be25464aa03a2e8b39561ca
-      internalID: 614021676
+      spriteID: dbb19ececf92aee49b2532c81cdf78f2
+      internalID: -2042516359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_5
+      name: animWithUZI_5
       rect:
         serializedVersion: 2
-        x: 8
-        y: 660
+        x: 635
+        y: 664
         width: 85
-        height: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5395581, y: 0.25282094}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31ee8225521991a4a9d37477683d44eb
-      internalID: -1610803338
+      spriteID: 995ffc9b529ac714880b51c6e6be7830
+      internalID: 168226598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_6
+      name: animWithUZI_6
       rect:
         serializedVersion: 2
-        x: 252
-        y: 398
+        x: 635
+        y: 809
         width: 85
-        height: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.54641235, y: 0.2726644}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 988e0364e48a0b345b71dd88754a41ef
-      internalID: 1434363157
+      spriteID: 9c0dadd96579e734d99fe88a7079298a
+      internalID: 2057172181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_7
+      name: animWithUZI_7
       rect:
         serializedVersion: 2
-        x: 252
-        y: 538
+        x: 635
+        y: 950
         width: 85
-        height: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5377246, y: 0.2802089}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68debf71a12d1964ab12657100d9c1be
-      internalID: 1053372262
+      spriteID: b01ea814a7085f44ab90fb5c6a269c09
+      internalID: -1590671767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_8
+      name: animWithUZI_8
       rect:
         serializedVersion: 2
-        x: 129
-        y: 0
-        width: 85
-        height: 100
+        x: 950
+        y: 949
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.528996, y: 0.2751928}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2805b556b16bae74aa4d9728ee3c2e24
-      internalID: 1867544085
+      spriteID: 3a3017848da8aab4eb56143f584cef4c
+      internalID: 746186956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_9
+      name: animWithUZI_9
       rect:
         serializedVersion: 2
-        x: 129
-        y: 136
-        width: 85
-        height: 100
+        x: 788
+        y: 809
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5202264, y: 0.2776812}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd43d52366573434ba292faedf6be2e0
-      internalID: 311010507
+      spriteID: c87b75b4a4a7fea45ae7f4bf7554386b
+      internalID: -994151576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_10
+      name: animWithUZI_10
       rect:
         serializedVersion: 2
-        x: 129
-        y: 266
-        width: 85
-        height: 100
+        x: 788
+        y: 664
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5264655, y: 0.2779043}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e66d7237f93fd204bb300bb6249c2678
-      internalID: 158577332
+      spriteID: 99b8c3a94d1de0e42b488b28ef3e7c56
+      internalID: 2083526365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_11
+      name: animWithUZI_11
       rect:
         serializedVersion: 2
-        x: 129
-        y: 396
-        width: 85
-        height: 100
+        x: 788
+        y: 529
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5648291, y: 0.2611596}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48f3563e7a198504784dd6440ec25d2b
-      internalID: 85296080
+      spriteID: fa69f71c93c2b4140856401d57c71a93
+      internalID: 154273951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_12
+      name: animWithUZI_12
       rect:
         serializedVersion: 2
-        x: 129
-        y: 525
-        width: 85
-        height: 100
+        x: 788
+        y: 399
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5282013, y: 0.2554381}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1635219d1b07c246ad144b10167a189
-      internalID: 1599064433
+      spriteID: 860ce95f0e93ee848be0a5ad8f9e247f
+      internalID: -1551827576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_13
+      name: animWithUZI_13
       rect:
         serializedVersion: 2
-        x: 129
-        y: 661
-        width: 85
-        height: 100
+        x: 788
+        y: 269
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5284497, y: 0.2703391}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cff7dc118ac7a6499214b28b3dee4ce
-      internalID: -1707147393
+      spriteID: 0a38f0cb217feb14f96471ee624c2fa6
+      internalID: -482864201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_14
+      name: animWithUZI_14
       rect:
         serializedVersion: 2
-        x: 244
-        y: 6
-        width: 85
-        height: 100
+        x: 788
+        y: 139
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5240851, y: 0.25027272}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb1c8858a39b20f4a95652a1c7672265
-      internalID: 2116304479
+      spriteID: d8e0d88040bece84586a319f81f52fd6
+      internalID: 582556228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_15
+      name: animWithUZI_15
       rect:
         serializedVersion: 2
-        x: 252
-        y: 142
-        width: 85
-        height: 100
+        x: 788
+        y: 5
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5240851, y: 0.24525604}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fcc3d2c1273776458d448451e3c554d
-      internalID: 267580316
+      spriteID: 636bd71974da336479dfee1ab1b1e4c8
+      internalID: -1498583023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_16
+      name: animWithUZI_16
       rect:
         serializedVersion: 2
-        x: 395
-        y: 0
-        width: 85
-        height: 100
+        x: 1112
+        y: 5
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.49789917, y: 0.2502726}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2cd2b82f5a35f54a801e581cbefcb0e
-      internalID: -909286216
+      spriteID: 5bf961f70a693bc46b28f5ea9adf5e87
+      internalID: 94475462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_17
+      name: animWithUZI_17
       rect:
         serializedVersion: 2
-        x: 395
-        y: 135
-        width: 85
-        height: 100
+        x: 950
+        y: 139
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5022638, y: 0.27033892}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 727c58c22f5a47244b70d00f52921b1a
-      internalID: 1253333352
+      spriteID: 5dc1a040b879a734ca9003cb35048c88
+      internalID: 304637173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_18
+      name: animWithUZI_18
       rect:
         serializedVersion: 2
-        x: 395
-        y: 265
-        width: 85
-        height: 100
+        x: 950
+        y: 269
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5284497, y: 0.2703391}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f4ecf579f81c624baa62df2a3cf1a1d
-      internalID: 639236240
+      spriteID: 6111b6c13c67388429c7ed1377490bc7
+      internalID: 988289496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_19
+      name: animWithUZI_19
       rect:
         serializedVersion: 2
-        x: 395
-        y: 395
-        width: 85
-        height: 100
+        x: 950
+        y: 399
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5282013, y: 0.2554381}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fddf432da12caec438a8f19456c4115e
-      internalID: -417984293
+      spriteID: 66573ae289348a546879c3bf406c9067
+      internalID: 182406236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_20
+      name: animWithUZI_20
       rect:
         serializedVersion: 2
-        x: 395
-        y: 524
-        width: 85
-        height: 100
+        x: 950
+        y: 529
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5648291, y: 0.2611596}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b6a951c234164f4881d2176e19f7203
-      internalID: 603986123
+      spriteID: e5b78dd5531d94947b83fbf52dbc2f2c
+      internalID: -1022925262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_21
+      name: animWithUZI_21
       rect:
         serializedVersion: 2
-        x: 395
-        y: 660
-        width: 85
-        height: 100
+        x: 950
+        y: 664
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5264655, y: 0.2779043}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bb68048f77b90d42a36a10a997bac33
-      internalID: -1329798359
+      spriteID: b6c07a61fe6a3c2498a78067c88d7181
+      internalID: 1184332281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_22
+      name: animWithUZI_22
       rect:
         serializedVersion: 2
-        x: 512
-        y: 136
-        width: 85
-        height: 100
+        x: 950
+        y: 809
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5202264, y: 0.2776812}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0fb00da009d50d4999127d9b0819b94
-      internalID: -1949492820
+      spriteID: f6f773a643153c645897fe7574b95724
+      internalID: -774554607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_23
+      name: animWithUZI_23
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 85
-        height: 100
+        x: 950
+        y: 5
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.49789917, y: 0.2502726}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad09f6c664b7cfa4eb501675f2141724
-      internalID: 831839389
+      spriteID: c20c1ead2c6cce24baacfbb96df10e77
+      internalID: -1571777601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_24
+      name: animWithUZI_24
       rect:
         serializedVersion: 2
-        x: 637
-        y: 0
-        width: 85
-        height: 100
+        x: 1112
+        y: 139
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5022638, y: 0.27033892}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d90773ba8649944c9c7e1cb85e01527
-      internalID: 955561727
+      spriteID: 5499b14767cc14a40a693f0e2243bf94
+      internalID: 417110157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_25
+      name: animWithUZI_25
       rect:
         serializedVersion: 2
-        x: 637
-        y: 135
-        width: 85
-        height: 100
+        x: 1112
+        y: 269
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5284497, y: 0.2703391}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24549ddb75f59974e99b3c41c537b0db
-      internalID: 1279762327
+      spriteID: c4c373b4a38d70841b387685e0c9118c
+      internalID: 1156681245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_26
+      name: animWithUZI_26
       rect:
         serializedVersion: 2
-        x: 637
-        y: 265
-        width: 85
-        height: 100
+        x: 1112
+        y: 399
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5282013, y: 0.2554381}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0803ae7a10d156a4fb9d200491157a2f
-      internalID: 734313235
+      spriteID: 9ceebc59208f4ec4d8863309b053f3bf
+      internalID: -896731771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_27
+      name: animWithUZI_27
       rect:
         serializedVersion: 2
-        x: 637
-        y: 395
-        width: 85
-        height: 100
+        x: 1112
+        y: 529
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5648291, y: 0.2611596}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b71c39bdf12eaf4889b4794dca5db84
-      internalID: -917034961
+      spriteID: 94e81381202d3af4599a81d3a3ba35f6
+      internalID: 1718866044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_28
+      name: animWithUZI_28
       rect:
         serializedVersion: 2
-        x: 642
-        y: 525
-        width: 85
-        height: 100
+        x: 1112
+        y: 664
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5264655, y: 0.2779043}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d45a993adbf50742b5600b06572a644
-      internalID: -2094025320
+      spriteID: f9c9c4617798aab4f86bb5ab31d215b3
+      internalID: 462813900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_29
+      name: animWithUZI_29
       rect:
         serializedVersion: 2
-        x: 637
-        y: 660
-        width: 85
-        height: 100
+        x: 1112
+        y: 809
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.5202264, y: 0.2776812}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8813f85ff89ac0e4ba095a8a7637233d
-      internalID: 516039351
+      spriteID: b28d8b4f7197c7b48aa19a4ff4bd1a8f
+      internalID: -1434640001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_30
+      name: animWithUZI_30
       rect:
         serializedVersion: 2
-        x: 752
-        y: 0
-        width: 85
-        height: 100
+        x: 788
+        y: 949
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.528996, y: 0.2751928}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bd7845774830c4438dbcd192d96b089
-      internalID: -288827518
+      spriteID: a89e30dbe887d4c41a468c7792e13394
+      internalID: 682596144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lightGreenAlian_31
+      name: animWithUZI_31
       rect:
         serializedVersion: 2
-        x: 752
-        y: 140
-        width: 85
-        height: 100
+        x: 1112
+        y: 949
+        width: 100
+        height: 87
       alignment: 9
-      pivot: {x: 0.5360709, y: 0.3650939}
+      pivot: {x: 0.528996, y: 0.2751928}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f57239e9d18fe3a40a5a93207ce24f1d
-      internalID: 1820005017
+      spriteID: 7398aa8b6a9e88644bccd720b5cc7f59
+      internalID: 1382702274
       vertices: []
       indices: 
       edges: []
@@ -798,38 +798,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      lightGreenAlian_27: -917034961
-      lightGreenAlian_30: -288827518
-      lightGreenAlian_6: 1434363157
-      lightGreenAlian_5: -1610803338
-      lightGreenAlian_3: -503383276
-      lightGreenAlian_0: -2071150350
-      lightGreenAlian_19: -417984293
-      lightGreenAlian_29: 516039351
-      lightGreenAlian_21: -1329798359
-      lightGreenAlian_24: 955561727
-      lightGreenAlian_10: 158577332
-      lightGreenAlian_4: 614021676
-      lightGreenAlian_13: -1707147393
-      lightGreenAlian_2: 1897902562
-      lightGreenAlian_14: 2116304479
-      lightGreenAlian_26: 734313235
-      lightGreenAlian_22: -1949492820
-      lightGreenAlian_8: 1867544085
-      lightGreenAlian_11: 85296080
-      lightGreenAlian_1: -161697458
-      lightGreenAlian_16: -909286216
-      lightGreenAlian_28: -2094025320
-      lightGreenAlian_31: 1820005017
-      lightGreenAlian_23: 831839389
-      lightGreenAlian_20: 603986123
-      lightGreenAlian_15: 267580316
-      lightGreenAlian_25: 1279762327
-      lightGreenAlian_18: 639236240
-      lightGreenAlian_17: 1253333352
-      lightGreenAlian_9: 311010507
-      lightGreenAlian_7: 1053372262
-      lightGreenAlian_12: 1599064433
+      animWithUZI_12: 154273951
+      animWithUZI_19: 2044776260
+      animWithUZI_9: 746186956
+      animWithUZI_16: -1498583023
+      animWithUZI_22: 182406236
+      animWithUZI_18: -722900187
+      animWithUZI_30: 1718866044
+      animWithUZI_0: 1337340100
+      animWithUZI_15: 582556228
+      animWithUZI_26: -1571777601
+      animWithUZI_1: 1458794776
+      animWithUZI_20: 304637173
+      animWithUZI_4: 1194024288
+      animWithUZI_10: -994151576
+      animWithUZI_31: 462813900
+      animWithUZI_11: 2083526365
+      animWithUZI_24: 1184332281
+      animWithUZI_6: 168226598
+      animWithUZI_5: -2042516359
+      animWithUZI_7: 2057172181
+      animWithUZI_8: -1590671767
+      animWithUZI_13: -1551827576
+      animWithUZI_23: -1022925262
+      animWithUZI_14: -482864201
+      animWithUZI_27: 417110157
+      animWithUZI_3: -1494601721
+      animWithUZI_28: 1156681245
+      animWithUZI_25: -774554607
+      animWithUZI_17: 94475462
+      animWithUZI_29: -896731771
+      animWithUZI_2: 1217712523
+      animWithUZI_21: 988289496
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

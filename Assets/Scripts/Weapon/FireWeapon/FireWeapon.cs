@@ -8,7 +8,7 @@ public class FireWeapon : Weapon
 	public float attackTime, beforeNextBulletTime;
 	public float minVarience;
 	public float maxVarience;
-	public int force, bulletsInQueue, bulletsInHolder;
+	public int force, bulletsInQueue, bulletsInHolder, bulletsNormalInHolder;
 	public	bool canAttack = true;
 	Vector3 navigation;
 
@@ -41,7 +41,7 @@ public class FireWeapon : Weapon
 	IEnumerator TimeBeforeAttack () {
 
 		yield return new WaitForSeconds(attackTime);
-		if (transform.parent != null)
+		if (transform.parent != null && transform.parent.GetComponent<PlayerMover>() != null)
 			transform.parent.GetComponent <PlayerMover> ().canThrow = true;
 		// transform.parent.GetComponent <Animator> ().SetBool ("Attack", false);
 		// GetComponent <Animator> ().SetBool ("Attack", false);

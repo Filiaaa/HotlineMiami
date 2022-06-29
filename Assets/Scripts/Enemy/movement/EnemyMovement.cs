@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour {
 
 	public Transform [] wayPoints;
+	public Sprite deathBody;
 	public GameObject playerObj, enter, curWeapon, killedEnemy;
 	public float minDistance = 0.5f, movingSpeed = 1, deltaDictance = 0.3f;
 	public bool agred = false;
@@ -21,14 +22,19 @@ public class EnemyMovement : MonoBehaviour {
 	private float angle;
 	 
 	void FixedUpdate () {
+        if (player == null)
+        {
+			agred = false;
+
+		}
 		if (!isReturning) {
 			if (!agred) {
 				enemy.Translate (Vector2.up * movingSpeed);
-
+				curWeapon.GetComponent<Animator>().SetBool("Attack", false);
 				angle = Vector2.Angle (Vector2.up, wayPoints[wayPointNumber].position - enemy.position);
 				enemy.eulerAngles = new Vector3 (0, 0, enemy.position.x < wayPoints[wayPointNumber].position.x ? -angle : angle);
 
-			} else {
+			} else{
 
 				if (Vector2.Distance(enemy.position, player.position) - deltaDictance > minDistance) {
 					enemy.Translate (Vector2.up * movingSpeed);
@@ -74,8 +80,12 @@ public class EnemyMovement : MonoBehaviour {
 	}
 
 	void KillEnemy () {
+		curWeapon.GetComponent<Animator>().SetBool("Enemys", false);
+		if(curWeapon.GetComponent<FireWeapon>() != null) curWeapon.GetComponent<FireWeapon>().bulletsInHolder = curWeapon.GetComponent<FireWeapon>().bulletsNormalInHolder;
+
 		curWeapon.GetComponent <Weapon> ().Throw();
-		Instantiate (killedEnemy, transform.position, transform.rotation);
+	 	GameObject deathBody_ = Instantiate (killedEnemy, transform.position, transform.rotation);
+		deathBody_.GetComponent<SpriteRenderer>().sprite = deathBody;
 		Destroy (gameObject);
 	}
 

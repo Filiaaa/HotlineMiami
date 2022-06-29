@@ -98,7 +98,7 @@ public class PlayerMover : MonoBehaviour
 		
 		if (collision.tag == "Room") {
 
-			curRoom.GetComponent <Manager> ().enemysDisAgr();
+			curRoom.GetComponent <Manager> ().enemysAgr();
 			curRoom = null;
 
 		}
@@ -107,6 +107,7 @@ public class PlayerMover : MonoBehaviour
 	void KillPlayer () {
 		Instantiate (killedPlayer, transform.position, transform.rotation);
 		restartPanel.SetActive (true);
+        if (curRoom != null) curRoom.GetComponent<Manager>().enemysAgr();
 		Destroy (gameObject);
 	}
 
