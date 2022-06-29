@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7678460299232489937}
   - component: {fileID: 2748705406421969193}
   - component: {fileID: 7859547251299398495}
+  - component: {fileID: 3661608222550671617}
   m_Layer: 0
   m_Name: Shotgun
   m_TagString: Weapon
@@ -26,14 +27,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7236741591760792430}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.66, y: 9.76, z: 0}
-  m_LocalScale: {x: 1, y: 0.20000002, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7678460299232489937
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -75,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
+  m_Sprite: {fileID: -857166311, guid: da32056fca0f24445a1477e97dc93e8d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -99,18 +100,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.019154549, y: -0.019153595}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3.125, y: 1.09375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.3623614, y: 1.5490875}
   m_EdgeRadius: 0
 --- !u!114 &7859547251299398495
 MonoBehaviour:
@@ -124,10 +125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 804b5acff8fe27f4db1c93d1a9a6b8d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetInHands: {x: 0, y: 0.23, z: 0}
-  offseRotationtInHands: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  offsetInHands: {x: -0.031, y: 2.635, z: 0}
+  offsetRotationInHands: {x: 0, y: 0, z: 0, w: 1}
   spriteInHands: {fileID: 0}
-  curBullet: {fileID: 0}
+  curBullet: {fileID: 1702249099695267215, guid: fa48f10bbddcfd941853bed72852ff0b, type: 3}
   playerBullet: {fileID: 1702249099695267215, guid: fa48f10bbddcfd941853bed72852ff0b, type: 3}
   attackTime: 1
   beforeNextBulletTime: 0.2
@@ -135,5 +136,26 @@ MonoBehaviour:
   maxVarience: 0.6
   force: 800
   bulletsInQueue: 5
-  bulletNumber: 0
+  bulletsInHolder: 6
+  bulletsNormalInHolder: 6
   canAttack: 1
+--- !u!95 &3661608222550671617
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7236741591760792430}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 92776cf59f1ba8249937fb4033b5b56f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
