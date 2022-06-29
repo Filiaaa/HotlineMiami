@@ -5,7 +5,7 @@ using UnityEngine;
 public class CursorAnimation : MonoBehaviour
 {
     public Texture2D[] Cursors;
-    private float Timer = 0.04f;
+    private float Timer = 0.1f;
     private int Temp = 0;
 
     void Update()
@@ -16,7 +16,7 @@ public class CursorAnimation : MonoBehaviour
         {
             Cursor.SetCursor(Cursors[Temp], Vector2.zero, CursorMode.ForceSoftware);
             Temp++;
-            Timer = 0.04f; // 0.04f = Speed
+            Timer = 0.1f; // 0.04f = Speed
         }
     }
 }
