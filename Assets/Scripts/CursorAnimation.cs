@@ -5,7 +5,7 @@ using UnityEngine;
 public class CursorAnimation : MonoBehaviour
 {
     public Texture2D[] Cursors;
-    private float Timer = 0.1f;
+    private float Timer = 1f;
     private int Temp = 0;
 
     void Update()
