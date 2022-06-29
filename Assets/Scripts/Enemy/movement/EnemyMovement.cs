@@ -60,7 +60,7 @@ public class EnemyMovement : MonoBehaviour {
 				enemy.eulerAngles = new Vector3 (0, 0, enemy.position.x < wayPoints[wayPointNumber].position.x ? -angle : angle);
 
 			} 
-			else{
+			else if(player != null){
 
 				if (player != null && Vector2.Distance (enemy.position, player.position) - deltaDictance > minDistance) {
 					enemy.Translate (Vector2.up * movingSpeed); 
