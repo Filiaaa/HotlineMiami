@@ -7,6 +7,7 @@ public class Weapon : MonoBehaviour
 	public Vector3 offsetInHands;
 	public Quaternion offsetRotationInHands;
 
+
 	public Sprite spriteInHands;
 
 	public virtual bool Attack () {
