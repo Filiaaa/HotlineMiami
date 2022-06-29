@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMover : MonoBehaviour
 {
-	public GameObject currentWeapon, knife, killedPlayer, restartPanel;
+	public GameObject currentWeapon, knife, killedPlayer, restartPanel, curRoom;
 	public float movingSpeed;
 	public bool canThrow = true;
 
@@ -79,21 +79,19 @@ public class PlayerMover : MonoBehaviour
 		}
 
 	}
-
-	GameObject curRoom;
 	
 	void OnTriggerEnter2D (Collider2D collision) {
 		
-		if (collision.tag == "Room") {
+/*		if (collision.tag == "Room") {
 			
 			curRoom = collision.gameObject;
 			curRoom.GetComponent <Manager> ().enemysAgr();
-
-		} else if (collision.tag == "EnemyAttack") {
+*/
+		/*}*/ /*else*/ if (collision.tag == "EnemyAttack") {
 			KillPlayer ();
 		}
 	}
-
+/*
 	void OnTriggerExit2D (Collider2D collision) {
 		
 		if (collision.tag == "Room") {
@@ -102,7 +100,7 @@ public class PlayerMover : MonoBehaviour
 			curRoom = null;
 
 		}
-	}
+	}*/
 
 	void KillPlayer () {
 		Instantiate (killedPlayer, transform.position, transform.rotation);

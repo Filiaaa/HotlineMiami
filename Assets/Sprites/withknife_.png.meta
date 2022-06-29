@@ -1,0 +1,1368 @@
+fileFormatVersion: 2
+guid: 2bd8adcfa2ec3f44c96326da1745f667
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: withknife__0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 95
+        height: 150
+      alignment: 9
+      pivot: {x: 0.47, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8cd7bf8d3a3e0449d29629a259c282
+      internalID: 656059139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 155
+        width: 95
+        height: 150
+      alignment: 9
+      pivot: {x: 0.47, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa79b89265cc7a49adb3e469437ea56
+      internalID: 2012374535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 310
+        width: 95
+        height: 150
+      alignment: 9
+      pivot: {x: 0.47, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f6cff71f3af598488fe2fc9c424cd7b
+      internalID: 1175388263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 466
+        width: 95
+        height: 150
+      alignment: 9
+      pivot: {x: 0.47, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1bfaea931345f44ad064722db721af
+      internalID: -453975071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 620
+        width: 95
+        height: 150
+      alignment: 9
+      pivot: {x: 0.47, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a294e01ecfa4e1e4e8b21b4a47515797
+      internalID: 724610140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 775
+        width: 95
+        height: 150
+      alignment: 9
+      pivot: {x: 0.47, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ab28d7376c7f143bcff0d69236a28e
+      internalID: -1931408656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 930
+        width: 95
+        height: 150
+      alignment: 9
+      pivot: {x: 0.47, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ef2be9820896849a9c9c47e04087b5
+      internalID: 26843801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1085
+        width: 95
+        height: 150
+      alignment: 9
+      pivot: {x: 0.47, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a361554bf38f1428b21202f7cc7e97
+      internalID: -2125650872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__8
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 50
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe4a86a4a238d44596da7d8d98475ae
+      internalID: -741212742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__9
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 185
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b09b9d54327fa4d9c290099ae070c2
+      internalID: -800619815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__10
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 320
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4db373b029bf574e9618ded99b33c77
+      internalID: -43333220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__11
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 455
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb395b0b93f0c2444abf50418157f622
+      internalID: 1926644051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__12
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 590
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4dac2cd203eef439225edd7c159e3c
+      internalID: 1536359317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__13
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 725
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89cb47ef6c6c1c4aafd506dc33a3eba
+      internalID: -156850654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__14
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 860
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22412a0e53a7a5c47bb6ac1d6e3743ec
+      internalID: 1404513282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__15
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 995
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e8f1ddc22fec7438eb288543d552fd
+      internalID: 2099620755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__16
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 50
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0a1dd826815244dbdbe3f98c85c43d
+      internalID: -631635161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__17
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 185
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc981f046d7f7504a89467383485f9c8
+      internalID: 1373617600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__18
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 320
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5baf298dc7c0c4c95f616c1264ff02
+      internalID: -2037785405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__19
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 455
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a6f134661cc164f84695adb573f3a5
+      internalID: -36663199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__20
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 590
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2991f1c266e73364f805c1466402fda0
+      internalID: 1457952817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__21
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 725
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a218f9d3bc2df9846b4814aa14cce4aa
+      internalID: 922595654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__22
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 860
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1e66095fd19a343b8a2422fa024b13
+      internalID: -687227012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__23
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 995
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65208a3164a7ee4e876fb6473f94463
+      internalID: -1964055364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__24
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 50
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15078ed25eadadd469d909e565360b8a
+      internalID: -16238752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__25
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 185
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0eb24f49025e4248a6f01fa54ec9802
+      internalID: -624746946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__26
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 320
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464dd9bbd2e882c42af7a86f65568b85
+      internalID: -2022386739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__27
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 455
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d7b181b5d2a804d8dc61d76639b060
+      internalID: -1286776063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__28
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 590
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365d94c66bd1f5f46a32d675536b0e8b
+      internalID: -996194262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__29
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 725
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6f89f92ebf2404ca7df877510f5a6e
+      internalID: -270142052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__30
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 860
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0323a3df195b610418006234724941ff
+      internalID: -1414608805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__31
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 996
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918efd042e0c7284687dd7dfba1aa052
+      internalID: -2129712910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__33
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 185
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270618b7844c0994db69f04c153c90d3
+      internalID: 956520490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__34
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 320
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6ef55d7cc4f774ea645ac8885fb8a3
+      internalID: 1735743541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__35
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 455
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28707796813e0f4e80fdc784e63632f
+      internalID: -1415627480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__36
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 590
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85f0f51164ea3241b59f8dff4a666b2
+      internalID: 2142613684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__37
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 725
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2c7395ad55cf24b8626512854faa86
+      internalID: 2017461417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__38
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 860
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9850662b6d5dfd64bb65c58b88ad87e6
+      internalID: -1866532668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__39
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 995
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1277a95f5f0dc884f90d821c7d0f143c
+      internalID: -1758481556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__40
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 50
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c7c69e32926c54a9a22c510aac5c07
+      internalID: -1907201300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__41
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 50
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9638ec73082cd5546ac99c4c505232b9
+      internalID: 588860302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__42
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 185
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4dffad2c3870df43aca3ea92fd9c370
+      internalID: -1854530829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__43
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 320
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e00e0fe9f995374a80fc4e02d894e48
+      internalID: 1778455761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__44
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 455
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74201eb285615da42ad9e3f9b0212792
+      internalID: 1942915338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__45
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 50
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101184a765a6fb140895770d1584a4af
+      internalID: 554520130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__46
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 185
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6914ae6ef9b4a72448e3c34213e0a18f
+      internalID: -1228104508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__47
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 320
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb447cc33bc17546812e4c84ba7f8d6
+      internalID: 74164521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__48
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 455
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c398c9fdc241aa542a20b3fd8d285b91
+      internalID: -645849406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__49
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 590
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31f99ade35a3c5459f90ef747a7e179
+      internalID: -934397593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__50
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 725
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32548d1c7e104c343b40af589652a2bd
+      internalID: 200263838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__51
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 860
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4892e9c08b167af4d8f5ba87d4474fd4
+      internalID: 854718224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__52
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 995
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da77c922a84bc3a44b4701d3e0d3e2c8
+      internalID: -1722750663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__53
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 590
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3892184e808a6b54887a06ea9712cb9a
+      internalID: -345820778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__54
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 725
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d360e141700ecd04a8089e96ad4b708b
+      internalID: 1383449286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__55
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 860
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0973fc15b2f7b438ae74e4763bd591
+      internalID: -1486447824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: withknife__56
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 995
+        width: 95
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9bf8f77791de24d934384746deee77
+      internalID: -1310341935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      withknife__16: -631635161
+      withknife__39: -1758481556
+      withknife__54: 1383449286
+      withknife__28: -996194262
+      withknife__2: 1175388263
+      withknife__21: 922595654
+      withknife__43: 1778455761
+      withknife__47: 74164521
+      withknife__36: 2142613684
+      withknife__18: -2037785405
+      withknife__25: -624746946
+      withknife__26: -2022386739
+      withknife__6: 26843801
+      withknife__7: -2125650872
+      withknife__15: 2099620755
+      withknife__20: 1457952817
+      withknife__45: 554520130
+      withknife__35: -1415627480
+      withknife__40: -1907201300
+      withknife__32: 370620768
+      withknife__23: -1964055364
+      withknife__5: -1931408656
+      withknife__8: -741212742
+      withknife__11: 1926644051
+      withknife__9: -800619815
+      withknife__37: 2017461417
+      withknife__55: -1486447824
+      withknife__14: 1404513282
+      withknife__56: -1310341935
+      withknife__24: -16238752
+      withknife__0: 656059139
+      withknife__3: -453975071
+      withknife__19: -36663199
+      withknife__31: -2129712910
+      withknife__17: 1373617600
+      withknife__57: -791846752
+      withknife__49: -934397593
+      withknife__33: 956520490
+      withknife__50: 200263838
+      withknife__42: -1854530829
+      withknife__44: 1942915338
+      withknife__52: -1722750663
+      withknife__41: 588860302
+      withknife__46: -1228104508
+      withknife__13: -156850654
+      withknife__12: 1536359317
+      withknife__29: -270142052
+      withknife__34: 1735743541
+      withknife__1: 2012374535
+      withknife__38: -1866532668
+      withknife__48: -645849406
+      withknife__10: -43333220
+      withknife__4: 724610140
+      withknife__30: -1414608805
+      withknife__22: -687227012
+      withknife__27: -1286776063
+      withknife__53: -345820778
+      withknife__51: 854718224
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

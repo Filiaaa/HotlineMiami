@@ -103,7 +103,7 @@ MonoBehaviour:
   offsetRotationInHands: {x: 0, y: 0, z: 0, w: 0}
   spriteInHands: {fileID: 0}
   attackCol: {fileID: 6534483207950084193}
-  attackTime: 1
+  attackTime: 0.6
 --- !u!95 &7752632034333042344
 Animator:
   serializedVersion: 4
