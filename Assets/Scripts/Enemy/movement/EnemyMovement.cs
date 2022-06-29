@@ -7,13 +7,14 @@ public class EnemyMovement : MonoBehaviour {
 	public Transform [] wayPoints;
 	public BoxCollider2D weaponCol;
 	public Sprite deathBody;
-	public GameObject playerObj, enter, curWeapon, killedEnemy;
+	public GameObject playerObj, curWeapon, killedEnemy;
 	public float minDistance = 0.5f, movingSpeed = 1, deltaDictance = 0.3f;
 	public bool agred = false, walk = true;
 	public AudioSource stepsSound;
+	public Transform [] enters;
 
 	private int wayPointNumber;
-	private Transform enemy, player;
+	private Transform player, enter, enemy;
 	private bool isReturning = false;
 
 	void Start () {
@@ -21,8 +22,8 @@ public class EnemyMovement : MonoBehaviour {
 		player = playerObj.GetComponent <Transform> ();
 		if (curWeapon != null)
 		{
-			curWeapon.GetComponent<Animator>().SetBool("onFloor", false); 
-			curWeapon.GetComponent<Animator>().SetBool("Enemys", true);
+			curWeapon.GetComponent <Animator> ().SetBool ("onFloor", false); 
+			curWeapon.GetComponent <Animator> ().SetBool ("Enemys", true);
 		}
 	}
 
@@ -87,7 +88,7 @@ public class EnemyMovement : MonoBehaviour {
 				
 			}
 		} else {
-			GetComponent<Animator>().SetBool("Attack", false);
+			GetComponent <Animator> ().SetBool ("Attack", false);
 			angle = Vector2.Angle (Vector2.up, enter.GetComponent <Transform> ().position - enemy.position);
 			enemy.eulerAngles = new Vector3 (0, 0, enemy.position.x < enter.GetComponent <Transform> ().position.x ? -angle : angle);
 
@@ -105,7 +106,17 @@ public class EnemyMovement : MonoBehaviour {
 	void OnTriggerExit2D(Collider2D collision) {
 		if (collision.tag == "Room") {
 			isReturning = true;
+			enter = FindEnter ();
 		}
+	}
+
+	Transform FindEnter () {
+		int minNumber = 0;
+		for (int i = 1; i < enters.Length; i++) {
+			if (Vector2.Distance (enters[minNumber].position, enemy.position) > Vector2.Distance (enters[i].position, enemy.position))
+				minNumber = i;
+		}
+		return enters[minNumber];
 	}
 
 	void OnTriggerEnter2D (Collider2D collision) {
