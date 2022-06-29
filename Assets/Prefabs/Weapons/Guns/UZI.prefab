@@ -136,8 +136,8 @@ MonoBehaviour:
   maxVarience: 0.5
   force: 800
   bulletsInQueue: 1
-  bulletNumber: 0
   bulletsInHolder: 30
+  bulletsNormalInHolder: 30
   canAttack: 1
 --- !u!95 &4548624306279792383
 Animator:

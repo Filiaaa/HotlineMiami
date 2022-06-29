@@ -17,6 +17,8 @@ public class EnemyMovement : MonoBehaviour {
 	void Start () {
 		enemy = GetComponent <Transform> (); 
 		player = playerObj.GetComponent <Transform> ();
+		curWeapon.GetComponent<Animator>().SetBool("onFloor", false);
+		curWeapon.GetComponent<Animator>().SetBool("Enemys", true);
 	}
 
 	private float angle;
@@ -31,6 +33,7 @@ public class EnemyMovement : MonoBehaviour {
 			if (!agred) {
 				enemy.Translate (Vector2.up * movingSpeed);
 				curWeapon.GetComponent<Animator>().SetBool("Attack", false);
+
 				angle = Vector2.Angle (Vector2.up, wayPoints[wayPointNumber].position - enemy.position);
 				enemy.eulerAngles = new Vector3 (0, 0, enemy.position.x < wayPoints[wayPointNumber].position.x ? -angle : angle);
 
