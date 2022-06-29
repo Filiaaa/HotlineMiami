@@ -7,9 +7,9 @@ public class PlayerMover : MonoBehaviour
 	public GameObject currentWeapon, knife, killedPlayer, restartPanel;
 	public float movingSpeed;
 	public bool canThrow = true;
+	public AudioSource steps;
 
 	float hor, vert, angle;
-	
 	Rigidbody2D rb;
 	bool attacked = true;
 	
@@ -54,8 +54,15 @@ public class PlayerMover : MonoBehaviour
 		rb.velocity = new Vector2(hor, vert) * movingSpeed;
     if (rb.velocity == Vector2.zero) {
 			GetComponent <Animator> ().SetBool("walk", false);
+			steps.Stop();
 		}
-		else GetComponent <Animator> ().SetBool("walk", true);
+		else  {
+			GetComponent <Animator> ().SetBool("walk", true);
+			if (!steps.isPlaying) {
+				steps.pitch = Random.Range (0.9f, 1.1f);
+				steps.PlayDelayed (0.15f);
+			}
+		}
 
 		var mousePosition = Input.mousePosition;
 		mousePosition = Camera.main.ScreenToWorldPoint (mousePosition); //положение мыши из экранных в мировые координаты
