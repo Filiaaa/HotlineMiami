@@ -8,7 +8,8 @@ public class EnemyMovement : MonoBehaviour {
 	public Sprite deathBody;
 	public GameObject playerObj, enter, curWeapon, killedEnemy;
 	public float minDistance = 0.5f, movingSpeed = 1, deltaDictance = 0.3f;
-	public bool agred = false;
+	public bool agred = false, walk = true;
+	public AudioSource stepsSound;
 
 	private int wayPointNumber;
 	private Transform enemy, player;
@@ -17,33 +18,35 @@ public class EnemyMovement : MonoBehaviour {
 	void Start () {
 		enemy = GetComponent <Transform> (); 
 		player = playerObj.GetComponent <Transform> ();
-		curWeapon.GetComponent<Animator>().SetBool("onFloor", false);
-		curWeapon.GetComponent<Animator>().SetBool("Enemys", true);
+		curWeapon.GetComponent <Animator> ().SetBool ("onFloor", false);
+		curWeapon.GetComponent <Animator> ().SetBool ("Enemys", true);
 	}
 
 	private float angle;
 	 
 	void FixedUpdate () {
-        if (player == null)
-        {
-			agred = false;
-
-		}
+		if (walk && !stepsSound.isPlaying) {
+			stepsSound.pitch = Random.Range (0.9f, 1.1f);
+			stepsSound.Play();
+		} else if (!walk)
+			stepsSound.Stop();
+		walk = true;
 		if (!isReturning) {
 			if (!agred) {
 				enemy.Translate (Vector2.up * movingSpeed);
-				curWeapon.GetComponent<Animator>().SetBool("Attack", false);
+				curWeapon.GetComponent <Animator> ().SetBool ("Attack", false);
 
 				angle = Vector2.Angle (Vector2.up, wayPoints[wayPointNumber].position - enemy.position);
 				enemy.eulerAngles = new Vector3 (0, 0, enemy.position.x < wayPoints[wayPointNumber].position.x ? -angle : angle);
 
 			} else{
 
-				if (Vector2.Distance(enemy.position, player.position) - deltaDictance > minDistance) {
+				if (Vector2.Distance (enemy.position, player.position) - deltaDictance > minDistance) {
 					enemy.Translate (Vector2.up * movingSpeed);
-				} else if (Vector2.Distance(enemy.position, player.position) + deltaDictance < minDistance) {
+				} else if (Vector2.Distance  (enemy.position, player.position) + deltaDictance < minDistance) {
 					enemy.Translate (Vector2.down * movingSpeed);
-				}
+				} else 
+					walk = false;
 
 				angle = Vector2.Angle (Vector2.up, player.position - enemy.position);
 				enemy.eulerAngles = new Vector3 (0, 0, enemy.position.x < player.position.x ? -angle : angle);

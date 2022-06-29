@@ -60,7 +60,7 @@ public class PlayerMover : MonoBehaviour
 			GetComponent <Animator> ().SetBool("walk", true);
 			if (!steps.isPlaying) {
 				steps.pitch = Random.Range (0.9f, 1.1f);
-				steps.PlayDelayed (0.15f);
+				steps.Play();
 			}
 		}
 
@@ -110,9 +110,10 @@ public class PlayerMover : MonoBehaviour
 	}*/
 
 	void KillPlayer () {
+
 		Instantiate (killedPlayer, transform.position, transform.rotation);
 		restartPanel.SetActive (true);
-        if (curRoom != null) curRoom.GetComponent<Manager>().enemysAgr();
+    // if (curRoom != null) curRoom.GetComponent <Manager> ().enemysDisAgr();
 		Destroy (gameObject);
 	}
 
