@@ -263,7 +263,7 @@ MonoBehaviour:
   beforeNextBulletTime: 0.2
   minVarience: 0
   maxVarience: 0
-  force: 1200
+  force: 1800
   bulletsInQueue: 1
   bulletsInHolder: 12
   bulletsNormalInHolder: 0
