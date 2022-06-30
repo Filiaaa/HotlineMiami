@@ -33,35 +33,38 @@ public class EnemyMovement : MonoBehaviour {
 
 		//agring or disagring
 
-        if (player != null && Vector2.Angle(transform.up, player.transform.position - transform.position) < 100 && Vector2.Distance(enemy.position, player.position) <= agringDistanse && player.GetComponent<PlayerMover>().curRoom == transform.parent.gameObject)
-        {
-            agred = true;
-        }
-		else if(player != null && player.GetComponent<PlayerMover>().curRoom != transform.parent.gameObject)
-        {
+    if (player != null && Vector2.Angle(transform.up, player.transform.position - transform.position) < 100 && Vector2.Distance(enemy.position, player.position) <= agringDistanse && player.GetComponent<PlayerMover>().curRoom == transform.parent.gameObject) {
+      agred = true;
+    }
+		else if (player != null && player.GetComponent <PlayerMover> ().curRoom != transform.parent.gameObject) {
 			agred = false;
-        }
+    }
 
 
         //////////////////////////////////////////////////////////////////////////////////
-        if (walk && !stepsSound.isPlaying) {
+    if (walk && !stepsSound.isPlaying) {
 			stepsSound.pitch = Random.Range (0.9f, 1.1f);
 			stepsSound.Play();
 		} else if (!walk)
 			stepsSound.Stop();
+
 		walk = true;
 		if (!isReturning) {
 			if (!agred) {
+
 				enemy.Translate (Vector2.up * movingSpeed);
-				GetComponent<Animator>().SetBool("Attack", false);
-				if(weaponCol != null) weaponCol.enabled = false;
-				if (curWeapon != null) curWeapon.GetComponent<Animator>().SetBool("Attack", false);
+
+				GetComponent <Animator> ().SetBool ("Attack", false);
+
+
+				if (weaponCol != null) weaponCol.enabled = false;
+				if (curWeapon != null) curWeapon.GetComponent <Animator> ().SetBool ("Attack", false);
 
 				angle = Vector2.Angle (Vector2.up, wayPoints[wayPointNumber].position - enemy.position);
 				enemy.eulerAngles = new Vector3 (0, 0, enemy.position.x < wayPoints[wayPointNumber].position.x ? -angle : angle);
 
 			} 
-			else if(player != null){
+			else if (player != null) {
 
 				if (player != null && Vector2.Distance (enemy.position, player.position) - deltaDictance > minDistance) {
 					enemy.Translate (Vector2.up * movingSpeed); 
@@ -70,7 +73,7 @@ public class EnemyMovement : MonoBehaviour {
 				}
 				else
 				{
-					walk = false; GetComponent<Animator>().SetBool("Attack", true);
+					walk = false; GetComponent <Animator> ().SetBool ("Attack", true);
 					if (weaponCol != null) { weaponCol.enabled = true; }
 				}
 				/*else if (Vector2.Distance  (enemy.position, player.position) + deltaDictance < minDistance) {
