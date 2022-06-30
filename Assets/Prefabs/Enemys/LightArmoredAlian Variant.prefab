@@ -32,6 +32,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7568317754413847410, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
+      propertyPath: heals
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7568317754413847410, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
       propertyPath: curWeapon
       value: 
       objectReference: {fileID: 0}
