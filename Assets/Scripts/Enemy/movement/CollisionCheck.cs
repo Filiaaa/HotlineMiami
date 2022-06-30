@@ -8,7 +8,7 @@ public class CollisionCheck : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D collision) {
 		if (collision.tag == "WayPoint") {
-			transform.parent.GetComponent <EnemyMovement>().ArriveToPoint();
+			transform.parent.GetComponent <EnemyMovement> ().ArriveToPoint();
 		}
 	}
 
