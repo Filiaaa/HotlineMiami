@@ -9027,7 +9027,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -589796335, guid: 900940ea2c914284e96f4875ae1e3ddb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -55362,7 +55362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1138171832}
   timerBar: {fileID: 1248147580}
-  time: 90
+  time: 40
 --- !u!114 &2036607937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56301,7 +56301,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -1068726178, guid: 900940ea2c914284e96f4875ae1e3ddb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
