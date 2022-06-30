@@ -139,6 +139,7 @@ MonoBehaviour:
   bulletsInHolder: 1000
   bulletsNormalInHolder: 12
   canAttack: 1
+  attackSound: {fileID: 0}
 --- !u!95 &1573172734
 Animator:
   serializedVersion: 4
@@ -203,6 +204,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7568317754413847410, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
+      propertyPath: wayPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7568317754413847410, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
       propertyPath: wayPoints.Array.data[0]
       value: 
       objectReference: {fileID: 0}
@@ -232,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7568317754413847417, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
       propertyPath: m_Name
-      value: LightArmoredAlian
+      value: LightArmoredAlian Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7568317754413847420, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
       propertyPath: m_RootOrder
@@ -277,6 +282,10 @@ PrefabInstance:
     - target: {fileID: 7568317754413847420, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699708478594559815, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
