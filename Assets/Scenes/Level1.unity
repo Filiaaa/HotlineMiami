@@ -39097,6 +39097,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1646522015}
     - target: {fileID: 1120778624138414924, guid: f10c16d5020a39c4ab27fca6988a0ed7, type: 3}
+      propertyPath: isImmortal
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1120778624138414924, guid: f10c16d5020a39c4ab27fca6988a0ed7, type: 3}
       propertyPath: movingSpeed
       value: 20
       objectReference: {fileID: 0}
@@ -41233,7 +41237,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 25.9
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -54482,6 +54486,10 @@ PrefabInstance:
       propertyPath: enters.Array.data[1]
       value: 
       objectReference: {fileID: 136810753}
+    - target: {fileID: 1217212412869530897, guid: 2146ffb12fc8a78428918ed68e70e645, type: 3}
+      propertyPath: wayPoints.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1217212412869530897, guid: 2146ffb12fc8a78428918ed68e70e645, type: 3}
       propertyPath: wayPoints.Array.data[0]
       value: 
