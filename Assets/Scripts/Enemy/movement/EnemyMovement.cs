@@ -12,10 +12,11 @@ public class EnemyMovement : MonoBehaviour {
 	public bool agred = false, walk = true;
 	public AudioSource stepsSound;
 	public Transform [] enters;
+	public int heals = 1;
 
 	private int wayPointNumber;
 	private Transform player, enter, enemy;
-	private bool isReturning = false;
+	private bool isReturning = false, isImmortal = false;
 
 	void Start () {
 		enemy = GetComponent <Transform> (); 
@@ -148,17 +149,28 @@ public class EnemyMovement : MonoBehaviour {
 	}
 
 	void KillEnemy () {
-		if (weaponCol != null) weaponCol.enabled = false;
-		if (curWeapon != null) {
-			curWeapon.GetComponent <Animator> ().SetBool ("Enemys", false);
-			curWeapon.GetComponent <Animator> ().SetBool ("Attack", false);
-		}
-		if (curWeapon != null && curWeapon.GetComponent <FireWeapon> () != null) curWeapon.GetComponent <FireWeapon> ().bulletsInHolder = curWeapon.GetComponent <FireWeapon> ().bulletsNormalInHolder;
+		if (!isImmortal)
+			heals--;
+		isImmortal = true;
+		StartCoroutine(ImmortalFrames());
+		if (heals <= 0) {
+			if (weaponCol != null) weaponCol.enabled = false;
+			if (curWeapon != null) {
+				curWeapon.GetComponent <Animator> ().SetBool ("Enemys", false);
+				curWeapon.GetComponent <Animator> ().SetBool ("Attack", false);
+			}
+			if (curWeapon != null && curWeapon.GetComponent <FireWeapon> () != null) curWeapon.GetComponent <FireWeapon> ().bulletsInHolder = curWeapon.GetComponent <FireWeapon> ().bulletsNormalInHolder;
 
-		if (curWeapon != null) curWeapon.GetComponent <Weapon> ().Throw();
-	 	GameObject deathBody_ = Instantiate (killedEnemy, transform.position, transform.rotation);
-		deathBody_.GetComponent<SpriteRenderer>().sprite = deathBody;
-		Destroy (gameObject);
+			if (curWeapon != null) curWeapon.GetComponent <Weapon> ().Throw();
+		 	GameObject deathBody_ = Instantiate (killedEnemy, transform.position, transform.rotation);
+			deathBody_.GetComponent<SpriteRenderer>().sprite = deathBody;
+			Destroy (gameObject);
+		}
+	}
+
+	IEnumerator ImmortalFrames(){
+		yield return new WaitForSeconds(0.6f);
+		isImmortal = false;
 	}
 
 }

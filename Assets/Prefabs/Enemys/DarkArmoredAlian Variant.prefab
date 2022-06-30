@@ -40,6 +40,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7568317754413847410, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
+      propertyPath: heals
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7568317754413847410, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
       propertyPath: deathBody
       value: 
       objectReference: {fileID: -785532070, guid: 2b51f124f3bd6044686ed04841c495d1, type: 3}
