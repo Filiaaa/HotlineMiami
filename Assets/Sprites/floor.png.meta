@@ -880,7 +880,7 @@ TextureImporter:
         width: 15
         height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -888,6 +888,69 @@ TextureImporter:
       bones: []
       spriteID: bcc735a166884194380acd489f9590ea
       internalID: 2083196263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_37
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 362
+        width: 185
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5537712c182a5fe4cb42273cbf9c19bd
+      internalID: -770690233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_38
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 282
+        width: 70
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84127ff47ddb6b64580fbdf93ebf8775
+      internalID: 1991948317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_39
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 665
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a395990ccfd618e41aef36eaff556f9e
+      internalID: 2076547156
       vertices: []
       indices: 
       edges: []
@@ -905,7 +968,9 @@ TextureImporter:
     nameFileIdTable:
       floor_21: 391481
       floor_27: -1428735322
+      floor_0: 1378811354
       floor_29: 1735509697
+      floor_38: 1991948317
       floor_18: -2134980296
       floor_7: -466894306
       floor_13: -82067093
@@ -939,7 +1004,8 @@ TextureImporter:
       floor_34: -86799674
       floor_30: 1917450081
       floor_35: -582733947
-      floor_0: 1378811354
+      floor_39: 2076547156
+      floor_37: -770690233
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

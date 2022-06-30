@@ -40,7 +40,7 @@ public class EnemyMovement : MonoBehaviour {
         }
 		else if(player != null && player.GetComponent<PlayerMover>().curRoom != transform.parent.gameObject)
         {
-			movingSpeed = 0.1f;
+			movingSpeed = 0.2f;
 			agred = false;
         }
 
