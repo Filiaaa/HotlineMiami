@@ -22930,7 +22930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4373594936548760826, guid: 2ff6338b21f2f04438b9bfa29e17a422, type: 3}
       propertyPath: heals
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4373594936548760826, guid: 2ff6338b21f2f04438b9bfa29e17a422, type: 3}
       propertyPath: curWeapon
@@ -62617,7 +62617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4373594936548760826, guid: 2ff6338b21f2f04438b9bfa29e17a422, type: 3}
       propertyPath: heals
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4373594936548760826, guid: 2ff6338b21f2f04438b9bfa29e17a422, type: 3}
       propertyPath: curWeapon
