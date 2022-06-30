@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2094025320, guid: c9bc81f38c0d6e545af4df92a97fbd75, type: 3}
+    - target: {fileID: 7568317754413847408, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7568317754413847409, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5360709

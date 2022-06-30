@@ -28,12 +28,19 @@ public class EnemyMovement : MonoBehaviour {
 	}
 
 	private float angle;
-	 
-	void FixedUpdate () {
+
+/*    private void OnDrawGizmos()
+    {
+		Gizmos.color = Color.red;
+		Gizmos.DrawLine(transform.position, playerObj.transform.position);
+    }*/
+
+    void FixedUpdate () {
 
 		//agring or disagring
+/*		RaycastHit2D hit =  Physics2D.Linecast(transform.position, player.position);*/
 
-        if (player != null && Vector2.Angle(transform.up, player.transform.position - transform.position) < 100 && Vector2.Distance(enemy.position, player.position) <= agringDistanse && player.GetComponent<PlayerMover>().curRoom == transform.parent.gameObject)
+		if (player != null/* && hit.collider != null && hit.collider.gameObject.CompareTag("Player") */&& Vector2.Angle(transform.up, player.transform.position - transform.position) < 100 && Vector2.Distance(enemy.position, player.position) <= agringDistanse && player.GetComponent<PlayerMover>().curRoom == transform.parent.gameObject)
         {
 			movingSpeed = 0.3f;
 			agred = true;

@@ -607,7 +607,7 @@ TextureImporter:
         width: 125
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -615,6 +615,27 @@ TextureImporter:
       bones: []
       spriteID: 890d536e992b91547b0cedb387d37ef7
       internalID: 698600362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decor_24
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 550
+        width: 10
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e32117dc294fc1449ce86267deb77d5
+      internalID: -894412502
       vertices: []
       indices: 
       edges: []
@@ -643,6 +664,7 @@ TextureImporter:
       Decor_9: -1083011310
       Decor_17: 1248185936
       Decor_13: 1093870835
+      Decor_24: -894412502
       Decor_8: -1537843433
       Decor_5: -1645131013
       Decor_19: -227917470
