@@ -109,7 +109,7 @@ public class PlayerMover : MonoBehaviour
 		}
 	}*/
 
-	void KillPlayer () {
+	public void KillPlayer () {
 		if (!isImmortal) {
 
 			Instantiate (killedPlayer, transform.position, transform.rotation);
