@@ -8,7 +8,7 @@ public class EnemyMovement : MonoBehaviour {
 	public BoxCollider2D weaponCol;
 	public Sprite deathBody;
 	public GameObject playerObj, curWeapon, killedEnemy;
-	public float minDistance = 0.5f, movingSpeed = 1, deltaDictance = 0.3f;
+	public float minDistance = 0.5f, movingSpeed = 0.1f, deltaDictance = 0.3f;
 	public bool agred = false, walk = true;
 	public AudioSource stepsSound;
 	public Transform [] enters;
@@ -35,10 +35,12 @@ public class EnemyMovement : MonoBehaviour {
 
         if (player != null && Vector2.Angle(transform.up, player.transform.position - transform.position) < 100 && Vector2.Distance(enemy.position, player.position) <= agringDistanse && player.GetComponent<PlayerMover>().curRoom == transform.parent.gameObject)
         {
-            agred = true;
+			movingSpeed = 0.15f;
+			agred = true;
         }
 		else if(player != null && player.GetComponent<PlayerMover>().curRoom != transform.parent.gameObject)
         {
+			movingSpeed = 0.1f;
 			agred = false;
         }
 

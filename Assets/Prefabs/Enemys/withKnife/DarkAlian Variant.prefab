@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1719176544}
   - component: {fileID: 1719176545}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: knifeCol
   m_TagString: EnemyAttack
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1157750193127201137, guid: 60583f56a38fb50428e650260c0e2b6d, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1515269350794294240, guid: 60583f56a38fb50428e650260c0e2b6d, type: 3}
       propertyPath: m_Sprite
@@ -95,7 +95,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1515269350794294242, guid: 60583f56a38fb50428e650260c0e2b6d, type: 3}
       propertyPath: agringDistanse
-      value: 20
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1515269350794294243, guid: 60583f56a38fb50428e650260c0e2b6d, type: 3}
       propertyPath: m_Mass
