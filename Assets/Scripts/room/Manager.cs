@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Manager : MonoBehaviour {
 
-	public GameObject [] enemys;
+/*	public GameObject [] enemys;*/
 
 /*	public void enemysAgr () {
 		for (int i = 0; i < enemys.Length; i++) {
