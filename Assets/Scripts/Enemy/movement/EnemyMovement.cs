@@ -31,8 +31,14 @@ public class EnemyMovement : MonoBehaviour {
 	void FixedUpdate () {
 
 		//agring or disagring
+		var dir = player.position - transform.position;
+		RaycastHit hit;
+        if (Physics.Raycast(transform.position, dir.normalized, out hit))
+        {
+			print(hit.transform.gameObject.name);
+        }
 
-    if (player != null && Vector2.Angle (transform.up, player.transform.position - transform.position) < 100 && Vector2.Distance (enemy.position, player.position) <= agringDistanse && player.GetComponent <PlayerMover> ().curRoom == transform.parent.gameObject) {
+        if (player != null && (Physics.Raycast(transform.position, dir.normalized, out hit) && hit.transform == player || !Physics.Raycast(transform.position, dir.normalized, out hit)) && Vector2.Angle (transform.up, player.transform.position - transform.position) < 100 && Vector2.Distance (enemy.position, player.position) <= agringDistanse && player.GetComponent <PlayerMover> ().curRoom == transform.parent.gameObject) {
 			movingSpeed = 0.3f;
 			agred = true;
     } else if (player != null && player.GetComponent <PlayerMover> ().curRoom != transform.parent.gameObject) {
