@@ -33,14 +33,12 @@ public class EnemyMovement : MonoBehaviour {
 
 		//agring or disagring
 
-        if (player != null && Vector2.Angle(transform.up, player.transform.position - transform.position) < 100 && Vector2.Distance(enemy.position, player.position) <= agringDistanse && player.GetComponent<PlayerMover>().curRoom == transform.parent.gameObject)
-        {
+    if (player != null && Vector2.Angle(transform.up, player.transform.position - transform.position) < 100 && Vector2.Distance(enemy.position, player.position) <= agringDistanse && player.GetComponent<PlayerMover>().curRoom == transform.parent.gameObject) {
 			movingSpeed = 0.15f;
 			agred = true;
-        }
-		else if(player != null && player.GetComponent<PlayerMover>().curRoom != transform.parent.gameObject)
-        {
-			movingSpeed = 0.2f;
+    }
+		else if (player != null && player.GetComponent<PlayerMover>().curRoom != transform.parent.gameObject) {
+			movingSpeed = 0.5f;
 			agred = false;
     }
 

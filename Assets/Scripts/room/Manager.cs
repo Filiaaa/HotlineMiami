@@ -23,9 +23,8 @@ public class Manager : MonoBehaviour {
         }*/
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
-        {
-            collision.gameObject.GetComponent<PlayerMover>().curRoom = gameObject;
+        if (collision.tag == "Player") {
+            collision.gameObject.GetComponent <PlayerMover> ().curRoom = gameObject;
 /*            enemysAgr();*/
         }
     }
