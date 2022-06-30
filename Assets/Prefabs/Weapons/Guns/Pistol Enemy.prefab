@@ -156,7 +156,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5463210463390852986}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.66, y: 9.76, z: 0}
+  m_LocalPosition: {x: 0.373, y: 2.159, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -223,7 +223,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5463210463390852986}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -263,10 +263,10 @@ MonoBehaviour:
   beforeNextBulletTime: 0.2
   minVarience: 0
   maxVarience: 0
-  force: 1200
+  force: 1800
   bulletsInQueue: 1
-  bulletsInHolder: 12
-  bulletsNormalInHolder: 0
+  bulletsInHolder: 1000
+  bulletsNormalInHolder: 12
   canAttack: 1
   attackSound: {fileID: 665840913272430436}
 --- !u!95 &636888881
