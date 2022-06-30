@@ -20,73 +20,71 @@ public class EnemyMovement : MonoBehaviour {
 	void Start () {
 		enemy = GetComponent <Transform> (); 
 		player = playerObj.GetComponent <Transform> ();
-		if (curWeapon != null)
-		{
+		if (curWeapon != null) {
 			curWeapon.GetComponent <Animator> ().SetBool ("onFloor", false); 
 			curWeapon.GetComponent <Animator> ().SetBool ("Enemys", true);
 		}
 	}
 
 	private float angle;
-
-/*    private void OnDrawGizmos()
-    {
-		Gizmos.color = Color.red;
-		Gizmos.DrawLine(transform.position, playerObj.transform.position);
-    }*/
-
-    void FixedUpdate () {
+	 
+	void FixedUpdate () {
 
 		//agring or disagring
-/*		RaycastHit2D hit =  Physics2D.Linecast(transform.position, player.position);*/
 
-		if (player != null/* && hit.collider != null && hit.collider.gameObject.CompareTag("Player") */&& Vector2.Angle(transform.up, player.transform.position - transform.position) < 100 && Vector2.Distance(enemy.position, player.position) <= agringDistanse && player.GetComponent<PlayerMover>().curRoom == transform.parent.gameObject)
-        {
+    if (player != null && Vector2.Angle (transform.up, player.transform.position - transform.position) < 100 && Vector2.Distance (enemy.position, player.position) <= agringDistanse && player.GetComponent <PlayerMover> ().curRoom == transform.parent.gameObject) {
 			movingSpeed = 0.3f;
 			agred = true;
-        }
-		else if(player != null && player.GetComponent<PlayerMover>().curRoom != transform.parent.gameObject)
-        {
+    } else if (player != null && player.GetComponent <PlayerMover> ().curRoom != transform.parent.gameObject) {
 			movingSpeed = 0.1f;
 			agred = false;
         }
 
-
         //////////////////////////////////////////////////////////////////////////////////
-        if (walk && !stepsSound.isPlaying) {
-			stepsSound.pitch = Random.Range (0.9f, 1.1f);
-			stepsSound.Play();
-		} else if (!walk)
-			stepsSound.Stop();
+    if (walk && !stepsSound.isPlaying) {
+		stepsSound.pitch = Random.Range (0.9f, 1.1f);
+		stepsSound.Play();
+	} else if (!walk)
+		stepsSound.Stop();
 		walk = true;
 		if (!isReturning) {
 			if (!agred) {
 				enemy.Translate (Vector2.up * movingSpeed);
-				GetComponent<Animator>().SetBool("Attack", false);
-				if(weaponCol != null) weaponCol.enabled = false;
-				if (curWeapon != null) curWeapon.GetComponent<Animator>().SetBool("Attack", false);
+				
+				GetComponent <Animator> ().SetBool ("Attack", false);
+				
+				if (weaponCol != null) weaponCol.enabled = false;
+				if (curWeapon != null) curWeapon.GetComponent <Animator> ().SetBool ("Attack", false);
 
 				angle = Vector2.Angle (Vector2.up, wayPoints[wayPointNumber].position - enemy.position);
 				enemy.eulerAngles = new Vector3 (0, 0, enemy.position.x < wayPoints[wayPointNumber].position.x ? -angle : angle);
 
-			} 
-			else if(player != null){
-
-				if (player != null && Vector2.Distance (enemy.position, player.position) - deltaDictance > minDistance) {
+			} else if (player != null) {
+				if (Vector2.Distance (enemy.position, player.position) - deltaDictance > minDistance) {
 					enemy.Translate (Vector2.up * movingSpeed); 
-					GetComponent<Animator>().SetBool("Attack", false);
-					if (weaponCol != null) weaponCol.enabled = false;
-				}
-				else
-				{
-					walk = false; GetComponent<Animator>().SetBool("Attack", true);
-					if (weaponCol != null) { weaponCol.enabled = true; }
-				}
-				/*else if (Vector2.Distance  (enemy.position, player.position) + deltaDictance < minDistance) {
+
+					GetComponent <Animator> ().SetBool ("Attack", false);
+					
+					if (weaponCol != null) 
+						weaponCol.enabled = false;
+
+				} else if (Vector2.Distance  (enemy.position, player.position) + deltaDictance < minDistance) {
 					enemy.Translate (Vector2.down * movingSpeed); 
-					GetComponent<Animator>().SetBool("Attack", false);
-					if (weaponCol != null) weaponCol.enabled = false;*/
-				/*}*/
+
+					GetComponent <Animator> ().SetBool ("Attack", false);
+
+					if (weaponCol != null) 
+						weaponCol.enabled = false;
+
+				} else {
+					walk = false; 
+
+					GetComponent <Animator> ().SetBool ("Attack", true);
+
+					if (weaponCol != null) { 
+						weaponCol.enabled = true;
+					}
+				}
 
 				angle = Vector2.Angle (Vector2.up, player.position - enemy.position);
 				enemy.eulerAngles = new Vector3 (0, 0, enemy.position.x < player.position.x ? -angle : angle);
@@ -97,7 +95,9 @@ public class EnemyMovement : MonoBehaviour {
 				
 			}
 		} else {
+
 			GetComponent <Animator> ().SetBool ("Attack", false);
+			
 			angle = Vector2.Angle (Vector2.up, enter.GetComponent <Transform> ().position - enemy.position);
 			enemy.eulerAngles = new Vector3 (0, 0, enemy.position.x < enter.GetComponent <Transform> ().position.x ? -angle : angle);
 
@@ -128,9 +128,14 @@ public class EnemyMovement : MonoBehaviour {
 		return enters[minNumber];
 	}
 
-	void OnTriggerEnter2D (Collider2D collision) {
+	void OnTriggerStay2D (Collider2D collision) {
 		if (collision.tag == "Room") {
-			isReturning = false;
+			if (collision.gameObject == transform.parent.gameObject) {
+				isReturning = false;
+			} else {
+				isReturning = true;
+				enter = FindEnter();
+			}
 		} else if (collision.tag == "PlayerAttack") {
 			KillEnemy ();
 		}
@@ -138,12 +143,11 @@ public class EnemyMovement : MonoBehaviour {
 
 	void KillEnemy () {
 		if (weaponCol != null) weaponCol.enabled = false;
-		if (curWeapon != null)
-		{
-			curWeapon.GetComponent<Animator>().SetBool("Enemys", false);
-			curWeapon.GetComponent<Animator>().SetBool("Attack", false);
+		if (curWeapon != null) {
+			curWeapon.GetComponent <Animator> ().SetBool ("Enemys", false);
+			curWeapon.GetComponent <Animator> ().SetBool ("Attack", false);
 		}
-		if(curWeapon != null && curWeapon.GetComponent<FireWeapon>() != null) curWeapon.GetComponent<FireWeapon>().bulletsInHolder = curWeapon.GetComponent<FireWeapon>().bulletsNormalInHolder;
+		if (curWeapon != null && curWeapon.GetComponent <FireWeapon> () != null) curWeapon.GetComponent <FireWeapon> ().bulletsInHolder = curWeapon.GetComponent <FireWeapon> ().bulletsNormalInHolder;
 
 		if (curWeapon != null) curWeapon.GetComponent <Weapon> ().Throw();
 	 	GameObject deathBody_ = Instantiate (killedEnemy, transform.position, transform.rotation);
