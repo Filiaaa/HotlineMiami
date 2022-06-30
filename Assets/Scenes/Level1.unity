@@ -18107,7 +18107,7 @@ PrefabInstance:
       objectReference: {fileID: 1646522015}
     - target: {fileID: 1120778624138414924, guid: f10c16d5020a39c4ab27fca6988a0ed7, type: 3}
       propertyPath: movingSpeed
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1120778624138414924, guid: f10c16d5020a39c4ab27fca6988a0ed7, type: 3}
       propertyPath: restartPanel
