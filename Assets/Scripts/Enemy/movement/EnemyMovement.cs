@@ -38,15 +38,14 @@ public class EnemyMovement : MonoBehaviour {
     } else if (player != null && player.GetComponent <PlayerMover> ().curRoom != transform.parent.gameObject) {
 			movingSpeed = 0.1f;
 			agred = false;
-    }
+        }
 
         //////////////////////////////////////////////////////////////////////////////////
     if (walk && !stepsSound.isPlaying) {
-			stepsSound.pitch = Random.Range (0.9f, 1.1f);
-			stepsSound.Play();
-		} else if (!walk)
-			stepsSound.Stop();
-
+		stepsSound.pitch = Random.Range (0.9f, 1.1f);
+		stepsSound.Play();
+	} else if (!walk)
+		stepsSound.Stop();
 		walk = true;
 		if (!isReturning) {
 			if (!agred) {
@@ -138,9 +137,8 @@ public class EnemyMovement : MonoBehaviour {
 				enter = FindEnter();
 			}
 		} else if (collision.tag == "PlayerAttack") {
-				KillEnemy ();
+			KillEnemy ();
 		}
-
 	}
 
 	void KillEnemy () {

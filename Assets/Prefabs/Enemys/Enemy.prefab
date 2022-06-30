@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8699708478594559815}
   - component: {fileID: 84955892879715634}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: StepsSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 7568317754413847410}
   - component: {fileID: 7568317754413847411}
   - component: {fileID: 1020415272}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2071150350, guid: c9bc81f38c0d6e545af4df92a97fbd75, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -257,15 +257,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agringDistanse: 0
-  wayPoints: []
+  wayPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   weaponCol: {fileID: 0}
   deathBody: {fileID: 0}
   playerObj: {fileID: 0}
   curWeapon: {fileID: 0}
   killedEnemy: {fileID: 2674800547056247793, guid: d86340ecfcb3bbd458454e2f602e6068, type: 3}
-  minDistance: 10
+  minDistance: 2
   movingSpeed: 0.05
-  deltaDictance: 1
+  deltaDictance: 0.3
   agred: 0
   walk: 1
   stepsSound: {fileID: 84955892879715634}
@@ -322,7 +326,7 @@ GameObject:
   - component: {fileID: 7568317755246810947}
   - component: {fileID: 7568317755246810945}
   - component: {fileID: 7568317755246810946}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: MovingCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
