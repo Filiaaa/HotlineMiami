@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5084327158303775855, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7568317754413847408, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -44,6 +48,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7568317754413847410, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
+      propertyPath: wayPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7568317754413847410, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
       propertyPath: wayPoints.Array.data[0]
       value: 
       objectReference: {fileID: 0}
@@ -70,6 +78,10 @@ PrefabInstance:
     - target: {fileID: 7568317754413847417, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
       propertyPath: m_Name
       value: DarkArmoredAlian Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7568317754413847417, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7568317754413847420, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
       propertyPath: m_RootOrder
@@ -114,6 +126,10 @@ PrefabInstance:
     - target: {fileID: 7568317754413847420, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7568317755246810956, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1020415272, guid: 4248367f6f0b77a439b571f058ab3c49, type: 3}
