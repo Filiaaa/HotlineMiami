@@ -6,7 +6,7 @@ public class PlayerMover : MonoBehaviour
 {
 	public GameObject currentWeapon, knife, killedPlayer, restartPanel, curRoom;
 	public float movingSpeed;
-	public bool canThrow = true;
+	public bool canThrow = true, isImmortal = false;
 	public AudioSource steps;
 
 	float hor, vert, angle;
@@ -110,11 +110,13 @@ public class PlayerMover : MonoBehaviour
 	}*/
 
 	void KillPlayer () {
+		if (!isImmortal) {
 
-		Instantiate (killedPlayer, transform.position, transform.rotation);
-		restartPanel.SetActive (true);
-    // if (curRoom != null) curRoom.GetComponent <Manager> ().enemysDisAgr();
-		Destroy (gameObject);
+			Instantiate (killedPlayer, transform.position, transform.rotation);
+			restartPanel.SetActive (true);
+	    // if (curRoom != null) curRoom.GetComponent <Manager> ().enemysDisAgr();
+			Destroy (gameObject);
+		}
 	}
 
 }

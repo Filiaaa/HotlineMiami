@@ -74,17 +74,14 @@ public class EnemyMovement : MonoBehaviour {
 					enemy.Translate (Vector2.up * movingSpeed); 
 					GetComponent<Animator>().SetBool("Attack", false);
 					if (weaponCol != null) weaponCol.enabled = false;
-				}
-				else
-				{
+				} else if (Vector2.Distance  (enemy.position, player.position) + deltaDictance < minDistance) {
+					enemy.Translate (Vector2.down * movingSpeed); 
+					GetComponent<Animator>().SetBool("Attack", false);
+					if (weaponCol != null) weaponCol.enabled = false;
+				} else {
 					walk = false; GetComponent <Animator> ().SetBool ("Attack", true);
 					if (weaponCol != null) { weaponCol.enabled = true; }
 				}
-				/*else if (Vector2.Distance  (enemy.position, player.position) + deltaDictance < minDistance) {
-					enemy.Translate (Vector2.down * movingSpeed); 
-					GetComponent<Animator>().SetBool("Attack", false);
-					if (weaponCol != null) weaponCol.enabled = false;*/
-				/*}*/
 
 				angle = Vector2.Angle (Vector2.up, player.position - enemy.position);
 				enemy.eulerAngles = new Vector3 (0, 0, enemy.position.x < player.position.x ? -angle : angle);
