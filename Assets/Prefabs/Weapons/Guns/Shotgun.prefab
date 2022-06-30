@@ -229,18 +229,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.019154549, y: -0.019153595}
+  m_Offset: {x: -0.019154549, y: 0.04461336}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.125, y: 1.09375}
+    oldSize: {x: 1.09375, y: 3.125}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.3623614, y: 1.5490875}
+  m_Size: {x: 3.3623614, y: 3.8871908}
   m_EdgeRadius: 0
 --- !u!114 &7859547251299398495
 MonoBehaviour:
@@ -257,8 +257,8 @@ MonoBehaviour:
   offsetInHands: {x: -0.031, y: 2.635, z: 0}
   offsetRotationInHands: {x: 0, y: 0, z: 0, w: 1}
   spriteInHands: {fileID: 0}
-  curBullet: {fileID: 1702249099695267215, guid: fa48f10bbddcfd941853bed72852ff0b, type: 3}
-  playerBullet: {fileID: 1702249099695267215, guid: fa48f10bbddcfd941853bed72852ff0b, type: 3}
+  curBullet: {fileID: 1702249099695267215, guid: 7af89de25155ba24091d6717791caee3, type: 3}
+  playerBullet: {fileID: 1702249099695267215, guid: 06aba4f1adff41147a15f8197bc1a12c, type: 3}
   attackTime: 1.5
   beforeNextBulletTime: 0.2
   minVarience: -0.6
