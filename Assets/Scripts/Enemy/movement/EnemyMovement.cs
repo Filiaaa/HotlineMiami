@@ -13,39 +13,66 @@ public class EnemyMovement : MonoBehaviour {
 	public AudioSource stepsSound;
 	public Transform [] enters;
 	public int heals = 1;
+	[SerializeField] private LayerMask obstacleLayerMask;
 
 	private int wayPointNumber;
 	private Transform player, enter, enemy;
 	private bool isReturning = false, isImmortal = false;
+	RaycastHit2D[] results;
 
 	void Start () {
 		enemy = GetComponent <Transform> (); 
 		player = playerObj.GetComponent <Transform> ();
 		if (curWeapon != null) {
 			curWeapon.GetComponent <Animator> ().SetBool ("onFloor", false); 
-			curWeapon.GetComponent <Animator> ().SetBool ("Enemys", true);
+			curWeapon.GetComponent <Animator> ().SetBool ("InHands", true);
 		}
 	}
 
 	private float angle;
-	 
-	void FixedUpdate () {
 
-		//agring or disagring
-		var dir = player.position - transform.position;
+/*    private void OnDrawGizmos()
+    {
+		var dir = playerObj.transform.position - transform.position;
 		RaycastHit hit;
-        if (Physics.Raycast(transform.position, dir.normalized, out hit))
-        {
-			print(hit.transform.gameObject.name);
-        }
+		Gizmos.color = Color.red;
+		Gizmos.DrawRay(transform.position, dir);
+		if (Physics.Raycast(playerObj.transform.position, dir.normalized, out hit))
+		{
+			print('S');
+			if (hit.transform == player) {print("HitPlayer");  }
+			else
+			{
+				print("Thing");
+				Gizmos.DrawLine(playerObj.transform.position, hit.transform.position);
+				Gizmos.color = Color.yellow;
+			}
+			// Стреляем
+		}
+	}*/
 
-        if (player != null && (Physics.Raycast(transform.position, dir.normalized, out hit) && hit.transform == player || !Physics.Raycast(transform.position, dir.normalized, out hit)) && Vector2.Angle (transform.up, player.transform.position - transform.position) < 100 && Vector2.Distance (enemy.position, player.position) <= agringDistanse && player.GetComponent <PlayerMover> ().curRoom == transform.parent.gameObject) {
+    void FixedUpdate () {
+/*		if (Physics2D.Linecast(transform.position, player.position, obstacleLayerMask))
+		{
+			print("ThereAreCols");
+		}*/
+		//agring or disagring
+		/*		var dir = player.position - transform.position;
+				RaycastHit hit;
+				if (Physics.Raycast(transform.position, dir.normalized, out hit))
+				{
+					print(hit.transform.gameObject.name);
+				}
+		*/
+		if (player != null && !Physics2D.Linecast(transform.position, player.position, obstacleLayerMask) && Vector2.Angle (transform.up, player.transform.position - transform.position) < 30 && Vector2.Distance (enemy.position, player.position) <= agringDistanse/* && player.GetComponent <PlayerMover> ().curRoom == transform.parent.gameObject*/) {
 			movingSpeed = 0.3f;
 			agred = true;
-    } else if (player != null && player.GetComponent <PlayerMover> ().curRoom != transform.parent.gameObject) {
+		} 
+		else if (player != null && /*player.GetComponent <PlayerMover> ().curRoom != transform.parent.gameObject*/ Physics2D.Linecast(transform.position, player.position, obstacleLayerMask))
+		{
 			movingSpeed = 0.1f;
 			agred = false;
-        }
+		}
 
         //////////////////////////////////////////////////////////////////////////////////
     if (walk && !stepsSound.isPlaying) {
@@ -57,8 +84,8 @@ public class EnemyMovement : MonoBehaviour {
 		if (!isReturning) {
 			if (!agred) {
 				enemy.Translate (Vector2.up * movingSpeed);
-				
-				GetComponent <Animator> ().SetBool ("Attack", false);
+
+				curWeapon.GetComponent <Animator> ().SetBool ("Attack", false);
 				
 				if (weaponCol != null) weaponCol.enabled = false;
 				if (curWeapon != null) curWeapon.GetComponent <Animator> ().SetBool ("Attack", false);
@@ -68,25 +95,25 @@ public class EnemyMovement : MonoBehaviour {
 
 			} else if (player != null) {
 				if (Vector2.Distance (enemy.position, player.position) - deltaDictance > minDistance) {
-					enemy.Translate (Vector2.up * movingSpeed); 
+					enemy.Translate (Vector2.up * movingSpeed);
 
-					GetComponent <Animator> ().SetBool ("Attack", false);
+					curWeapon.GetComponent <Animator> ().SetBool ("Attack", false);
 					
 					if (weaponCol != null) 
 						weaponCol.enabled = false;
 
 				} else if (Vector2.Distance  (enemy.position, player.position) + deltaDictance < minDistance) {
-					enemy.Translate (Vector2.down * movingSpeed); 
+					enemy.Translate (Vector2.down * movingSpeed);
 
-					GetComponent <Animator> ().SetBool ("Attack", false);
+					curWeapon.GetComponent <Animator> ().SetBool ("Attack", false);
 
 					if (weaponCol != null) 
 						weaponCol.enabled = false;
 
 				} else {
-					walk = false; 
+					walk = false;
 
-					GetComponent <Animator> ().SetBool ("Attack", true);
+					curWeapon.GetComponent <Animator> ().SetBool ("Attack", true);
 
 					if (weaponCol != null) { 
 						weaponCol.enabled = true;
@@ -103,7 +130,7 @@ public class EnemyMovement : MonoBehaviour {
 			}
 		} else {
 
-			GetComponent <Animator> ().SetBool ("Attack", false);
+			curWeapon.GetComponent <Animator> ().SetBool ("Attack", false);
 			
 			angle = Vector2.Angle (Vector2.up, enter.GetComponent <Transform> ().position - enemy.position);
 			enemy.eulerAngles = new Vector3 (0, 0, enemy.position.x < enter.GetComponent <Transform> ().position.x ? -angle : angle);
@@ -143,22 +170,29 @@ public class EnemyMovement : MonoBehaviour {
 				isReturning = true;
 				enter = FindEnter();
 			}
-		} else if (collision.tag == "PlayerAttack") {
-			KillEnemy ();
+		}
+		if (collision.tag == "PlayerAttack")
+		{
+			KillEnemy();
 		}
 	}
 
-	void KillEnemy () {
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+		if (collision.gameObject.tag == "PlayerAttack")
+		{
+			if (collision.gameObject.GetComponent<Bullet>()) Destroy(collision.gameObject);
+			KillEnemy();
+		}
+	}
+
+    void KillEnemy () {
 		if (!isImmortal)
-			heals--;
+			heals-= playerObj.GetComponent<PlayerMover>().damage;
 		isImmortal = true;
 		StartCoroutine(ImmortalFrames());
 		if (heals <= 0) {
 			if (weaponCol != null) weaponCol.enabled = false;
-			if (curWeapon != null) {
-				curWeapon.GetComponent <Animator> ().SetBool ("Enemys", false);
-				curWeapon.GetComponent <Animator> ().SetBool ("Attack", false);
-			}
 			if (curWeapon != null && curWeapon.GetComponent <FireWeapon> () != null) curWeapon.GetComponent <FireWeapon> ().bulletsInHolder = curWeapon.GetComponent <FireWeapon> ().bulletsNormalInHolder;
 
 			if (curWeapon != null) curWeapon.GetComponent <Weapon> ().Throw();

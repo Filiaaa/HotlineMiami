@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CursorAnimation : MonoBehaviour
 {
+    public Vector2 offset;
     public Texture2D[] Cursors;
     private float Timer = 1f;
     private int Temp = 0;
@@ -14,7 +15,7 @@ public class CursorAnimation : MonoBehaviour
         if (Temp >= Cursors.Length) Temp = 0;
         if (Timer <= 0)
         {
-            Cursor.SetCursor(Cursors[Temp], Vector2.zero, CursorMode.ForceSoftware);
+            Cursor.SetCursor(Cursors[Temp], offset, CursorMode.ForceSoftware);
             Temp++;
             Timer = 0.1f; // 0.04f = Speed
         }

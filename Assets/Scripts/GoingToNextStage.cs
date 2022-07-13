@@ -7,7 +7,6 @@ public class GoingToNextStage : MonoBehaviour
 {
     public GameObject levelClosingAnim;
     public GameObject[] enemies;
-    bool allEnemiesDie = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

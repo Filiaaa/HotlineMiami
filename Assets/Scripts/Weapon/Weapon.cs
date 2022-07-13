@@ -21,12 +21,14 @@ public class Weapon : MonoBehaviour
 		transform.localRotation = offsetRotationInHands;
 		GetComponent <BoxCollider2D> ().enabled = false;
 		GetComponent <Animator> ().SetBool ("onFloor", false);
+		GetComponent<Animator>().SetBool("InHands", true);
 		/*        GetComponent<SpriteRenderer>().sprite = spriteInHands;*/
 	}
 
 	public virtual void Throw () {
 		transform.parent = null;
 		GetComponent <Animator> ().SetBool ("onFloor", true);
+		GetComponent<Animator>().SetBool("InHands", true);
 		GetComponent <BoxCollider2D> ().enabled = true;
 	}
 }

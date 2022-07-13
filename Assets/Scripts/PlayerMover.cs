@@ -1,62 +1,108 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMover : MonoBehaviour
 {
+	public Text bulletText;
 	public GameObject currentWeapon, knife, killedPlayer, restartPanel, curRoom;
-	public float movingSpeed;
+	public float movingSpeed, soundRadius = 10;
+	public static float bulletSpeedBuff = 1;
 	public bool canThrow = true, isImmortal = false;
 	public AudioSource steps;
+	public int hearts = 1, damage = 16, soundResultsNumb;
+	List<Collider2D> soundResults = new List<Collider2D>();
+	[SerializeField] private ContactFilter2D enemyContactFilter;
 
 	float hor, vert, angle;
 	Rigidbody2D rb;
 	bool attacked = true;
 	
 	private void Start () {
+		Time.timeScale = 1;
+		bulletSpeedBuff = 1;
 		currentWeapon = knife;
 		rb = GetComponent <Rigidbody2D> ();
 	}
 
 	void FixedUpdate () {
+/*		soundResults.Clear();*/
+		if (currentWeapon.GetComponent<FireWeapon>() == null)
+        {
+			bulletText.gameObject.SetActive(false);
+		}
 		if (currentWeapon == null) {
 			currentWeapon = knife;
 			GetComponent <Animator> ().SetBool ("withKnife", true);
 			knife.SetActive (true);
 		}
 		if (Input.GetMouseButton (0)) {
-			currentWeapon.SetActive (true);
 			attacked = currentWeapon.GetComponent <Weapon> ().Attack();
+            if (attacked)
+            {
+				soundResultsNumb = Physics2D.OverlapCircle(transform.position, soundRadius, enemyContactFilter, soundResults);
+                foreach (Collider2D nearEnemy in soundResults)
+                {
+					nearEnemy.gameObject.GetComponent<EnemyMovement>().agred = true;
+
+				}
+				
+			}
+			bulletText.gameObject.SetActive(true);
+			if (currentWeapon.TryGetComponent(out FireWeapon FW))
+			{
+				bulletText.text = FW.bulletsInHolder.ToString() + "/" + FW.bulletsNormalInHolder.ToString();
+
+
+			}
+		
+			/*			if (currentWeapon != knife)
+						{
+							currentWeapon.GetComponent<SpriteRenderer>().enabled = true;
+						}*/
+			/*		GetComponent<Animator>().SetBool("Attack", true);*/
 			if (!attacked) {
 				currentWeapon = null;
 			}
-		} 
-
-		if (!Input.GetMouseButton (0)) {
-			GetComponent <Animator> ().SetBool ("Attack", false);
-			canThrow = true;
-			if (currentWeapon != null && currentWeapon != knife)
-				currentWeapon.GetComponent <Animator> ().SetBool ("Attack", false);
-			// currentWeapon.SetActive (false);
 		}
 
-// 		else if (!Input.GetMouseButton (0)) {
-// /*            GetComponent<Animator>().SetBool("Attack", false);*/
-//       if (currentWeapon != knife) {
-// 				currentWeapon.SetActive (false);
-// /*				currentWeapon.GetComponent<Animator>().SetBool("Attack", false);*/
-			// }
-		// }
+        if (!Input.GetMouseButton(0))
+        {
+/*            GetComponent<Animator>().SetBool("Attack", false);*/
+            if (currentWeapon.TryGetComponent(out FireWeapon FW))
+            {
+				currentWeapon.GetComponent<Animator>().SetBool("Attack", false);
+               
+
+            }
+
+            // currentWeapon.SetActive (false);
+        }
+
+        // 		else if (!Input.GetMouseButton (0)) {
+        // /*            GetComponent<Animator>().SetBool("Attack", false);*/
+        //       if (currentWeapon != knife) {
+        // 				currentWeapon.SetActive (false);
+        // /*				currentWeapon.GetComponent<Animator>().SetBool("Attack", false);*/
+        // }
+        // }
 
 
-		vert = Input.GetAxis ("Vertical");
+        vert = Input.GetAxis ("Vertical");
 		hor = Input.GetAxis ("Horizontal");
 		rb.velocity = new Vector2(hor, vert) * movingSpeed;
-    if (rb.velocity == Vector2.zero) {
+		if (rb.velocity == Vector2.zero) {
+			currentWeapon.SetActive(true);
 			GetComponent <Animator> ().SetBool("walk", false);
 			steps.Stop();
 		}
 		else  {
+			if (currentWeapon.GetComponent<meleeWeapon>() != null && !currentWeapon.GetComponent<meleeWeapon>().attack)
+            {
+				currentWeapon.SetActive(false);
+
+			}
 			GetComponent <Animator> ().SetBool("walk", true);
 			if (!steps.isPlaying) {
 				steps.pitch = Random.Range (0.9f, 1.1f);
@@ -82,6 +128,10 @@ public class PlayerMover : MonoBehaviour
 			GetComponent <Animator> ().SetBool ("withKnife", false);
 			currentWeapon = collision.gameObject;
 			currentWeapon.GetComponent <Weapon> ().Take (transform);
+            if (currentWeapon.GetComponent<FireWeapon>() != null)
+            {
+				currentWeapon.GetComponent<FireWeapon>().colInPlayersHands.enabled = true;
+			}
 			// currentWeapon.SetActive (false);
 		}
 
@@ -95,6 +145,7 @@ public class PlayerMover : MonoBehaviour
 			curRoom.GetComponent <Manager> ().enemysAgr();
 */
 		/*}*/ /*else*/ if (collision.tag == "EnemyAttack") {
+			Destroy(collision.gameObject);
 			KillPlayer ();
 		}
 	}
@@ -111,11 +162,14 @@ public class PlayerMover : MonoBehaviour
 
 	public void KillPlayer () {
 		if (!isImmortal) {
-
-			Instantiate (killedPlayer, transform.position, transform.rotation);
-			restartPanel.SetActive (true);
-	    // if (curRoom != null) curRoom.GetComponent <Manager> ().enemysDisAgr();
-			Destroy (gameObject);
+			hearts--;
+            if (hearts == 0)
+            {
+				Instantiate(killedPlayer, transform.position, transform.rotation);
+				restartPanel.SetActive(true);
+				// if (curRoom != null) curRoom.GetComponent <Manager> ().enemysDisAgr();
+				Destroy(gameObject);
+			}
 		}
 	}
 
