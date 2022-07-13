@@ -8,7 +8,7 @@ public class EnemyMovement : MonoBehaviour {
 	public BoxCollider2D weaponCol;
 	public Sprite deathBody;
 	public GameObject playerObj, curWeapon, killedEnemy;
-	public float minDistance = 0.5f, movingSpeed = 0.1f, deltaDictance = 0.3f;
+	public float minDistance = 0.5f, movingSpeed = 0.01f, deltaDictance = 0.3f;
 	public bool agred = false, walk = true;
 	public AudioSource stepsSound;
 	public Transform [] enters;
@@ -70,7 +70,7 @@ public class EnemyMovement : MonoBehaviour {
 		} 
 		else if (player != null && /*player.GetComponent <PlayerMover> ().curRoom != transform.parent.gameObject*/ Physics2D.Linecast(transform.position, player.position, obstacleLayerMask))
 		{
-			movingSpeed = 0.1f;
+			movingSpeed = 0.01f;
 			agred = false;
 		}
 
@@ -171,6 +171,10 @@ public class EnemyMovement : MonoBehaviour {
 				enter = FindEnter();
 			}
 		}
+	}
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
 		if (collision.tag == "PlayerAttack")
 		{
 			KillEnemy();
@@ -187,10 +191,10 @@ public class EnemyMovement : MonoBehaviour {
 	}
 
     void KillEnemy () {
-		if (!isImmortal)
+/*		if (!isImmortal)*/
 			heals-= playerObj.GetComponent<PlayerMover>().damage;
-		isImmortal = true;
-		StartCoroutine(ImmortalFrames());
+/*		isImmortal = true;*/
+/*		StartCoroutine(ImmortalFrames());*/
 		if (heals <= 0) {
 			if (weaponCol != null) weaponCol.enabled = false;
 			if (curWeapon != null && curWeapon.GetComponent <FireWeapon> () != null) curWeapon.GetComponent <FireWeapon> ().bulletsInHolder = curWeapon.GetComponent <FireWeapon> ().bulletsNormalInHolder;
@@ -201,10 +205,10 @@ public class EnemyMovement : MonoBehaviour {
 			Destroy (gameObject);
 		}
 	}
-
+/*
 	IEnumerator ImmortalFrames(){
 		yield return new WaitForSeconds(0.6f);
 		isImmortal = false;
 	}
-
+*/
 }
