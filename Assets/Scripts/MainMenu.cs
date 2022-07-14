@@ -63,8 +63,13 @@ public class MainMenu : MonoBehaviour
 
     public void ChangeEffectsVolume()
     {
+
+        print(effectsVol.value);
         audioMixer.SetFloat("EffectsVolume", effectsVol.value);
+        audioMixer.GetFloat("EffectsVolume",out float value);
+
         PlayerPrefs.SetFloat("EffectsVolume", effectsVol.value);
+
     }
 
     public void ChangeMusicVolume()

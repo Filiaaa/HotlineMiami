@@ -6,6 +6,7 @@ public class Weapon : MonoBehaviour
 {
 	public Vector3 offsetInHands;
 	public Quaternion offsetRotationInHands;
+	public float soundRadius;
 
 
 	public Sprite spriteInHands;

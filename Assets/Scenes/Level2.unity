@@ -75922,6 +75922,14 @@ PrefabInstance:
       value: 1.5277778
       objectReference: {fileID: 0}
     - target: {fileID: 5191757497768255636, guid: 509fac80fac4f3a47b57f26569b993ce, type: 3}
+      propertyPath: soundRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5191757497768255636, guid: 509fac80fac4f3a47b57f26569b993ce, type: 3}
+      propertyPath: bulletsInHolder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5191757497768255636, guid: 509fac80fac4f3a47b57f26569b993ce, type: 3}
       propertyPath: colInPlayersHands
       value: 
       objectReference: {fileID: 1250513933}
