@@ -9,7 +9,7 @@ public class FireWeapon : Weapon
 	public float attackTime, beforeNextBulletTime;
 	public float minVarience;
 	public float maxVarience;
-	public int force, bulletsInQueue, bulletsInHolder, bulletsNormalInHolder;
+	public int force, bulletsInQueue, bulletsInHolder, bulletsNormalInHolder, ricochetCount;
 	public	bool canAttack = true;
 	public AudioSource attackSound;
 
@@ -56,6 +56,7 @@ public class FireWeapon : Weapon
 			Vector3 instPos = new Vector3(transform.position.x, transform.position.y - 0.2f, transform.position.z);
 			var bullet_ = Instantiate (curBullet, instPos, transform.rotation, null);
 			navigation = new Vector3 (transform.up.x + Random.Range (minVarience, maxVarience), transform.up.y + Random.Range (minVarience, maxVarience), transform.up.z);
+			bullet_.GetComponent<Bullet>().ricochetCount = ricochetCount;
 			bullet_.GetComponent <Rigidbody2D> ().AddForce (navigation * force * PlayerMover.bulletSpeedBuff/*, ForceMode2D.Impulse*/);
 			yield return new WaitForSeconds (beforeNextBulletTime);
 		}

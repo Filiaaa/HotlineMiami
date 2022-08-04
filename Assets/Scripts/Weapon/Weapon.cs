@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+	public int soundRadius = 0;
 	public Vector3 offsetInHands;
 	public Quaternion offsetRotationInHands;
-	public float soundRadius;
 
 
 	public Sprite spriteInHands;

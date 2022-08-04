@@ -56,7 +56,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -116,12 +116,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d9d528e0ba442f4381fdf9853dd105b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletText: {fileID: 0}
   currentWeapon: {fileID: 0}
   knife: {fileID: 0}
   killedPlayer: {fileID: 2656129908650568117, guid: 104e54492efc2fa489a3e71cc7b152f1, type: 3}
   restartPanel: {fileID: 0}
+  curRoom: {fileID: 0}
   movingSpeed: 10
+  soundRadius: 10
   canThrow: 1
+  isImmortal: 0
+  steps: {fileID: 0}
+  hearts: 1
+  damage: 16
+  soundResultsNumb: 0
+  enemyContactFilter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!50 &1120778624138414931
 Rigidbody2D:
   serializedVersion: 4

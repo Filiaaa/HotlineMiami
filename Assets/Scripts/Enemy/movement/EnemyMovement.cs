@@ -17,8 +17,8 @@ public class EnemyMovement : MonoBehaviour {
 
 	private int wayPointNumber;
 	private Transform player, enter, enemy;
-	private bool isReturning = false/*, isImmortal = false*/;
-/*	RaycastHit2D[] results;*/
+	private bool isReturning = false, isImmortal = false;
+	RaycastHit2D[] results;
 
 	void Start () {
 		enemy = GetComponent <Transform> (); 
@@ -185,7 +185,7 @@ public class EnemyMovement : MonoBehaviour {
     {
 		if (collision.gameObject.tag == "PlayerAttack")
 		{
-			if (collision.gameObject.GetComponent<Bullet>()) Destroy(collision.gameObject);
+			if (collision.gameObject.GetComponent<Bullet>()) {Destroy(collision.gameObject);}
 			KillEnemy();
 		}
 	}

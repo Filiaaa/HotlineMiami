@@ -28,21 +28,43 @@ public class PlayerMover : MonoBehaviour
 
 	void FixedUpdate () {
 		/*		soundResults.Clear();*/
-		if (currentWeapon == null)
+		soundRadius = currentWeapon.GetComponent<Weapon>().soundRadius;
+        if (currentWeapon != knife)
+        {
+			knife.SetActive(false);
+        }
+        else { knife.SetActive(true); }
+/*		if (currentWeapon.TryGetComponent(out FireWeapon FW))
 		{
-			currentWeapon = knife;
-			GetComponent<Animator>().SetBool("withKnife", true);
-			knife.SetActive(true);
-		}
+			bulletText.text = FW.bulletsInHolder.ToString() + "/" + FW.bulletsNormalInHolder.ToString();
+
+
+		}*/
 		if (currentWeapon.GetComponent<FireWeapon>() == null)
         {
 			bulletText.gameObject.SetActive(false);
+		}
+        else
+        {
+			bulletText.gameObject.SetActive(true);
+			bulletText.text = currentWeapon.GetComponent<FireWeapon>().bulletsInHolder.ToString() + "/" + currentWeapon.GetComponent<FireWeapon>().bulletsNormalInHolder.ToString();
+		}
+        if (Input.GetKey(KeyCode.G) && currentWeapon != knife)
+        {
+			canThrow = true;
+			currentWeapon.GetComponent<Weapon>().Throw();
+			currentWeapon = null;
+		}
+		if (currentWeapon == null) {
+			currentWeapon = knife;
+			GetComponent <Animator> ().SetBool ("withKnife", true);
+			knife.SetActive (true);
 		}
 		if (Input.GetMouseButton (0)) {
 			attacked = currentWeapon.GetComponent <Weapon> ().Attack();
             if (attacked)
             {
-				Physics2D.OverlapCircle(transform.position, currentWeapon.GetComponent<Weapon>().soundRadius, enemyContactFilter, soundResults);
+				soundResultsNumb = Physics2D.OverlapCircle(transform.position, soundRadius, enemyContactFilter, soundResults);
                 foreach (Collider2D nearEnemy in soundResults)
                 {
 					nearEnemy.gameObject.GetComponent<EnemyMovement>().agred = true;
@@ -51,12 +73,6 @@ public class PlayerMover : MonoBehaviour
 				
 			}
 			bulletText.gameObject.SetActive(true);
-			if (currentWeapon.TryGetComponent(out FireWeapon FW))
-			{
-				bulletText.text = FW.bulletsInHolder.ToString() + "/" + FW.bulletsNormalInHolder.ToString();
-
-
-			}
 		
 			/*			if (currentWeapon != knife)
 						{
@@ -71,7 +87,7 @@ public class PlayerMover : MonoBehaviour
         if (!Input.GetMouseButton(0))
         {
 /*            GetComponent<Animator>().SetBool("Attack", false);*/
-            if (currentWeapon.TryGetComponent(out FireWeapon FW))
+            if (currentWeapon.TryGetComponent(out FireWeapon fw))
             {
 				currentWeapon.GetComponent<Animator>().SetBool("Attack", false);
                
@@ -125,8 +141,7 @@ public class PlayerMover : MonoBehaviour
 		if (collision.tag == "Weapon" && Input.GetMouseButtonDown (1) && canThrow) {
 			if (currentWeapon != knife) {
 				currentWeapon.GetComponent <Weapon> ().Throw();
-			}
-			knife.SetActive(false);
+			} 
 			GetComponent <Animator> ().SetBool ("withKnife", false);
 			currentWeapon = collision.gameObject;
 			currentWeapon.GetComponent <Weapon> ().Take (transform);

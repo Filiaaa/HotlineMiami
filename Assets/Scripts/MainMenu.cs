@@ -14,6 +14,10 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         print(Time.timeScale);
+        if (!PlayerPrefs.HasKey("lastSceneIndex"))
+        {
+            PlayerPrefs.SetInt("lastSceneIndex", 0);
+        }
         if (PlayerPrefs.HasKey("EffectsVolume"))
         {
             audioMixer.SetFloat("EffectsVolume", PlayerPrefs.GetFloat("EffectsVolume"));
@@ -63,13 +67,8 @@ public class MainMenu : MonoBehaviour
 
     public void ChangeEffectsVolume()
     {
-
-        print(effectsVol.value);
         audioMixer.SetFloat("EffectsVolume", effectsVol.value);
-        audioMixer.GetFloat("EffectsVolume",out float value);
-
         PlayerPrefs.SetFloat("EffectsVolume", effectsVol.value);
-
     }
 
     public void ChangeMusicVolume()
@@ -99,6 +98,6 @@ public class MainMenu : MonoBehaviour
 
     IEnumerator ClosingAnim(){
         yield return new WaitForSeconds(0.3f);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(PlayerPrefs.GetInt("lastSceneIndex", 0));
     }
 }
