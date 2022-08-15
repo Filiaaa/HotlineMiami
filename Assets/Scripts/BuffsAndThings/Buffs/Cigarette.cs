@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Cigarette : Buff
 {
 
+
     public override void Use()
     {
         player.damage = 2;

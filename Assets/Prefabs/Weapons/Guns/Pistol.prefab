@@ -313,6 +313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 804b5acff8fe27f4db1c93d1a9a6b8d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimParametre: withFire
   soundRadius: 10
   offsetInHands: {x: -0.018, y: 2.5, z: 0}
   offsetRotationInHands: {x: 0, y: 0, z: 0, w: 0}
@@ -328,6 +329,7 @@ MonoBehaviour:
   bulletsInQueue: 1
   bulletsInHolder: 100
   bulletsNormalInHolder: 12
+  ricochetCount: 0
   canAttack: 1
   attackSound: {fileID: 665840913272430436}
 --- !u!95 &636888881

@@ -56,6 +56,7 @@ public class UseBuff : MonoBehaviour
 
     IEnumerator ActivatingBuff()
     {
+        
         yield return new WaitForSeconds(timeToEnableCol);
         GetComponent<BoxCollider2D>().enabled = true;
     }

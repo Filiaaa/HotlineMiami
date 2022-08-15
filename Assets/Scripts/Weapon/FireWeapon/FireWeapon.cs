@@ -76,6 +76,7 @@ public class FireWeapon : Weapon
 	}
 
 	public override void Throw () {
+		transform.parent.gameObject.GetComponent<Animator>().SetBool(playerAnimParametre, false);
 		GetComponent<FireWeapon>().colInPlayersHands.enabled = false;
 		GetComponent<Animator>().SetBool("InHands", false);
 		GetComponent <BoxCollider2D> ().enabled = true;

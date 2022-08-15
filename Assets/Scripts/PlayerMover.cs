@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PlayerMover : MonoBehaviour
 {
+	public GameObject movingPartWeaponOfAnim;
+	public string[] parametres;
 	public Text bulletText;
 	public GameObject currentWeapon, knife, killedPlayer, restartPanel, curRoom;
 	public float movingSpeed, soundRadius = 10;
@@ -17,6 +19,8 @@ public class PlayerMover : MonoBehaviour
 
 	float hor, vert, angle;
 	Rigidbody2D rb;
+	Animator animator;
+	public SpriteRenderer movingPart;
 	bool attacked = true;
 	
 	private void Start () {
@@ -24,16 +28,38 @@ public class PlayerMover : MonoBehaviour
 		bulletSpeedBuff = 1;
 		currentWeapon = knife;
 		rb = GetComponent <Rigidbody2D> ();
+		animator = GetComponent<Animator>();
+		movingPart = movingPartWeaponOfAnim.GetComponent<SpriteRenderer>();
 	}
 
 	void FixedUpdate () {
-		/*		soundResults.Clear();*/
-		soundRadius = currentWeapon.GetComponent<Weapon>().soundRadius;
-        if (currentWeapon != knife)
+
+        animator.SetBool(currentWeapon.GetComponent<Weapon>().playerAnimParametre, true);
+        if (currentWeapon.GetComponent<Weapon>().spriteInHands != null && !currentWeapon.GetComponent<meleeWeapon>().attack)
+        {
+			currentWeapon.SetActive(false);
+
+			movingPartWeaponOfAnim.SetActive(true);
+            movingPart.sprite = currentWeapon.GetComponent<Weapon>().spriteInHands;
+        }
+        else
+        {
+            movingPartWeaponOfAnim.SetActive(false);
+        }
+        for (int i = 0; i < parametres.Length; i++)
+        {
+            if (parametres[i] != currentWeapon.GetComponent<Weapon>().playerAnimParametre)
+            {
+                animator.SetBool(parametres[i], false);
+            }
+        }
+        /*		soundResults.Clear();*/
+        soundRadius = currentWeapon.GetComponent<Weapon>().soundRadius;
+/*        if (currentWeapon != knife)
         {
 			knife.SetActive(false);
         }
-        else { knife.SetActive(true); }
+        else { knife.SetActive(true); }*/
 /*		if (currentWeapon.TryGetComponent(out FireWeapon FW))
 		{
 			bulletText.text = FW.bulletsInHolder.ToString() + "/" + FW.bulletsNormalInHolder.ToString();
@@ -57,8 +83,8 @@ public class PlayerMover : MonoBehaviour
 		}
 		if (currentWeapon == null) {
 			currentWeapon = knife;
-			GetComponent <Animator> ().SetBool ("withKnife", true);
-			knife.SetActive (true);
+/*			animator.SetBool ("withMeleeOneHand", true);
+			movingPartWeaponOfAnim.sprite = knife.GetComponent<SpriteRenderer>().sprite;*/
 		}
 		if (Input.GetMouseButton (0)) {
 			attacked = currentWeapon.GetComponent <Weapon> ().Attack();
@@ -72,7 +98,10 @@ public class PlayerMover : MonoBehaviour
 				}
 				
 			}
-			bulletText.gameObject.SetActive(true);
+			if(currentWeapon.GetComponent<FireWeapon>() != null)
+            {
+				bulletText.gameObject.SetActive(true);
+			}
 		
 			/*			if (currentWeapon != knife)
 						{
@@ -83,6 +112,8 @@ public class PlayerMover : MonoBehaviour
 				currentWeapon = null;
 			}
 		}
+
+        
 
         if (!Input.GetMouseButton(0))
         {
@@ -110,8 +141,8 @@ public class PlayerMover : MonoBehaviour
 		hor = Input.GetAxis ("Horizontal");
 		rb.velocity = new Vector2(hor, vert) * movingSpeed;
 		if (rb.velocity == Vector2.zero) {
-			currentWeapon.SetActive(true);
-			GetComponent <Animator> ().SetBool("walk", false);
+/*			currentWeapon.SetActive(true);*/
+			animator.SetBool("walk", false);
 			steps.Stop();
 		}
 		else  {
@@ -120,7 +151,7 @@ public class PlayerMover : MonoBehaviour
 				currentWeapon.SetActive(false);
 
 			}
-			GetComponent <Animator> ().SetBool("walk", true);
+			animator.SetBool("walk", true);
 			if (!steps.isPlaying) {
 				steps.pitch = Random.Range (0.9f, 1.1f);
 				steps.Play();
@@ -141,8 +172,8 @@ public class PlayerMover : MonoBehaviour
 		if (collision.tag == "Weapon" && Input.GetMouseButtonDown (1) && canThrow) {
 			if (currentWeapon != knife) {
 				currentWeapon.GetComponent <Weapon> ().Throw();
-			} 
-			GetComponent <Animator> ().SetBool ("withKnife", false);
+			}
+/*			animator.SetBool ("withKnife", false);*/
 			currentWeapon = collision.gameObject;
 			currentWeapon.GetComponent <Weapon> ().Take (transform);
             if (currentWeapon.GetComponent<FireWeapon>() != null)

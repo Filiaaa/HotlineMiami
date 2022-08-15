@@ -12,6 +12,7 @@ public class Bullet : MonoBehaviour
     /*    public Transform normal;
         Vector3 result;
         float velocity;*/
+    
 
 
     private void OnCollisionEnter2D(Collision2D collision)

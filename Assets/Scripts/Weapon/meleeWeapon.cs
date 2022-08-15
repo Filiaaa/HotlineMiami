@@ -14,6 +14,11 @@ public class meleeWeapon : Weapon
 	public override bool Attack() {
 		
 		if (!attack) {
+			if(transform.parent.GetComponent<PlayerMover>() != null)
+            {
+				transform.parent.GetComponent<PlayerMover>().canThrow = false;
+
+			}
             gameObject.SetActive(true);
 			GetComponent<Animator>().SetBool("Attack", true);
 			gameObject.transform.localPosition = Vector3.zero;
@@ -35,12 +40,18 @@ public class meleeWeapon : Weapon
 	{
 
 		yield return new WaitForSeconds (attackTime);
-		GetComponent<Animator>().SetBool("Attack", false);
-		gameObject.transform.localPosition = offsetInHands;
+		gameObject.SetActive(false);
+		/*		GetComponent<Animator>().SetBool("Attack", false);
+				gameObject.transform.localPosition = offsetInHands;*/
 		attackCol.enabled = false;
 		transform.parent.gameObject.GetComponent<SpriteRenderer>().enabled = true;
 		/*		transform.parent.GetComponent <SpriteRenderer> ().enabled = true;*/
 		attack = false;
+		if (transform.parent.GetComponent<PlayerMover>() != null)
+		{
+			transform.parent.GetComponent<PlayerMover>().canThrow = true;
+
+		}
 
 		/*		gameObject.SetActive(false);*/
 	}

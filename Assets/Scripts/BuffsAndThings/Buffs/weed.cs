@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class weed : Buff
 {
+
+
+
+
+
     public float newTimeScale;
 
     public override void Use()
@@ -37,4 +42,6 @@ public class weed : Buff
             yield return new WaitForSeconds(1f);
         }
     }
+
+
 }

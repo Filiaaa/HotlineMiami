@@ -17,7 +17,7 @@ public class EnemyMovement : MonoBehaviour {
 
 	private int wayPointNumber;
 	private Transform player, enter, enemy;
-	private bool isReturning = false, isImmortal = false;
+	private bool isReturning = false;
 	RaycastHit2D[] results;
 
 	void Start () {
