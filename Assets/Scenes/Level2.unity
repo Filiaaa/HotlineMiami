@@ -9324,6 +9324,9 @@ MonoBehaviour:
   - {fileID: 1387670342}
   - {fileID: 1291107904}
   - {fileID: 487223971}
+  playersCanvas: {fileID: 1859564102}
+  warningText: {fileID: 311429710872436357, guid: 6f7d329b3b5db3f40886f7fd95e3a8c1, type: 3}
+  sceneGoingID: 0
 --- !u!61 &515566918
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -80240,7 +80243,7 @@ GameObject:
   - component: {fileID: 1859564099}
   - component: {fileID: 1859564098}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Player's Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
