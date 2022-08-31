@@ -9,14 +9,17 @@ using UnityEngine.SceneManagement;
 public class LoadScene : MonoBehaviour
 {
     AsyncOperation asyncOperation;
+    public Image back;
+    public static Sprite backGround;
     public Image loadBar;
     public Text barTxt;
-    public int sceneId;
+    public static int sceneId;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        back.sprite = backGround;
         StartCoroutine(LoadSceneCor());
     }
 

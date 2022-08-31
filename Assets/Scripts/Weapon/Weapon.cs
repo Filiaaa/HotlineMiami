@@ -38,13 +38,17 @@ public class Weapon : MonoBehaviour
 
 	public virtual void Throw () {
 		gameObject.SetActive(true);
-		if (transform.parent.GetComponent<PlayerMover>() != null)
+		if (transform.parent != null && transform.parent.GetComponent<PlayerMover>() != null)
 		{
 			transform.parent.GetComponent<Animator>().SetBool(playerAnimParametre, false);
 		}
+
 		transform.parent = null;
-		GetComponent <Animator> ().SetBool ("onFloor", true);
-		GetComponent<Animator>().SetBool("InHands", true);
+		if(GetComponent<meleeWeapon>() != null)
+        {
+			GetComponent<meleeWeapon>().attackCol.tag = "PlayerAttack";
+
+		}
 		GetComponent <BoxCollider2D> ().enabled = true;
 	}
 }

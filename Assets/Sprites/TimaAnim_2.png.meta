@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TimaAnim_2_0
+      name: TimaAnim_2_
       rect:
         serializedVersion: 2
         x: 0
@@ -434,12 +434,12 @@ TextureImporter:
       name: TimaAnim_2_16
       rect:
         serializedVersion: 2
-        x: 3895
-        y: 1663
-        width: 240
-        height: 1
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1005
+        y: 1500
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1354,6 +1354,4122 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_59
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 0
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9718f24998e142247bf33ae726971faf
+      internalID: -870798867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_60
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 150
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd0a258fc28fd1478aee2a8b8c4f2b5
+      internalID: 1677466914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_61
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 300
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ecf35fcc2447b64c97ee09d434a959a
+      internalID: 1563217745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_62
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 450
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64ca448a972ae648858043b8caea466
+      internalID: -1222237459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_63
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 600
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0475093e93debed44a76ce834af79b92
+      internalID: 1010654505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_64
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 750
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cc59d9ff0a98845bc80cbd15730bf8
+      internalID: 2064987549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_65
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 900
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300c1286a7493de4d9e5a0f648babf70
+      internalID: 1702929488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_66
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 1050
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307a295d075cb074fa628589e1f953b1
+      internalID: -2027394070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_67
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 1200
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc164223000466c42adfb8a17c0d8ae1
+      internalID: -771134004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_68
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 1350
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dec102e20169ac4fbbcf127321ac264
+      internalID: 1732489064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_69
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 0
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab986e23f8b5c94a98a34a20e2829c1
+      internalID: 1653713025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_70
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 150
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fead9e5715bcf4e985c9502d681a53
+      internalID: 1621319278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_71
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 300
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef56a7f3a8d17d46ab3982403a6c62e
+      internalID: -1365328771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_72
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 450
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83981d182575e9243b08a9f4de96bd33
+      internalID: -17758832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_73
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 600
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b5891331d538040b85f3e7e85abaeb
+      internalID: -458441021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_74
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 750
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c222134391ab1f54ebfc5ca70ed6f40a
+      internalID: -1143325133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_75
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 900
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb7edf85dd8dc8419b548225128fab4
+      internalID: -849369914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_76
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1050
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0ea5fac1bbe3447b88a7d723338efe
+      internalID: 1028788286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_77
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1200
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91cc1ae2d579ca64c9751b99e560895b
+      internalID: 27385994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_78
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1350
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95dfb18d7fe0fe4185e4eb9061d7c5d
+      internalID: 1341144012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_79
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 0
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39493bc40fe224e4abec1a04987d2029
+      internalID: 934642916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_80
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 150
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0053a0943c221cf4387a9f58b5fd95f3
+      internalID: 406561999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_81
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 300
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287d1af3a1f5c8e4886b7381d287026b
+      internalID: -1217213627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_82
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 450
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b9bfb8c3de9ea49a18da3a4972669c
+      internalID: 499791268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_83
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 600
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e42abe3d31c4043a80637be05002b1
+      internalID: 885924665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_84
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 750
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d0ef1ff1f0a374d9e9c933672e799f
+      internalID: 1313795211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_85
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 900
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4e3c3bfff527042ae37e197c86fddf
+      internalID: 619834874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_86
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1052
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3702bd845e2af547ade087d09931f78
+      internalID: -1534174055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_87
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1200
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd176ae4cc9937449b16c44aebcd3246
+      internalID: 236832008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_88
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1350
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627dac1fd79ad2f48a3eb2d0f33f3c18
+      internalID: -454849428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_89
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 0
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6b2a188c4652a4093a3a0509a11a31
+      internalID: 120461638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_90
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 150
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9579e7acc2aeef84097fe335567a557f
+      internalID: -2049831004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_91
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 300
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec324162a8ca33941a8ecbf57dd037f2
+      internalID: -621615906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_92
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 450
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3923e85e8b14a6a4298b36cf3e0a1fd6
+      internalID: 1972072638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_93
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 600
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160a20cbe5d7a4a41af8604907a53f77
+      internalID: 727821646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_94
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 750
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4115798930da9944294a124e7ec1a9ab
+      internalID: 1618396370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_95
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 900
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786e328df69aae84a83c5233fba76824
+      internalID: 694463209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_96
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1050
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56b89365fe1a3e4ebdd5d18bce83a2e
+      internalID: -1206963609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_97
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1200
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9255c159fd7bcf4ca0313fe9a206992
+      internalID: -1763587361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_98
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1350
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93d884b7864d6a479f507981c0eb1d2
+      internalID: 1961730556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_99
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 0
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff68dbac8923fd040a73309b6243a0b3
+      internalID: 55413029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_100
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 150
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b444237dff1e9943bb11a45f0218d7d
+      internalID: 295963928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_101
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 300
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9abfd0e8468067947ac3c0ddab1565cb
+      internalID: -56388760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_102
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 450
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2680e2ddf308bbf42af424f0a7ad6c8b
+      internalID: 358481725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_103
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 600
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68bba3aff5405e41bdb28d874b19b1f
+      internalID: 937231940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_104
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 750
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012c4e0d96fe1bc42a6aa00ab31fa26b
+      internalID: 1045764640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_105
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 900
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32f45739aa04674586cc2593f819ba8
+      internalID: 2052640002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_106
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 1050
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0c90a3bfa807b4e898c74e7e91ffce
+      internalID: -382782570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_107
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 1200
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad35424cb072e7b45b6a2af18db34e75
+      internalID: 1228899432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_108
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 1350
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb0bf21a6981fe43996c3b08baa5b12
+      internalID: 1088068219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_109
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 0
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957e8dba2c1245f488343ca4441297c4
+      internalID: 858492211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_110
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 150
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91579f0129bedeb43b93415eea650b6a
+      internalID: -1311792682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_111
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 300
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818543734b8e02948bf09161dcc8a2a5
+      internalID: 1687188377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_112
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 450
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7b19e4f790bf3498e4b8dbaa7a0e91
+      internalID: 790161492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_113
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 600
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b2b4e9fb346934b95939391612158a
+      internalID: -1465485762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_114
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 600
+        width: 210
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44768743aaf7b844abe95667ad756989
+      internalID: 247237654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_115
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 750
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d602760b9a22303439f22153a9f95c19
+      internalID: 919118349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_116
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 901
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f2b55ac4d76d84db5d471fdf2f53de
+      internalID: -1921835711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_117
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 1050
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4dedca142483c44871ae81146cf091
+      internalID: 1646055578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_118
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 1200
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0344c86a9d11b714b9c43e0c89d4a19a
+      internalID: -237932370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_119
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 1350
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b9ea7547f14ef48baddfc24582f795
+      internalID: -1344183262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_120
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 0
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eccec6b01c6fc1488826476a8b13687
+      internalID: -696545587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_121
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 150
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1456783cad07a26459fdebad8a4aaf7f
+      internalID: -1399125106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_122
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 300
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa4b9182249b364c82c9f271520fe6f
+      internalID: 122787538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_123
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 450
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0aff53dd689b04ebb054669b9b32a8
+      internalID: -1695199256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_124
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 600
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a29165bb18ddf48969b967daa8fba2
+      internalID: 1056973138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_125
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 750
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcab6ee6a15338c4e909e5bbf2062a80
+      internalID: -1625869268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_126
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 900
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b800a7a9e9600844ae45a19d549b752
+      internalID: 1936447601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_127
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 1050
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553173c78add5034faa84d6774e3bec9
+      internalID: 677815749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_128
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 1200
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d97bc718e507c94dadfe5c5f2290461
+      internalID: -511176718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_129
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 1350
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5551682e52d9d4ca2789828b7ca8be
+      internalID: -66995651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_130
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 0
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e7fc3ca07ff2f43b920f640a6b40bb
+      internalID: -1664561818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_131
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 150
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce671e9343361e946b5806fb769849f5
+      internalID: 662920545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_132
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 300
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6b66540ceea5b49bf17d7777e01e16
+      internalID: 2126291349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_133
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 450
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a7d870111bea54e9c9e171f64e5111
+      internalID: 1677124712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_134
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 600
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89d9334ebffe3d4c9befb76d7add0e2
+      internalID: -1045679597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_135
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 750
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f047456aa3a1e4c810450b60b72db0
+      internalID: 823878362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_136
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 900
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc53cff4d0b03794d91d2bd388bf0693
+      internalID: -511194585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_137
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 1050
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e3011a2e9846542ae1504ad49dea5b
+      internalID: -777730842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_138
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 1200
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6149914d8528f439978c7b36129d66
+      internalID: -273072901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_139
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 1350
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c9b1d750c17764aa1b0ca62a8ef2cb
+      internalID: 36981859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_0
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 0
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82acb3349aa726b4ea832931dcabaa07
+      internalID: 1867061344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_140
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 150
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d154b24f3e415344a7ff557386a3fe9
+      internalID: -1116734926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_141
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 300
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0c09f323471b9409f6cfda6c2a448c
+      internalID: 78306168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_142
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 450
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb8b764124abf44998ba288bd68cf85
+      internalID: -1503456302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_143
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 600
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0885efc7b089542986121c81834fe2
+      internalID: 1952126069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_144
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 750
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50edfa072c54fc1439042e5789836ee8
+      internalID: 1137226812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_145
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 900
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6a96069cb86ad4aabec737c2af3ec5
+      internalID: 707689430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_146
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 1050
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716ed8e9dcf24084a8336b3dfe5b65f1
+      internalID: 763854011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_147
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 0
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd62fda7f4f112744883526e126f4560
+      internalID: 1511530899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_148
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 150
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ac12b5b99ec4d439054dec2cb099c7
+      internalID: 533468745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_149
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 300
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc6e780ce35f7f44a33a28a3a33c98c
+      internalID: 1726944410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_150
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 450
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6363a883927e8e846acc4bc58bab212a
+      internalID: 1079874577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_151
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 600
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0ee6f35287d4645a5e3ddfb98895f3
+      internalID: -48776228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_152
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 750
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c278296f8216b34d95cf3881a9591db
+      internalID: 1218112753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_153
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 900
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f993ed386eedb42aef075906d36cec
+      internalID: -90096180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_154
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1050
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6805489d117726040af86b82bc7ee345
+      internalID: 332312476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_155
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 0
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365a482e00866614ca25ac8bc0c21f68
+      internalID: 1173878791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_156
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 150
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72637d6ebba8f2a489be61c3f2e756a1
+      internalID: -140350377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_157
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 300
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d662fd7bd7aac94c8f782194ac1521b
+      internalID: -1355300757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_158
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 450
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928f1529d14c2ee409a5006f92804230
+      internalID: -1814087375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_159
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 600
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394f2c48280f7bd47b1aec004bebcd8b
+      internalID: -630137158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_160
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 750
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc8653ce5de2174f89265dabe780b51
+      internalID: -365395549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_161
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 900
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d7767a2ee523248bddde69e92cc91b
+      internalID: 944620353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_162
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 1050
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716ad7de3ec82ce429669f5d87b62a36
+      internalID: 1788896394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_163
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bcd458f9181e21439e48befd313dbc3
+      internalID: -789510312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_164
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 150
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673a38f7a1a9a804f9e1b9d9e242a698
+      internalID: -1671590111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_165
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 300
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d0fb5472af2924095ced9d9934d7a1
+      internalID: 1773341290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_166
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 450
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69ff7a0ff6b4f54790f4a0eea6ce7a0
+      internalID: 232128350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_167
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 600
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d015db4fed9f6da46802ca396728ab20
+      internalID: 817772511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_168
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 750
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae0457ce316b8f49861e1564df2aa60
+      internalID: -1919716060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_169
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 900
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895d9c41095bab145a86c9ad4424f328
+      internalID: -1671829235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_170
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 1200
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ddc9e3abc8489c4cb6a76c10f90a256
+      internalID: -376271303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_171
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 1650
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2065d1ef65d6fae4f96eabca08b7872c
+      internalID: 922290535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_172
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1800
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5393f844aee9546969d9c4769f72cf
+      internalID: 909546257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_173
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 1950
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba87155b1bd298942997652a0105b408
+      internalID: -1344406124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_174
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 2100
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b847f482d006e3d468a72fdf3dbf0b7e
+      internalID: -575934785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_175
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 2250
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33207bd3575eca40881223b5d160af7
+      internalID: 1557754082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_176
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 2400
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e60f86d6caaa5f47918cae33207b89f
+      internalID: -824270352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_177
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 2550
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd49630984bea1428f04d754426f455
+      internalID: 924975149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_178
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1500
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3192b6fed708f147a576ad33d194a3a
+      internalID: 538825466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_179
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1650
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f72c9f617be834690a9fa44a534438
+      internalID: 1027136584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_180
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1800
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b3b88c163501247b128ea96fc89eab
+      internalID: 2120656593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_181
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1950
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0531d231909e9f45a9a9c866b454326
+      internalID: 1324208117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_182
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 2100
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7448e7f8be46a444984d1486f1d1e66d
+      internalID: 421061114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_183
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 2250
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a327cbadcb73f054db6d000d7c215cea
+      internalID: 1171784840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_184
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 2400
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa152c49732dcf14d846750b52a0f038
+      internalID: 1947556240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_185
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 2550
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58f082e06a38f4468b0a5f10dd374ad
+      internalID: 2061755917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_186
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1500
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de52f1349a9cbfd4bb229d520210878a
+      internalID: 857337087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_187
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1650
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d20b9f8aad9af64f8cdbfe1b0d58730
+      internalID: -1583457931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_188
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1800
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb515c4fc4a9b445a2fd8a2dc107387
+      internalID: -398544570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_189
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1950
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0bf9649f5fb7db4381149c012e534dc
+      internalID: -871666507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_190
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 2100
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ddeb272fc040a4cbe9aaa094248e29
+      internalID: 1152964164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_191
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 2250
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a572699906b6a46b0b6b47e91cde4c
+      internalID: 638277851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_192
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 2400
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6558cd959b0414d96009ab3a60d491
+      internalID: 402131008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_193
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 2550
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80468788528b014bb50b25a3626d27d
+      internalID: -395227657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_194
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1500
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b317fee64500144bc083bf10d0da55
+      internalID: 833803617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_195
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1650
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ab37a937a688e46a456e4820c3db58
+      internalID: -395066149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_196
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1800
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934f8f870059e1a4a9c03596dbb17fa5
+      internalID: -136908862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_197
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1950
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72af4e8900231344abe41f5308262654
+      internalID: -1033225919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_198
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 2100
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c6d585bf9b3ef4e8db732f96135741
+      internalID: -344511052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_199
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 2250
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3975714a3f16c4fad363c74eb7ae94
+      internalID: -682752608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_200
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 2400
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e20bbe79469944fb76db2d6cb2ed24
+      internalID: -1020493415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_201
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 2550
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22e4197801929e46a57d5fdbcad7f2b
+      internalID: 769544062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_202
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1500
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8814978fbae091f40a7ab2e2aa31f78e
+      internalID: 46687921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_203
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1650
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c57859ef6864e4abeeb479dfd65faf
+      internalID: -1955056445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_204
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1800
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77100d954cc4394d9bedaf40cd42d29
+      internalID: 807547655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_205
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1950
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470611f005cbb6e49bdfe368ac816d3d
+      internalID: 1496176307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_206
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 2100
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a619cf5e899949e4da0ce80ef177bb4c
+      internalID: 1925486604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_207
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 2250
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6caf5c3c3c7424ab768e02a028ab8f
+      internalID: -1089555413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_208
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 2400
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6a58158218fae4d83e0414fa7fcb4d
+      internalID: -1746791801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_209
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 2550
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f36bce1f509ada4781f906aa3280c79
+      internalID: 58229590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_210
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 1500
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aede7a1c762bd941886792b5afb543c
+      internalID: 709772227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_211
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 1650
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ead5dfdf01d1d14d9719cb1137e17c8
+      internalID: 1770076621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_212
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 1800
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63252cf4bd019941bfd5dd346a4d840
+      internalID: -1529565589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_213
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 1950
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7a78f58c1e91f4f9c46ed1fbe7b690
+      internalID: 1209532756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_214
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 2100
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4bfc4624c2cb7c41adaa3f1b848ef16
+      internalID: 1801659459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_215
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 2250
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e171fba670c6314aa9077a61cd86055
+      internalID: -707885487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_216
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 2400
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342263ab04cf2c946bb27a97064fe948
+      internalID: -853003511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_217
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 2550
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f34cc4bb6a2e84d9ac3eed2405b0f4
+      internalID: -1314203828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_218
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 1500
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e3957e3eb31474d8c7a2a8e456b40e
+      internalID: 1245275362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_219
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 1650
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f5af37c593f0d418e65c091093eb50
+      internalID: -1199757079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_220
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 1800
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b17c38485cfca4693b9bec900cf232
+      internalID: 963677983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_221
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 1950
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e951a68a46be94293965cb035ebdbb
+      internalID: -1327455871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_222
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 2100
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b2aee4026c8764b9b5aadbd8c4feb0
+      internalID: -251753830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_223
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 2250
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d461924a94d31eb4a8d373c52065c9d9
+      internalID: -1560173792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_224
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 2400
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a9502f12f6ae948a33511f436bc1d6
+      internalID: 1818223146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_225
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 2550
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7c32b8d454aa74f8e481e916e89d0c
+      internalID: -1186257365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_226
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 1500
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7342198e1043a9043973020a727502e3
+      internalID: -1824555334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_227
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 1650
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e5709bbd54e6440848cc4837315782
+      internalID: 2032001606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_228
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 1800
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56c167dbec05b34ebe686a6d5fb245d
+      internalID: 411688066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_229
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 1950
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b514ec3efaf376438cd15cf344fd3d9
+      internalID: 1104956836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_230
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 2100
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827670a245c873f4084bf91231493870
+      internalID: 2013398831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_231
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 2250
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e100ad0856536f347a38ce21d67b29a2
+      internalID: -1756810419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_232
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 2400
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce51886e2602c64f877f1442c48b01e
+      internalID: -734145480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_233
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 2550
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3bf39c962469fd478a52d9f5ab90a98
+      internalID: -169715327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_234
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 2700
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4b17a2163621646975ffed5d8bb577
+      internalID: -510977577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_235
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 2850
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41705df0d09cc0849b143a03a3078666
+      internalID: -1551210778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_236
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 2700
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42cf1bd976d15b42b8474a9c0c76f80
+      internalID: 72396044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_237
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 2850
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba4c1080807e4d45b81a8d1b57db46e
+      internalID: -262555661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_238
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 2700
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a3124429592fd4c8ed4dd67bec9132
+      internalID: 2002993069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_239
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 2850
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172e04ad297172e40853ce5f75181e5e
+      internalID: 1714676048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_240
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 2700
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 867174ae4ce600442b9987badb43743e
+      internalID: -1238910101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_241
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 2850
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c221fb75c99f34b4c9195409c30e81fb
+      internalID: 1354993072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_242
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 2700
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac32c0eacc4b3048becbe4c74eade01
+      internalID: 1124995342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_243
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 2850
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94734ac8828fe464d92f68758d779fd3
+      internalID: 197178060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_244
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 2700
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eae697679a49994f9da21b15e0fb64c
+      internalID: -1570072647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_245
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 2850
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec99b82a85b8d854194b30376b694c53
+      internalID: -1877881811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_246
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 2700
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db907157df30b5041b6243a3ecc3784f
+      internalID: -425065041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_247
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 2850
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc05edf0e4324545ae119e09138d331
+      internalID: -1359982708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_248
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 2700
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b71695da6d279c4497ac0967da1e3bc
+      internalID: 720716210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_249
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 2850
+        width: 210
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7afef20fd537034ba6319c72881023f
+      internalID: -491845469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_250
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1568
+        width: 15
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad921838885a4c943a5a65f2bf7c1086
+      internalID: -2005663802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_251
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1568
+        width: 15
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bcd73512bc2aa24ab6927e36f4f890e
+      internalID: 2096186402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_252
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1568
+        width: 15
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810c3f35e6ad62b4f99a384619849786
+      internalID: 1432371420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimaAnim_2_253
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1491
+        width: 45
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7147c8e090bdeb41be910f638a74363
+      internalID: 195034793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1365,65 +5481,261 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TimaAnim_2_17: 135870360
+      TimaAnim_2_61: 2096611773
+      TimaAnim_2_196: -136908862
+      TimaAnim_2_202: 46687921
       TimaAnim_2_4: 1633758625
+      TimaAnim_2_69: -2027394070
+      TimaAnim_2_161: -365395549
       TimaAnim_2_47: 1513962330
-      TimaAnim_2_54: -2111842345
-      TimaAnim_2_55: -567615329
-      TimaAnim_2_2: 2122947025
-      TimaAnim_2_19: 1144859334
-      TimaAnim_2_0: -1706399541
-      TimaAnim_2_13: 38646751
-      TimaAnim_2_50: 122594702
-      TimaAnim_2_52: -1555438884
-      TimaAnim_2_18: 316443154
-      TimaAnim_2_53: -1204736666
+      TimaAnim_2_121: -237932370
+      TimaAnim_2_147: 763854011
+      TimaAnim_2_213: 1209532756
+      TimaAnim_2_0: 1867061344
+      TimaAnim_2_67: 2064987549
+      TimaAnim_2_100: -1763587361
       TimaAnim_2_3: -1877013636
       TimaAnim_2_11: 573809920
-      TimaAnim_2_24: -1108681006
-      TimaAnim_2_28: -470208249
+      TimaAnim_2_232: -734145480
+      TimaAnim_2_126: -1695199256
+      TimaAnim_2_179: 1027136584
+      TimaAnim_2_227: 2032001606
+      TimaAnim_2_159: -1814087375
       TimaAnim_2_21: 1708838435
-      TimaAnim_2_1: 933111975
-      TimaAnim_2_27: -403953631
-      TimaAnim_2_40: 2146275855
-      TimaAnim_2_45: -507228275
-      TimaAnim_2_51: -1912832845
-      TimaAnim_2_36: -838148317
+      TimaAnim_2_95: 1972072638
+      TimaAnim_2_110: 1228899432
+      TimaAnim_2_: -1706399541
+      TimaAnim_2_160: -630137158
+      TimaAnim_2_107: 1045764640
+      TimaAnim_2_170: -1671829235
       TimaAnim_2_38: -1514107404
-      TimaAnim_2_46: 590452141
-      TimaAnim_2_41: 672247665
+      TimaAnim_2_186: 857337087
+      TimaAnim_2_204: 807547655
       TimaAnim_2_7: -1582226238
+      TimaAnim_2_114: 1687188377
+      TimaAnim_2_79: 1028788286
+      TimaAnim_2_140: 40481093
+      TimaAnim_2_112: 858492211
+      TimaAnim_2_44: -1566106353
+      TimaAnim_2_34: -2043760928
+      TimaAnim_2_158: -1355300757
+      TimaAnim_2_93: -2049831004
+      TimaAnim_2_109: -382782570
+      TimaAnim_2_172: 909546257
+      TimaAnim_2_225: -1186257365
+      TimaAnim_2_142: 78306168
+      TimaAnim_2_212: -1529565589
+      TimaAnim_2_250: -2005663802
+      TimaAnim_2_128: -1625869268
+      TimaAnim_2_155: 332312476
+      TimaAnim_2_30: 949834221
+      TimaAnim_2_244: -1570072647
+      TimaAnim_2_33: -673789300
+      TimaAnim_2_245: -1877881811
+      TimaAnim_2_8: 541634704
+      TimaAnim_2_64: 1563217745
+      TimaAnim_2_236: 72396044
+      TimaAnim_2_118: 919118349
+      TimaAnim_2_222: -251753830
+      TimaAnim_2_134: 662920545
+      TimaAnim_2_247: -425065041
+      TimaAnim_2_252: 1432371420
+      TimaAnim_2_168: 817772511
+      TimaAnim_2_146: 707689430
+      TimaAnim_2_54: -2111842345
+      TimaAnim_2_200: -1020493415
+      TimaAnim_2_68: 1702929488
+      TimaAnim_2_228: 411688066
+      TimaAnim_2_2: 2122947025
+      TimaAnim_2_52: -1555438884
+      TimaAnim_2_117: 247237654
+      TimaAnim_2_182: 421061114
+      TimaAnim_2_193: -395227657
+      TimaAnim_2_91: -454849428
+      TimaAnim_2_233: -169715327
+      TimaAnim_2_123: -696545587
+      TimaAnim_2_149: 533468745
+      TimaAnim_2_198: -344511052
+      TimaAnim_2_98: 694463209
+      TimaAnim_2_27: -403953631
+      TimaAnim_2_119: -1921835711
+      TimaAnim_2_40: 2146275855
+      TimaAnim_2_83: 406561999
+      TimaAnim_2_45: -507228275
+      TimaAnim_2_153: 1218112753
+      TimaAnim_2_173: -1344406124
+      TimaAnim_2_175: 1557754082
+      TimaAnim_2_73: 1621319278
+      TimaAnim_2_129: 1936447601
+      TimaAnim_2_166: 1773341290
+      TimaAnim_2_125: 122787538
       TimaAnim_2_42: -1048700135
       TimaAnim_2_22: -1831872614
-      TimaAnim_2_43: -1738224584
-      TimaAnim_2_32: 889620954
-      TimaAnim_2_14: -678909822
-      TimaAnim_2_12: 1781047481
-      TimaAnim_2_57: 1891502353
-      TimaAnim_2_5: 788879363
+      TimaAnim_2_210: 709772227
+      TimaAnim_2_106: 937231940
       TimaAnim_2_9: 1641478538
-      TimaAnim_2_31: 1607412221
-      TimaAnim_2_49: -1163986299
-      TimaAnim_2_44: -1566106353
-      TimaAnim_2_20: -336213827
-      TimaAnim_2_34: -2043760928
-      TimaAnim_2_58: -1937979705
-      TimaAnim_2_15: 1263905138
+      TimaAnim_2_231: -1756810419
       TimaAnim_2_16: -634833908
       TimaAnim_2_37: -729995445
-      TimaAnim_2_10: -1244188946
-      TimaAnim_2_23: 814787691
+      TimaAnim_2_105: 358481725
+      TimaAnim_2_120: 1646055578
+      TimaAnim_2_103: 295963928
+      TimaAnim_2_209: 58229590
+      TimaAnim_2_246: -1376384137
+      TimaAnim_2_90: 236832008
       TimaAnim_2_29: 1045886740
-      TimaAnim_2_39: -1873327413
-      TimaAnim_2_30: 949834221
-      TimaAnim_2_33: -673789300
-      TimaAnim_2_8: 541634704
+      TimaAnim_2_154: -90096180
+      TimaAnim_2_89: -1534174055
+      TimaAnim_2_111: 1088068219
+      TimaAnim_2_85: 499791268
+      TimaAnim_2_70: -771134004
+      TimaAnim_2_243: 197178060
+      TimaAnim_2_199: -682752608
+      TimaAnim_2_77: -1143325133
+      TimaAnim_2_201: 769544062
+      TimaAnim_2_190: 1152964164
+      TimaAnim_2_171: 922290535
+      TimaAnim_2_137: -1045679597
+      TimaAnim_2_55: -567615329
+      TimaAnim_2_124: -1399125106
+      TimaAnim_2_113: -1311792682
+      TimaAnim_2_104: -56388760
+      TimaAnim_2_194: 833803617
+      TimaAnim_2_18: 316443154
+      TimaAnim_2_53: -1204736666
+      TimaAnim_2_184: 1947556240
+      TimaAnim_2_207: -1089555413
+      TimaAnim_2_208: -1746791801
+      TimaAnim_2_24: -1108681006
+      TimaAnim_2_86: 885924665
+      TimaAnim_2_28: -470208249
+      TimaAnim_2_1: 933111975
+      TimaAnim_2_178: 538825466
+      TimaAnim_2_157: -140350377
+      TimaAnim_2_185: 2061755917
+      TimaAnim_2_191: 638277851
+      TimaAnim_2_235: -1551210778
+      TimaAnim_2_71: 1732489064
+      TimaAnim_2_74: -1365328771
+      TimaAnim_2_65: -1222237459
+      TimaAnim_2_46: 590452141
+      TimaAnim_2_181: 1324208117
+      TimaAnim_2_122: -1344183262
+      TimaAnim_2_41: 672247665
+      TimaAnim_2_230: 2013398831
+      TimaAnim_2_216: -853003511
+      TimaAnim_2_32: 889620954
+      TimaAnim_2_78: -849369914
+      TimaAnim_2_57: 1891502353
+      TimaAnim_2_58: -1937979705
+      TimaAnim_2_135: 2126291349
+      TimaAnim_2_92: 120461638
+      TimaAnim_2_240: -1238910101
+      TimaAnim_2_20: -336213827
+      TimaAnim_2_101: 1961730556
+      TimaAnim_2_127: 1056973138
+      TimaAnim_2_15: 1263905138
+      TimaAnim_2_23: 814787691
+      TimaAnim_2_180: 2120656593
+      TimaAnim_2_130: 677815749
+      TimaAnim_2_192: 402131008
+      TimaAnim_2_195: -395066149
+      TimaAnim_2_197: -1033225919
+      TimaAnim_2_72: 1653713025
+      TimaAnim_2_136: 1677124712
+      TimaAnim_2_214: 1801659459
+      TimaAnim_2_141: -1116734926
+      TimaAnim_2_63: 211055947
+      TimaAnim_2_223: -1560173792
+      TimaAnim_2_251: 2096186402
+      TimaAnim_2_206: 1925486604
+      TimaAnim_2_249: 720716210
+      TimaAnim_2_238: 2002993069
+      TimaAnim_2_82: 934642916
       TimaAnim_2_25: -1639753680
-      TimaAnim_2_48: 1517164501
+      TimaAnim_2_75: -17758832
+      TimaAnim_2_150: 1726944410
       TimaAnim_2_35: -533736947
       TimaAnim_2_56: -2005610467
+      TimaAnim_2_234: -510977577
+      TimaAnim_2_144: 1952126069
+      TimaAnim_2_156: 1173878791
+      TimaAnim_2_211: 1770076621
+      TimaAnim_2_221: -1327455871
+      TimaAnim_2_17: 135870360
+      TimaAnim_2_84: -1217213627
+      TimaAnim_2_215: -707885487
+      TimaAnim_2_237: -262555661
+      TimaAnim_2_217: -1314203828
+      TimaAnim_2_19: 1144859334
+      TimaAnim_2_50: 122594702
+      TimaAnim_2_13: 38646751
+      TimaAnim_2_174: -575934785
+      TimaAnim_2_189: -871666507
+      TimaAnim_2_218: 1245275362
+      TimaAnim_2_116: -1465485762
+      TimaAnim_2_132: -66995651
+      TimaAnim_2_59: -870798867
+      TimaAnim_2_203: -1955056445
+      TimaAnim_2_248: -1359982708
+      TimaAnim_2_205: 1496176307
+      TimaAnim_2_96: 727821646
+      TimaAnim_2_226: -1824555334
+      TimaAnim_2_51: -1912832845
+      TimaAnim_2_162: 944620353
+      TimaAnim_2_163: 1788896394
+      TimaAnim_2_164: -789510312
+      TimaAnim_2_36: -838148317
+      TimaAnim_2_60: 1677466914
+      TimaAnim_2_94: -621615906
+      TimaAnim_2_176: -824270352
+      TimaAnim_2_220: 963677983
+      TimaAnim_2_99: -1206963609
+      TimaAnim_2_43: -1738224584
+      TimaAnim_2_239: 1714676048
+      TimaAnim_2_241: 1354993072
+      TimaAnim_2_242: 1124995342
+      TimaAnim_2_14: -678909822
+      TimaAnim_2_12: 1781047481
+      TimaAnim_2_165: -1671590111
+      TimaAnim_2_133: -1664561818
+      TimaAnim_2_5: 788879363
+      TimaAnim_2_31: 1607412221
+      TimaAnim_2_49: -1163986299
+      TimaAnim_2_62: -1762497483
+      TimaAnim_2_139: -511194585
+      TimaAnim_2_143: -1503456302
+      TimaAnim_2_138: 823878362
+      TimaAnim_2_169: -1919716060
+      TimaAnim_2_219: -1199757079
+      TimaAnim_2_66: 1010654505
+      TimaAnim_2_177: 924975149
+      TimaAnim_2_253: 195034793
+      TimaAnim_2_10: -1244188946
+      TimaAnim_2_81: 1341144012
+      TimaAnim_2_183: 1171784840
+      TimaAnim_2_97: 1618396370
+      TimaAnim_2_102: 55413029
+      TimaAnim_2_187: -1583457931
+      TimaAnim_2_224: 1818223146
+      TimaAnim_2_229: 1104956836
+      TimaAnim_2_76: -458441021
+      TimaAnim_2_87: 1313795211
+      TimaAnim_2_167: 232128350
+      TimaAnim_2_88: 619834874
+      TimaAnim_2_151: 1079874577
+      TimaAnim_2_39: -1873327413
+      TimaAnim_2_148: 1511530899
+      TimaAnim_2_80: 27385994
+      TimaAnim_2_48: 1517164501
+      TimaAnim_2_152: -48776228
+      TimaAnim_2_115: 790161492
+      TimaAnim_2_188: -398544570
+      TimaAnim_2_145: 1137226812
       TimaAnim_2_6: -1450987200
+      TimaAnim_2_108: 2052640002
       TimaAnim_2_26: -1299422110
+      TimaAnim_2_131: -511176718
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

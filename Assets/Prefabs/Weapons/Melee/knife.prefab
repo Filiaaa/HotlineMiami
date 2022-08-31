@@ -205,7 +205,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 797349354, guid: 352cb56b7cd59ac4ca41ffbf0cea2ee1, type: 3}
+  m_Sprite: {fileID: 852833245, guid: 8235f8070f1a7b94da4c75ae6ad88d56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -228,6 +228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d54da4a6f5ae364f9759fd509961a0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimParametre: 
+  soundRadius: 0
   offsetInHands: {x: 0.28, y: 0, z: 0}
   offsetRotationInHands: {x: 0, y: 0, z: 0, w: 0}
   spriteInHands: {fileID: 0}
@@ -300,7 +302,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.0495453, y: 0.91876686}
+  m_Offset: {x: 1.1353977, y: 0.7626717}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -311,5 +313,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.69253445, y: 1.7810986}
+  m_Size: {x: 0.5208297, y: 0.8757467}
   m_EdgeRadius: 0

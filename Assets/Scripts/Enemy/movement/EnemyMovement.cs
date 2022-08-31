@@ -81,6 +81,7 @@ public class EnemyMovement : MonoBehaviour {
 	} else if (!walk)
 		stepsSound.Stop();
 		walk = true;
+
 		if (!isReturning) {
 			if (!agred) {
 				enemy.Translate (Vector2.up * movingSpeed);

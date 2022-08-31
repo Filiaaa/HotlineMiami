@@ -33,8 +33,19 @@ public class PlayerMover : MonoBehaviour
 	}
 
 	void FixedUpdate () {
-
-        animator.SetBool(currentWeapon.GetComponent<Weapon>().playerAnimParametre, true);
+		if (Input.GetKey(KeyCode.G) && currentWeapon != knife)
+		{
+			canThrow = true;
+			currentWeapon.GetComponent<Weapon>().Throw();
+			currentWeapon = null;
+		}
+		if (currentWeapon == null)
+		{
+			currentWeapon = knife;
+			/*			animator.SetBool ("withMeleeOneHand", true);
+						movingPartWeaponOfAnim.sprite = knife.GetComponent<SpriteRenderer>().sprite;*/
+		}
+		animator.SetBool(currentWeapon.GetComponent<Weapon>().playerAnimParametre, true);
         if (currentWeapon.GetComponent<Weapon>().spriteInHands != null && !currentWeapon.GetComponent<meleeWeapon>().attack)
         {
 			currentWeapon.SetActive(false);
@@ -74,17 +85,6 @@ public class PlayerMover : MonoBehaviour
         {
 			bulletText.gameObject.SetActive(true);
 			bulletText.text = currentWeapon.GetComponent<FireWeapon>().bulletsInHolder.ToString() + "/" + currentWeapon.GetComponent<FireWeapon>().bulletsNormalInHolder.ToString();
-		}
-        if (Input.GetKey(KeyCode.G) && currentWeapon != knife)
-        {
-			canThrow = true;
-			currentWeapon.GetComponent<Weapon>().Throw();
-			currentWeapon = null;
-		}
-		if (currentWeapon == null) {
-			currentWeapon = knife;
-/*			animator.SetBool ("withMeleeOneHand", true);
-			movingPartWeaponOfAnim.sprite = knife.GetComponent<SpriteRenderer>().sprite;*/
 		}
 		if (Input.GetMouseButton (0)) {
 			attacked = currentWeapon.GetComponent <Weapon> ().Attack();
@@ -192,7 +192,7 @@ public class PlayerMover : MonoBehaviour
 			curRoom = collision.gameObject;
 			curRoom.GetComponent <Manager> ().enemysAgr();
 */
-		/*}*/ /*else*/ if (collision.tag == "EnemyAttack") {
+		/*}*/ /*else*/ if (collision.tag == "EnemyAttack" && collision.gameObject.GetComponent<Bullet>() != null) {
 			Destroy(collision.gameObject);
 			KillPlayer ();
 		}

@@ -14,20 +14,19 @@ public class meleeWeapon : Weapon
 	public override bool Attack() {
 		
 		if (!attack) {
-			if(transform.parent.GetComponent<PlayerMover>() != null)
-            {
+
+            gameObject.SetActive(true);
+			if (transform.parent.GetComponent<PlayerMover>() != null)
+			{
 				transform.parent.GetComponent<PlayerMover>().canThrow = false;
+				GetComponent<Animator>().SetBool("Attack", true);
 
 			}
-            gameObject.SetActive(true);
-			GetComponent<Animator>().SetBool("Attack", true);
 			gameObject.transform.localPosition = Vector3.zero;
 			transform.parent.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-/*			gameObject.SetActive(true);*/
 			attackSound.pitch = Random.Range (0.9f, 1.1f);
     		attackSound.Play ();
 			attack = true;
-/*			transform.parent.GetComponent <SpriteRenderer> ().enabled = false;*/
 			attackCol.enabled = true;
 
 			StartCoroutine (waitForEnablingCol());
@@ -40,19 +39,16 @@ public class meleeWeapon : Weapon
 	{
 
 		yield return new WaitForSeconds (attackTime);
-		gameObject.SetActive(false);
-		/*		GetComponent<Animator>().SetBool("Attack", false);
-				gameObject.transform.localPosition = offsetInHands;*/
-		attackCol.enabled = false;
-		transform.parent.gameObject.GetComponent<SpriteRenderer>().enabled = true;
-		/*		transform.parent.GetComponent <SpriteRenderer> ().enabled = true;*/
-		attack = false;
-		if (transform.parent.GetComponent<PlayerMover>() != null)
+		if (transform.parent != null && transform.parent.GetComponent<PlayerMover>() != null)
 		{
+			attack = false;
+			gameObject.SetActive(false);
+			attackCol.enabled = false;
+			transform.parent.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+
 			transform.parent.GetComponent<PlayerMover>().canThrow = true;
 
 		}
 
-		/*		gameObject.SetActive(false);*/
 	}
 }

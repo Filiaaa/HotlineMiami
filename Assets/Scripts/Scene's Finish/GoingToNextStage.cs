@@ -8,7 +8,9 @@ public class GoingToNextStage : MonoBehaviour
     public GameObject levelClosingAnim;
     public GameObject[] enemies;
     public Transform playersCanvas;
-    public GameObject warningText; 
+    public GameObject warningText;
+    public Sprite loadingSceneSprite;
+    public int loadingSceneID;
     public int sceneGoingID;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -33,6 +35,8 @@ public class GoingToNextStage : MonoBehaviour
     IEnumerator StartOpenAnim()
     {
         yield return new WaitForSeconds(0.3f);
-        SceneManager.LoadScene(sceneGoingID);
+        LoadScene.backGround = loadingSceneSprite;
+        LoadScene.sceneId = sceneGoingID;
+        SceneManager.LoadScene(loadingSceneID);
     }
 }

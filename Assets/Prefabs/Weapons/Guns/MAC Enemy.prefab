@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5463210463390852986}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.66, y: 2.159, z: 0}
+  m_LocalPosition: {x: 0.329, y: 2.336, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -127,6 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 804b5acff8fe27f4db1c93d1a9a6b8d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimParametre: withFire
+  soundRadius: 0
   offsetInHands: {x: -0.073, y: 2.64, z: 0}
   offsetRotationInHands: {x: 0, y: 0, z: 0, w: 0}
   spriteInHands: {fileID: 0}
@@ -141,6 +143,7 @@ MonoBehaviour:
   bulletsInQueue: 1
   bulletsInHolder: 1000
   bulletsNormalInHolder: 30
+  ricochetCount: 0
   canAttack: 1
   attackSound: {fileID: 6057576235884043748}
 --- !u!95 &4548624306279792383
