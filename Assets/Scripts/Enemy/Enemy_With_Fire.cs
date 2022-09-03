@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+
 
 public class Enemy_With_Fire : MonoBehaviour
 {
@@ -11,15 +13,16 @@ public class Enemy_With_Fire : MonoBehaviour
 	public float minDistance = 4f, movingSpeed = 0.1f, deltaDictance = 0.3f, disagringDistance = 15f;
 	public bool agred = false, walk = true;
 	public AudioSource stepsSound;
-	public Transform[] enters;
+/*	public Transform[] enters;*/
 	public int heals = 1;
 	[SerializeField] private LayerMask obstacleLayerMask;
 
 	private int wayPointNumber;
-	private Transform player, enter, enemy;
-	private bool isReturning = false;
+	private Transform player,/* enter,*/ enemy;
+/*	private bool isReturning = false;*/
 	private Animator cur_weapon_animator, animator;
 	private FireWeapon cur_weapon_weapon;
+	private NavMeshAgent agent;
 
 	void Start()
 	{
@@ -28,7 +31,9 @@ public class Enemy_With_Fire : MonoBehaviour
 		animator = GetComponent<Animator>();
 		cur_weapon_weapon = curWeapon.GetComponent<FireWeapon>();
 		cur_weapon_animator = curWeapon.GetComponent<Animator>();
-
+		agent = GetComponent<NavMeshAgent>();
+		agent.updateRotation = false;
+		agent.updateUpAxis = false;
 	}
 
 	private float angle;
@@ -61,29 +66,32 @@ public class Enemy_With_Fire : MonoBehaviour
 		}
 
 
-
-			if (!isReturning)
-			{
+		/*
+					if (!isReturning)
+					{
+						*/
 				if (!agred)
 				{
-					enemy.Translate(Vector2.up * movingSpeed);
+					agent.SetDestination(wayPoints[wayPointNumber].position);
+/*					enemy.Translate(Vector2.up * movingSpeed);*/
 					cur_weapon_animator.SetBool("Attack", false);
-					angle = Vector2.Angle(Vector2.up, wayPoints[wayPointNumber].position - enemy.position);
-					enemy.eulerAngles = new Vector3(0, 0, enemy.position.x < wayPoints[wayPointNumber].position.x ? -angle : angle);
+/*					angle = Vector2.Angle(Vector2.up, wayPoints[wayPointNumber].position - enemy.position);
+					enemy.eulerAngles = new Vector3(0, 0, enemy.position.x < wayPoints[wayPointNumber].position.x ? -angle : angle);*/
 					walk = true;
 				}
 				else if (player != null)
 				{
 					if (Vector2.Distance(enemy.position, player.position) - deltaDictance > minDistance)
 					{
-						enemy.Translate(Vector2.up * movingSpeed);
+						
+/*						enemy.Translate(Vector2.up * movingSpeed);*/
 						walk = true;
 
 
 					}
 					else
 					{
-						enemy.Translate(Vector2.up * movingSpeed);
+/*						enemy.Translate(Vector2.up * movingSpeed);*/
 						walk = true;
 						cur_weapon_animator.SetBool("Attack", true);
 						cur_weapon_weapon.Attack();
@@ -97,21 +105,30 @@ public class Enemy_With_Fire : MonoBehaviour
 
 								}*/
 
-					angle = Vector2.Angle(Vector2.up, player.position - enemy.position);
-					enemy.eulerAngles = new Vector3(0, 0, enemy.position.x < player.position.x ? -angle : angle);
-
+/*					angle = Vector2.Angle(Vector2.up, player.position - enemy.position);
+					enemy.eulerAngles = new Vector3(0, 0, enemy.position.x < player.position.x ? -angle : angle);*/
+					agent.SetDestination(player.position);
 
 				}
-			}
-/*			else
-			{
-				angle = Vector2.Angle(Vector2.up, enter.GetComponent<Transform>().position - enemy.position);
-				enemy.eulerAngles = new Vector3(0, 0, enemy.position.x < enter.GetComponent<Transform>().position.x ? -angle : angle);
+				angle = Vector2.Angle(Vector2.up, agent.steeringTarget - enemy.position);
+				enemy.eulerAngles = new Vector3(0, 0, enemy.position.x < agent.steeringTarget.x ? -angle : angle);
+		/*			}*/
+		/*			else
+					{
+						angle = Vector2.Angle(Vector2.up, agent.steeringTarget - enemy.position);
+						enemy.eulerAngles = new Vector3(0, 0, enemy.position.x < agent.steeringTarget.x ? -angle : angle);
+						FindEnter();
+		*//*				enemy.Translate(Vector2.up * movingSpeed);*//*
+					}*/
+		/*else
+        {
+            angle = Vector2.Angle(Vector2.up, enter.GetComponent<Transform>().position - enemy.position);
+            enemy.eulerAngles = new Vector3(0, 0, enemy.position.x < enter.GetComponent<Transform>().position.x ? -angle : angle);
 
-				enemy.Translate(Vector2.up * movingSpeed);
+            enemy.Translate(Vector2.up * movingSpeed);
 
-			}*/
-		
+        }*/
+
 	}
 
 
@@ -121,34 +138,50 @@ public class Enemy_With_Fire : MonoBehaviour
 		wayPointNumber %= wayPoints.Length;
 	}
 
-/*	Transform FindEnter()
-	{
-		int minNumber = 0;
-		for (int i = 1; i < enters.Length; i++)
-		{
-			if (Vector2.Distance(enters[minNumber].position, enemy.position) > Vector2.Distance(enters[i].position, enemy.position))
+/*    void FindEnter()
+    {
+        int minNumber = 0;
+        for (int i = 0; i < enters.Length; i++)
+        {
+			print("a");	
+			float distToEnter;
+			agent.SetDestination(enters[minNumber].position);
+			distToEnter = agent.remainingDistance;
+			agent.SetDestination(enters[i].position);
+			print(distToEnter);
+			print(agent.remainingDistance);
+			*//*			if (Vector2.Distance(enters[minNumber].position, enemy.position) > Vector2.Distance(enters[i].position, enemy.position))
+							minNumber = i;*//*
+
+			if (distToEnter > agent.remainingDistance)
+            {
 				minNumber = i;
-		}
-		return enters[minNumber];
-	}*/
-/*
-	void OnTriggerStay2D(Collider2D collision)
-	{
-		if (collision.tag == "Room")
-		{
-			if (collision.gameObject == transform.parent.gameObject)
-			{
-				isReturning = false;
+				print(enters[minNumber].name);
+				agent.SetDestination(enters[minNumber].position);
 			}
-			else
-			{
-				isReturning = true;
-				enter = FindEnter();
-			}
-		}
-	}
+        }
+    }
 */
-	private void OnTriggerEnter2D(Collider2D collision)
+/*    void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "Room")
+        {
+
+            if (collision.gameObject == transform.parent.gameObject)
+            {
+                isReturning = false;
+
+			}
+            else if(!agred)
+            {
+                isReturning = true;
+
+*//*				FindEnter();*//*
+            }
+        }
+    }*/
+
+    private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.tag == "PlayerAttack")
 		{
@@ -171,7 +204,7 @@ public class Enemy_With_Fire : MonoBehaviour
 
 	void KillEnemy()
 	{
-		print("damage"); 
+/*		print("damage"); */
 		heals -= playerObj.GetComponent<PlayerMover>().damage;
 
 		if (heals <= 0)

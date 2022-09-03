@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 	private Animator cur_weapon_animator, animator;
 	private meleeWeapon cur_weapon_weapon;
 	private PlayerMover plM;
+	private NavMeshAgent agent;
 
 	void Start()
 	{
@@ -34,7 +36,9 @@ public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 		animator = GetComponent<Animator>();
 		cur_weapon_weapon = curWeapon.GetComponent<meleeWeapon>();
 		cur_weapon_animator = curWeapon.GetComponent<Animator>();
-
+		agent = GetComponent<NavMeshAgent>();
+		agent.updateRotation = false;
+		agent.updateUpAxis = false;
 	}
 
 	private float angle;
@@ -82,23 +86,26 @@ public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 		}
 
 
-			if (!isReturning)
-			{
+/*			if (!isReturning)
+			{*/
 				if (!agred)
 				{
-					enemy.Translate(Vector2.up * movingSpeed);
+					agent.speed = 6;
+					agent.SetDestination(wayPoints[wayPointNumber].position);
+				/*					enemy.Translate(Vector2.up * movingSpeed);*/
 
 					cur_weapon_weapon.attack = false;
 
-					angle = Vector2.Angle(Vector2.up, wayPoints[wayPointNumber].position - enemy.position);
-					enemy.eulerAngles = new Vector3(0, 0, enemy.position.x < wayPoints[wayPointNumber].position.x ? -angle : angle);
+					/*angle = Vector2.Angle(Vector2.up, wayPoints[wayPointNumber].position - enemy.position);
+					enemy.eulerAngles = new Vector3(0, 0, enemy.position.x < wayPoints[wayPointNumber].position.x ? -angle : angle);*/
 					walk = true;
 				}
 				else if (player != null)
 				{
+					agent.speed = 18;
 					if (Vector2.Distance(enemy.position, player.position) - deltaDictance > minDistance) //оружие начинает бить
 					{
-						enemy.Translate(Vector2.up * movingSpeed);
+						/*enemy.Translate(Vector2.up * movingSpeed);*/
 						walk = true;
 						cur_weapon_weapon.gameObject.SetActive(false);
 						sr.enabled = true;
@@ -106,7 +113,7 @@ public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 					}
 					else
 					{
-						enemy.Translate(Vector2.up * movingSpeed);
+/*						enemy.Translate(Vector2.up * movingSpeed);*/
 						walk = true;
 						sr.enabled = false;
 						cur_weapon_weapon.gameObject.SetActive(true);
@@ -116,29 +123,30 @@ public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 
 					}
 
-					/*				else if (Vector2.Distance(enemy.position, player.position) + deltaDictance < minDistance)
-									{
-										enemy.Translate(Vector2.down * movingSpeed);
+			/*				else if (Vector2.Distance(enemy.position, player.position) + deltaDictance < minDistance)
+							{
+								enemy.Translate(Vector2.down * movingSpeed);
 
 
 
-									}*/
+							}*/
+					agent.SetDestination(player.position);
 
-					angle = Vector2.Angle(Vector2.up, player.position - enemy.position);
-					enemy.eulerAngles = new Vector3(0, 0, enemy.position.x < player.position.x ? -angle : angle);
 
 
 				}
-			}
-/*			else
-			{
-				angle = Vector2.Angle(Vector2.up, enter.GetComponent<Transform>().position - enemy.position);
-				enemy.eulerAngles = new Vector3(0, 0, enemy.position.x < enter.GetComponent<Transform>().position.x ? -angle : angle);
+				angle = Vector2.Angle(Vector2.up, agent.steeringTarget - enemy.position);
+				enemy.eulerAngles = new Vector3(0, 0, enemy.position.x < agent.steeringTarget.x ? -angle : angle);
+		/*			}*/
+		/*			else
+					{
+						angle = Vector2.Angle(Vector2.up, enter.GetComponent<Transform>().position - enemy.position);
+						enemy.eulerAngles = new Vector3(0, 0, enemy.position.x < enter.GetComponent<Transform>().position.x ? -angle : angle);
 
-				enemy.Translate(Vector2.up * movingSpeed);
+						enemy.Translate(Vector2.up * movingSpeed);
 
-			}*/
-		
+					}*/
+
 	}
 
 
