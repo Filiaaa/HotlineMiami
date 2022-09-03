@@ -135,10 +135,17 @@ public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 
 
 				}
+
+
+
+
 				angle = Vector2.Angle(Vector2.up, agent.steeringTarget - enemy.position);
 				enemy.eulerAngles = new Vector3(0, 0, enemy.position.x < agent.steeringTarget.x ? -angle : angle);
-		/*			}*/
-		/*			else
+
+
+
+        /*			}*/
+        /*			else
 					{
 						angle = Vector2.Angle(Vector2.up, enter.GetComponent<Transform>().position - enemy.position);
 						enemy.eulerAngles = new Vector3(0, 0, enemy.position.x < enter.GetComponent<Transform>().position.x ? -angle : angle);
@@ -147,7 +154,7 @@ public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 
 					}*/
 
-	}
+    }
 
 
 	public void ArriveToPoint()
