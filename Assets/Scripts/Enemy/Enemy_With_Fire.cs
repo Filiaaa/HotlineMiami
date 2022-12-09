@@ -23,7 +23,7 @@ public class Enemy_With_Fire : MonoBehaviour
 	private Animator cur_weapon_animator, animator;
 	private FireWeapon cur_weapon_weapon;
 	private NavMeshAgent agent;
-
+	bool canDie = true;
 	void Start()
 	{
 		enemy = GetComponent<Transform>();
@@ -41,13 +41,24 @@ public class Enemy_With_Fire : MonoBehaviour
 
 	void FixedUpdate()
 	{
-
+		if (movingSpeed == 0)
+		{
+			walk = false;
+		}
 		if (player != null && !Physics2D.Linecast(transform.position, player.position, obstacleLayerMask) && Vector2.Angle(transform.up, player.transform.position - transform.position) < 30 && Vector2.Distance(enemy.position, player.position) <= agringDistanse/* && player.GetComponent <PlayerMover> ().curRoom == transform.parent.gameObject*/)
 		{
+			if (movingSpeed != 0)
+			{
+				movingSpeed = 0.3f;
+			}
 			agred = true;
 		}
 		else if (player != null && (Physics2D.Linecast(transform.position, player.position, obstacleLayerMask) || Vector2.Distance(enemy.position, player.position) > disagringDistance))
 		{
+			if (movingSpeed != 0)
+			{
+				movingSpeed = 0.1f;
+			}
 			agred = false;
 		}
 
@@ -55,14 +66,14 @@ public class Enemy_With_Fire : MonoBehaviour
 		if (!walk)
 		{
 			animator.SetBool("walk", false);
-			stepsSound.Stop();
+/*			stepsSound.Stop();*/
 
 		}
 		else if (walk)
 		{
-			stepsSound.pitch = Random.Range(0.9f, 1.1f);
+/*			stepsSound.pitch = Random.Range(0.9f, 1.1f);*/
 			animator.SetBool("walk", true);
-			stepsSound.Play();
+/*			stepsSound.Play();*/
 		}
 
 
@@ -183,8 +194,10 @@ public class Enemy_With_Fire : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.tag == "PlayerAttack")
+		if (collision.tag == "PlayerAttack" && !Physics2D.Linecast(transform.position, player.position, obstacleLayerMask))
 		{
+			canDie = false;
+			StartCoroutine(ImmortalFrames(playerObj.GetComponent<PlayerMover>().currentWeapon.GetComponent<meleeWeapon>().attackTime));
 			KillEnemy();
 		}
 		if (collision.tag == "WayPoint" && collision.transform == wayPoints[wayPointNumber])
@@ -219,5 +232,11 @@ public class Enemy_With_Fire : MonoBehaviour
 			Destroy(gameObject);
 		}
 	}
+	IEnumerator ImmortalFrames(float immortalTime)
+	{
+		yield return new WaitForSeconds(immortalTime);
+		canDie = true;
 
+
+	}
 }

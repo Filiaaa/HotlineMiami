@@ -11,6 +11,7 @@ TagManager:
   - Room
   - wall
   - EnemyAttack
+  - Thing
   layers:
   - Default
   - TransparentFX
@@ -20,10 +21,10 @@ TagManager:
   - UI
   - Obstacle
   - Bullet
-  - 
-  - 
-  - 
-  - 
+  - forLamp1
+  - forLamp2
+  - forLamp3
+  - forlamp4
   - 
   - 
   - 
@@ -45,6 +46,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Room1
+    uniqueID: 1593704269
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: NotLight
+    uniqueID: 153460015
+    locked: 0
+  - name: Lamp1
+    uniqueID: 3402562547
     locked: 0

@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour
         print(Time.timeScale);
         if (!PlayerPrefs.HasKey("lastSceneIndex"))
         {
-            PlayerPrefs.SetInt("lastSceneIndex", 0);
+            PlayerPrefs.SetInt("lastSceneIndex", 1);
         }
         if (PlayerPrefs.HasKey("EffectsVolume"))
         {
@@ -53,6 +53,7 @@ public class MainMenu : MonoBehaviour
         closingAnim.SetActive(true);
         StartCoroutine(ClosingAnim());
     }
+
 
     public void Quit(){
         Application.Quit();
@@ -98,6 +99,6 @@ public class MainMenu : MonoBehaviour
 
     IEnumerator ClosingAnim(){
         yield return new WaitForSeconds(0.3f);
-        SceneManager.LoadScene(PlayerPrefs.GetInt("lastSceneIndex", 0));
+        SceneManager.LoadScene(PlayerPrefs.GetInt("lastSceneIndex"));
     }
 }

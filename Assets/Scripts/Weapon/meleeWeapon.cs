@@ -16,7 +16,7 @@ public class meleeWeapon : Weapon
 		if (!attack) {
 
             gameObject.SetActive(true);
-			if (transform.parent.GetComponent<PlayerMover>() != null)
+			if (transform.parent != null && transform.parent.GetComponent<PlayerMover>() != null)
 			{
 				transform.parent.GetComponent<PlayerMover>().canThrow = false;
 				GetComponent<Animator>().SetBool("Attack", true);
@@ -24,8 +24,8 @@ public class meleeWeapon : Weapon
 			}
 			gameObject.transform.localPosition = Vector3.zero;
 			transform.parent.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-			attackSound.pitch = Random.Range (0.9f, 1.1f);
-    		attackSound.Play ();
+/*			attackSound.pitch = Random.Range (0.9f, 1.1f);
+    		attackSound.Play ()*/;
 			attack = true;
 			attackCol.enabled = true;
 

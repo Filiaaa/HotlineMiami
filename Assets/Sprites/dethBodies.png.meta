@@ -124,7 +124,7 @@ TextureImporter:
         width: 110
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -145,7 +145,7 @@ TextureImporter:
         width: 110
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -166,7 +166,7 @@ TextureImporter:
         width: 110
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,7 +187,7 @@ TextureImporter:
         width: 110
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -208,7 +208,7 @@ TextureImporter:
         width: 110
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -216,6 +216,258 @@ TextureImporter:
       bones: []
       spriteID: ca7f7b6077b47e846907fd82896749eb
       internalID: -1351988067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dethBodies_5
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 750
+        width: 100
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123909ca44826fd4aa3eeae5ee31963f
+      internalID: -1367210979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dethBodies_6
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 750
+        width: 100
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364872f9baacddd48a2b1de283c796df
+      internalID: -1204497732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dethBodies_7
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 750
+        width: 100
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba697f6690316af4e8fc2a6a9ee30874
+      internalID: 1265127177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dethBodies_8
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 620
+        width: 100
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2538ef368847e4bb2831d5e058bc73
+      internalID: -2062269302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dethBodies_9
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 620
+        width: 100
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfcfeae5c3227043b1d0f62642fa963
+      internalID: 835039964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dethBodies_10
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 490
+        width: 100
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a08dd85c106f24f8dd9582ef3fabe4
+      internalID: 1435048612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dethBodies_11
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 490
+        width: 100
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd14e437a911604da370776e0932307
+      internalID: 654758336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dethBodies_12
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 350
+        width: 100
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294f980e4bc54b046a5260f38df6899a
+      internalID: -1146719816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dethBodies_13
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 350
+        width: 100
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ad4a6506db060488408f458a9d807b
+      internalID: -1028911202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dethBodies_14
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 215
+        width: 100
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf6980b8edc9d241b2987b1d5f00f7e
+      internalID: 60897884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dethBodies_15
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 215
+        width: 100
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23db66115039e14a9952a6bc87418e8
+      internalID: 1237127900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dethBodies_16
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 80
+        width: 100
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a4e9c8f75e0f243a379cf285b66ed9
+      internalID: 993742079
       vertices: []
       indices: 
       edges: []
@@ -231,9 +483,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      dethBodies_8: -2062269302
       dethBodies_3: -785532070
       dethBodies_1: -376695711
+      dethBodies_10: 1435048612
+      dethBodies_13: -1028911202
+      dethBodies_6: -1204497732
+      dethBodies_16: 993742079
+      dethBodies_9: 835039964
+      dethBodies_12: -1146719816
+      dethBodies_14: 60897884
+      dethBodies_7: 1265127177
+      dethBodies_11: 654758336
+      dethBodies_5: -1367210979
       dethBodies_2: 238364394
+      dethBodies_15: 1237127900
       dethBodies_0: 1460587054
       dethBodies_4: -1351988067
   spritePackingTag: 

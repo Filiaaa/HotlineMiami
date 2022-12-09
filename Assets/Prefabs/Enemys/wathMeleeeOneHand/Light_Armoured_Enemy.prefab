@@ -87,7 +87,7 @@ SpriteRenderer:
   m_Size: {x: 6.5625, y: 4.6875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &5775754640387462601
@@ -368,6 +368,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8919752180880942747, guid: 0e996d6ba4829794e932d946a2059e7b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 8919752180880942749, guid: 0e996d6ba4829794e932d946a2059e7b, type: 3}
       propertyPath: m_Name
       value: knife_in_hands

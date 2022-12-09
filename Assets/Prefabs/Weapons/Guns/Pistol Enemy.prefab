@@ -185,7 +185,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -257,9 +257,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerAnimParametre: withFire
   soundRadius: 0
-  offsetInHands: {x: -0.018, y: 2.5, z: 0}
+  offsetInHands: {x: -0.152, y: 2.114, z: 0}
   offsetRotationInHands: {x: 0, y: 0, z: 0, w: 0}
   spriteInHands: {fileID: 0}
+  pickUpSprite: {fileID: 2095746535, guid: 8235f8070f1a7b94da4c75ae6ad88d56, type: 3}
+  defaultSprite: {fileID: 2114230624, guid: 8235f8070f1a7b94da4c75ae6ad88d56, type: 3}
+  spriteInTrig: {fileID: 120788871, guid: 8235f8070f1a7b94da4c75ae6ad88d56, type: 3}
+  sr: {fileID: 0}
+  timeToTake: 2
+  animator: {fileID: 0}
   colInPlayersHands: {fileID: 7022465188460048660}
   curBullet: {fileID: 1702249099695267215, guid: 52f9e30c9a22c9642a28882a31cbb0d9, type: 3}
   playerBullet: {fileID: 1702249099695267215, guid: fa48f10bbddcfd941853bed72852ff0b, type: 3}

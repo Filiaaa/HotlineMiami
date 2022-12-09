@@ -1111,7 +1111,7 @@ TextureImporter:
         width: 60
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1132,7 +1132,9 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: ace1339569b834944a4cd5461667428f, type: 3}
+      name: _NormalMao
     nameFileIdTable:
       floor_21: 391481
       floor_27: -1428735322
@@ -1159,12 +1161,12 @@ TextureImporter:
       floor_6: 1864560291
       floor_17: 1027284869
       floor_30: 1917450081
-      floor_44: 660403575
       floor_35: -582733947
-      floor_0: 1378811354
-      floor_37: -770690233
-      floor_41: -1071306434
       floor_43: 347654340
+      floor_37: -770690233
+      floor_44: 660403575
+      floor_41: -1071306434
+      floor_0: 1378811354
       floor_13: -82067093
       floor_25: 438916614
       floor_8: -1608589450

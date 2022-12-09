@@ -56,7 +56,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -131,6 +131,12 @@ MonoBehaviour:
   offsetInHands: {x: 1.037, y: 0.294, z: 0}
   offsetRotationInHands: {x: 0, y: 0, z: 0, w: 0}
   spriteInHands: {fileID: -838148317, guid: 8235f8070f1a7b94da4c75ae6ad88d56, type: 3}
+  pickUpSprite: {fileID: -715571238, guid: 8235f8070f1a7b94da4c75ae6ad88d56, type: 3}
+  defaultSprite: {fileID: -1555438884, guid: 8235f8070f1a7b94da4c75ae6ad88d56, type: 3}
+  spriteInTrig: {fileID: 601095138, guid: 8235f8070f1a7b94da4c75ae6ad88d56, type: 3}
+  sr: {fileID: 0}
+  timeToTake: 2
+  animator: {fileID: 0}
   attackCol: {fileID: 0}
   attackTime: 0.66
   attackSound: {fileID: 0}

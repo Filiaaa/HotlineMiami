@@ -26,7 +26,7 @@ public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 	private meleeWeapon cur_weapon_weapon;
 	private PlayerMover plM;
 	private NavMeshAgent agent;
-
+	bool canDie = true;
 	void Start()
 	{
 		sr = GetComponent<SpriteRenderer>();
@@ -46,6 +46,10 @@ public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 
 	void FixedUpdate()
 	{
+		if (movingSpeed == 0)
+		{
+			walk = false;
+		}
 		if (!cur_weapon_weapon.attack)
 		{
             curWeapon.SetActive(false);
@@ -62,12 +66,19 @@ public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 
 		if (player != null && !Physics2D.Linecast(transform.position, player.position, obstacleLayerMask) && Vector2.Angle(transform.up, player.transform.position - transform.position) < 30 && Vector2.Distance(enemy.position, player.position) <= agringDistanse/* && player.GetComponent <PlayerMover> ().curRoom == transform.parent.gameObject*/)
 		{
-			movingSpeed = 0.3f;
+			if(movingSpeed != 0)
+            {
+				movingSpeed = 0.3f;
+			}
 			agred = true;
 		}
 		else if (player != null && (Physics2D.Linecast(transform.position, player.position, obstacleLayerMask) || Vector2.Distance(enemy.position, player.position) > disagringDistance))
 		{
-			movingSpeed = 0.1f;
+			if (movingSpeed != 0)
+			{
+				movingSpeed = 0.1f;
+			}
+
 			agred = false;
 		}
 
@@ -75,14 +86,14 @@ public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 		if (!walk)
 		{
 			animator.SetBool("walk", false);
-			stepsSound.Stop();
+/*			stepsSound.Stop();*/
 
 		}
 		else if (walk)
 		{
-			stepsSound.pitch = Random.Range(0.9f, 1.1f);
+/*			stepsSound.pitch = Random.Range(0.9f, 1.1f);*/
 			animator.SetBool("walk", true);
-			stepsSound.Play();
+/*			stepsSound.Play();*/
 		}
 
 
@@ -98,7 +109,7 @@ public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 
 					/*angle = Vector2.Angle(Vector2.up, wayPoints[wayPointNumber].position - enemy.position);
 					enemy.eulerAngles = new Vector3(0, 0, enemy.position.x < wayPoints[wayPointNumber].position.x ? -angle : angle);*/
-					walk = true;
+					if(movingSpeed != 0){walk = true;}
 				}
 				else if (player != null)
 				{
@@ -106,7 +117,7 @@ public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 					if (Vector2.Distance(enemy.position, player.position) - deltaDictance > minDistance) //оружие начинает бить
 					{
 						/*enemy.Translate(Vector2.up * movingSpeed);*/
-						walk = true;
+						if(movingSpeed != 0){walk = true;}
 						cur_weapon_weapon.gameObject.SetActive(false);
 						sr.enabled = true;
 						moving_weapon_part_of_anim.SetActive(true);
@@ -114,7 +125,7 @@ public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 					else
 					{
 /*						enemy.Translate(Vector2.up * movingSpeed);*/
-						walk = true;
+						if(movingSpeed != 0){walk = true;}
 						sr.enabled = false;
 						cur_weapon_weapon.gameObject.SetActive(true);
 						cur_weapon_animator.SetBool("Enemy", true);
@@ -192,7 +203,7 @@ public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.tag == "PlayerAttack")
+		if (collision.tag == "PlayerAttack" && !Physics2D.Linecast(transform.position, player.position, obstacleLayerMask))
 		{
 			KillEnemy();
 		}
@@ -204,8 +215,10 @@ public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		if (collision.gameObject.tag == "PlayerAttack")
+		if (collision.gameObject.tag == "PlayerAttack" && canDie)
 		{
+			canDie = false;
+			StartCoroutine(ImmortalFrames());
 			if (collision.gameObject.GetComponent<Bullet>() != null) { Destroy(collision.gameObject); }
 			KillEnemy();
 		}
@@ -228,6 +241,14 @@ public class Enemy_With_Melee_Two_Hands : MonoBehaviour
 			deathBody_.GetComponent<SpriteRenderer>().sprite = deathBody;
 			Destroy(gameObject);
 		}
+	}
+
+	IEnumerator ImmortalFrames()
+    {
+		yield return new WaitForSeconds(0.33f);
+		canDie = true;
+
+
 	}
 
 }

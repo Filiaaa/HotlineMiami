@@ -16,23 +16,73 @@ public class PlayerMover : MonoBehaviour
 	public int hearts = 1, damage = 16, soundResultsNumb;
 	List<Collider2D> soundResults = new List<Collider2D>();
 	[SerializeField] private ContactFilter2D enemyContactFilter;
-
+	public GameObject pressBtnMenu, filledCircle;
+	public float circleTime = 0f;
+	Renderer filledCircleRenderer;
+	public float distBetwThings = 10f;
+	public GameObject lastNearestCollisionThing;
+	public bool onThingsTrig = false;
+	public GameObject collisionObj;
 	float hor, vert, angle;
 	Rigidbody2D rb;
 	Animator animator;
 	public SpriteRenderer movingPart;
 	bool attacked = true;
+	public float nearestDistanceToUse = 99999999f;
 	
 	private void Start () {
 		Time.timeScale = 1;
 		bulletSpeedBuff = 1;
 		currentWeapon = knife;
-		rb = GetComponent <Rigidbody2D> ();
+        filledCircleRenderer = filledCircle.GetComponent<Renderer>();
+        rb = GetComponent <Rigidbody2D> ();
 		animator = GetComponent<Animator>();
 		movingPart = movingPartWeaponOfAnim.GetComponent<SpriteRenderer>();
 	}
 
 	void FixedUpdate () {
+
+
+        if (onThingsTrig)
+        {
+			if (Input.GetKey(KeyCode.E) && collisionObj != null && canThrow && lastNearestCollisionThing == collisionObj && collisionObj.GetComponent<Weapon>() != null)
+			{
+				circleTime += Time.deltaTime;
+				collisionObj.GetComponent<SpriteRenderer>().sprite = collisionObj.GetComponent<Weapon>().pickUpSprite;
+				filledCircleRenderer.material.SetFloat("_Arc1", 360 * circleTime / collisionObj.GetComponent<Weapon>().timeToTake);
+
+				if (circleTime >= collisionObj.GetComponent<Weapon>().timeToTake)
+				{
+					pressBtnMenu.SetActive(false);
+
+					if (currentWeapon != knife)
+					{
+						currentWeapon.GetComponent<Weapon>().Throw();
+					}
+					currentWeapon = collisionObj;
+					currentWeapon.GetComponent<Weapon>().Take(transform);
+
+					if (currentWeapon.GetComponent<FireWeapon>() != null)
+					{
+						currentWeapon.GetComponent<FireWeapon>().colInPlayersHands.enabled = true;
+					}
+				}
+			}
+			if (Input.GetKeyUp(KeyCode.E) && collisionObj.GetComponent<Weapon>() != null && lastNearestCollisionThing == collisionObj && collisionObj != null)
+			{
+				collisionObj.GetComponent<SpriteRenderer>().sprite = collisionObj.GetComponent<Weapon>().spriteInTrig;
+				circleTime = 0;
+				filledCircleRenderer.material.SetFloat("_Arc1", 360);
+			}
+		}
+
+
+
+
+
+
+
+
 		if (Input.GetKey(KeyCode.G) && currentWeapon != knife)
 		{
 			canThrow = true;
@@ -169,24 +219,42 @@ public class PlayerMover : MonoBehaviour
 	}
 
 	private void OnTriggerStay2D (Collider2D collision) {
-		if (collision.tag == "Weapon" && Input.GetMouseButtonDown (1) && canThrow) {
-			if (currentWeapon != knife) {
-				currentWeapon.GetComponent <Weapon> ().Throw();
-			}
-/*			animator.SetBool ("withKnife", false);*/
-			currentWeapon = collision.gameObject;
-			currentWeapon.GetComponent <Weapon> ().Take (transform);
-            if (currentWeapon.GetComponent<FireWeapon>() != null)
-            {
-				currentWeapon.GetComponent<FireWeapon>().colInPlayersHands.enabled = true;
-			}
-			// currentWeapon.SetActive (false);
+		
+		if(Vector2.Distance(collision.gameObject.transform.position, gameObject.transform.position) <= distBetwThings && (collision.tag == "Weapon" || collision.tag == "Buff" || collision.tag == "Thing"))
+        {
+			collisionObj = collision.gameObject;
+			onThingsTrig = true;
+			lastNearestCollisionThing = collision.gameObject;
+			pressBtnMenu.SetActive(true);
+			pressBtnMenu.transform.position = new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y + 1f, 0);
+		}
+		
+	}
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+		distBetwThings = 10;
+		if (collision.tag == "Weapon")
+		{
+			collisionObj = null;
+			distBetwThings = 9999;
+			   Weapon collisionWeapon = collision.GetComponent<Weapon>();
+			collisionWeapon.sr.sprite = collisionWeapon.defaultSprite;
+			circleTime = 0;
+			filledCircleRenderer.material.SetFloat("_Arc1", 360);
+			pressBtnMenu.SetActive(false);
+		}
+	}
+
+    void OnTriggerEnter2D (Collider2D collision) {
+		if(collision.tag == "Weapon")
+        {
+			pressBtnMenu.SetActive(true);
+			pressBtnMenu.transform.position = collision.gameObject.transform.position;
+			Weapon collisionWeapon = collision.GetComponent<Weapon>();
+			collisionWeapon.sr.sprite = collisionWeapon.spriteInTrig;
+
 		}
 
-	}
-	
-	void OnTriggerEnter2D (Collider2D collision) {
-		
 /*		if (collision.tag == "Room") {
 			
 			curRoom = collision.gameObject;
@@ -195,6 +263,10 @@ public class PlayerMover : MonoBehaviour
 		/*}*/ /*else*/ if (collision.tag == "EnemyAttack" && collision.gameObject.GetComponent<Bullet>() != null) {
 			Destroy(collision.gameObject);
 			KillPlayer ();
+		}
+		else if (collision.tag == "EnemyAttack")
+        {
+			KillPlayer();
 		}
 	}
 /*

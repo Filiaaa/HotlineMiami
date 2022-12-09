@@ -5,28 +5,55 @@ using UnityEngine;
 public class UseBuff : MonoBehaviour
 {
     public GameObject pressBtnMenu, filledCircle, Player;
+    public PlayerMover playerMover;
     public float timeToTake, timeToEnableCol;
     float circleTime = 0;
     bool onTrig = false;
+    SpriteRenderer sr;
+    public Sprite pickUpSprite, defaultSprite, spriteInTrig;
+    Renderer filledCircleRenderer;
+
+    private void Start()
+    {
+        filledCircleRenderer = filledCircle.GetComponent<Renderer>();
+        sr = GetComponent<SpriteRenderer>();
+    }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.tag == "Player")
         {
+            sr.sprite = spriteInTrig;
             onTrig = true;
-            pressBtnMenu.SetActive(true);
-            pressBtnMenu.transform.position = gameObject.transform.position;
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+
+        if (collision.tag == "Player")
+        {
+            if (Vector2.Distance(gameObject.transform.position, Player.transform.position) <= playerMover.distBetwThings)
+            {
+                pressBtnMenu.SetActive(true);
+                pressBtnMenu.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 1f, 0);
+                playerMover.lastNearestCollisionThing = gameObject;
+            }
+        }
+    }
+
+
     private void Update()
     {
-        if (onTrig && Input.GetKey(KeyCode.E))
+
+        if (onTrig && Input.GetKey(KeyCode.E) && playerMover.lastNearestCollisionThing == gameObject)
         {
+            sr.sprite = pickUpSprite;
             circleTime += Time.deltaTime;
 
-            filledCircle.GetComponent<Renderer>().material.SetFloat("_Arc1", 360 * circleTime / timeToTake);
+            filledCircleRenderer.material.SetFloat("_Arc1", 360 * circleTime / timeToTake);
             if (circleTime >= timeToTake)
             {
                 pressBtnMenu.SetActive(false);
@@ -36,10 +63,11 @@ public class UseBuff : MonoBehaviour
                 gameObject.GetComponent<Buff>().Use();
             }
         }
-        if (Input.GetKeyUp(KeyCode.E))
+        if (onTrig && Input.GetKeyUp(KeyCode.E))
         {
+            sr.sprite = spriteInTrig;
             circleTime = 0;
-            filledCircle.GetComponent<Renderer>().material.SetFloat("_Arc1", 360);
+            filledCircleRenderer.material.SetFloat("_Arc1", 360);
         }
     }
 
@@ -47,6 +75,8 @@ public class UseBuff : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            playerMover.distBetwThings = 10;
+            sr.sprite = defaultSprite;
             circleTime = 0;
             filledCircle.GetComponent<Renderer>().material.SetFloat("_Arc1", 360);
             onTrig = false;

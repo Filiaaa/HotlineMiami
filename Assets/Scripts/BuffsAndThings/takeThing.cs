@@ -6,15 +6,18 @@ public class takeThing : MonoBehaviour
 {
 
     public GameObject pressBtnMenu, filledCircle, Player;
+    public GameObject[] enemiesToTake;
+    public GameObject[] spawnEnemies;
     public float timeToTake, playerSpeedDown;
     float time = 0;
     bool onTrig = false;
+    PlayerMover playerMover;
 
-/*    void Start()
+    void Start()
     {
-        filledCircle.GetComponent<Renderer>().material.SetFloat("_Arc1", 0);
+        playerMover = Player.GetComponent<PlayerMover>();
     }
-*/
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
@@ -27,8 +30,12 @@ public class takeThing : MonoBehaviour
 
     private void Update()
     {
-        if (onTrig && Input.GetKey(KeyCode.E))
+        if (onTrig && Input.GetKey(KeyCode.E) && playerMover.lastNearestCollisionThing == gameObject)
         {
+            for (int i = 0; i < spawnEnemies.Length; i++)
+            {
+                spawnEnemies[i].SetActive(true);
+            }
             time += Time.deltaTime;
 
             filledCircle.GetComponent<Renderer>().material.SetFloat("_Arc1", 360 * time / timeToTake);
@@ -37,7 +44,16 @@ public class takeThing : MonoBehaviour
                 pressBtnMenu.SetActive(false);
                 print("taken");
                 Player.GetComponent<PlayerMover>().movingSpeed -= playerSpeedDown;
-                gameObject.SetActive(false);
+                for (int i = 0; i < enemiesToTake.Length; i++)
+                {
+                    if (enemiesToTake[i] != null)
+                    {
+                        /*                var warning_text = Instantiate(warningText, playersCanvas);*/
+                        /*                StartCoroutine(DestroyText(warning_text));*/
+                        return;
+                    }
+                }
+                Destroy(gameObject);
             }
         }
         if (Input.GetKeyUp(KeyCode.E))
